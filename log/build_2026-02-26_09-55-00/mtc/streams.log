@@ -1,0 +1,27 @@
+[0.009s] Invoking command in '/home/secu4090/xarm_ws/build/mtc': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/secu4090/turtlebot3_ws/install/tb3_custom_explore DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/secu4090/xarm_ws/build/mtc -- -j28 -l28
+[0.051s] [ 50%] [32mBuilding CXX object CMakeFiles/mtc_node.dir/src/mtc_node.cpp.o[0m
+[5.108s] [100%] [32m[1mLinking CXX executable mtc_node[0m
+[5.298s] [100%] Built target mtc_node
+[5.306s] Invoked command in '/home/secu4090/xarm_ws/build/mtc' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/secu4090/turtlebot3_ws/install/tb3_custom_explore DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/secu4090/xarm_ws/build/mtc -- -j28 -l28
+[5.307s] Invoking command in '/home/secu4090/xarm_ws/build/mtc': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/secu4090/turtlebot3_ws/install/tb3_custom_explore DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/secu4090/xarm_ws/build/mtc
+[5.311s] -- Install configuration: ""
+[5.311s] -- Installing: /home/secu4090/xarm_ws/install/mtc/lib/mtc/mtc_node
+[5.312s] -- Set non-toolchain portion of runtime path of "/home/secu4090/xarm_ws/install/mtc/lib/mtc/mtc_node" to ""
+[5.312s] -- Up-to-date: /home/secu4090/xarm_ws/install/mtc/share/mtc/launch
+[5.312s] -- Up-to-date: /home/secu4090/xarm_ws/install/mtc/share/mtc/launch/pick_place_demo.launch.py
+[5.312s] -- Up-to-date: /home/secu4090/xarm_ws/install/mtc/share/ament_index/resource_index/package_run_dependencies/mtc
+[5.312s] -- Up-to-date: /home/secu4090/xarm_ws/install/mtc/share/ament_index/resource_index/parent_prefix_path/mtc
+[5.312s] -- Up-to-date: /home/secu4090/xarm_ws/install/mtc/share/mtc/environment/ament_prefix_path.sh
+[5.312s] -- Up-to-date: /home/secu4090/xarm_ws/install/mtc/share/mtc/environment/ament_prefix_path.dsv
+[5.312s] -- Up-to-date: /home/secu4090/xarm_ws/install/mtc/share/mtc/environment/path.sh
+[5.312s] -- Up-to-date: /home/secu4090/xarm_ws/install/mtc/share/mtc/environment/path.dsv
+[5.312s] -- Up-to-date: /home/secu4090/xarm_ws/install/mtc/share/mtc/local_setup.bash
+[5.312s] -- Up-to-date: /home/secu4090/xarm_ws/install/mtc/share/mtc/local_setup.sh
+[5.312s] -- Up-to-date: /home/secu4090/xarm_ws/install/mtc/share/mtc/local_setup.zsh
+[5.312s] -- Up-to-date: /home/secu4090/xarm_ws/install/mtc/share/mtc/local_setup.dsv
+[5.312s] -- Installing: /home/secu4090/xarm_ws/install/mtc/share/mtc/package.dsv
+[5.312s] -- Up-to-date: /home/secu4090/xarm_ws/install/mtc/share/ament_index/resource_index/packages/mtc
+[5.312s] -- Up-to-date: /home/secu4090/xarm_ws/install/mtc/share/mtc/cmake/mtcConfig.cmake
+[5.312s] -- Up-to-date: /home/secu4090/xarm_ws/install/mtc/share/mtc/cmake/mtcConfig-version.cmake
+[5.312s] -- Up-to-date: /home/secu4090/xarm_ws/install/mtc/share/mtc/package.xml
+[5.313s] Invoked command in '/home/secu4090/xarm_ws/build/mtc' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/secu4090/turtlebot3_ws/install/tb3_custom_explore DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/secu4090/xarm_ws/build/mtc

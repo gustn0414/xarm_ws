@@ -1,0 +1,61 @@
+-- The C compiler identification is GNU 13.3.0
+-- The CXX compiler identification is GNU 13.3.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 2.5.5 (/opt/ros/jazzy/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+-- Found ament_lint_auto: 0.17.4 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done (0.5s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/secu4090/xarm_ws/build/xarm_1s_description
+-- Install configuration: ""
+-- Installing: /home/secu4090/xarm_ws/install/xarm_1s_description/share/xarm_1s_description/meshes
+-- Installing: /home/secu4090/xarm_ws/install/xarm_1s_description/share/xarm_1s_description/meshes/link0_left.stl
+-- Installing: /home/secu4090/xarm_ws/install/xarm_1s_description/share/xarm_1s_description/meshes/link3.stl
+-- Installing: /home/secu4090/xarm_ws/install/xarm_1s_description/share/xarm_1s_description/meshes/link6.stl
+-- Installing: /home/secu4090/xarm_ws/install/xarm_1s_description/share/xarm_1s_description/meshes/link5_collision.stl
+-- Installing: /home/secu4090/xarm_ws/install/xarm_1s_description/share/xarm_1s_description/meshes/link2.stl
+-- Installing: /home/secu4090/xarm_ws/install/xarm_1s_description/share/xarm_1s_description/meshes/link1_left_collision.stl
+-- Installing: /home/secu4090/xarm_ws/install/xarm_1s_description/share/xarm_1s_description/meshes/link5.stl
+-- Installing: /home/secu4090/xarm_ws/install/xarm_1s_description/share/xarm_1s_description/meshes/link4_collision.stl
+-- Installing: /home/secu4090/xarm_ws/install/xarm_1s_description/share/xarm_1s_description/meshes/link2_collision.stl
+-- Installing: /home/secu4090/xarm_ws/install/xarm_1s_description/share/xarm_1s_description/meshes/link1_collision.stl
+-- Installing: /home/secu4090/xarm_ws/install/xarm_1s_description/share/xarm_1s_description/meshes/link0.stl
+-- Installing: /home/secu4090/xarm_ws/install/xarm_1s_description/share/xarm_1s_description/meshes/link1.stl
+-- Installing: /home/secu4090/xarm_ws/install/xarm_1s_description/share/xarm_1s_description/meshes/link0_collision.stl
+-- Installing: /home/secu4090/xarm_ws/install/xarm_1s_description/share/xarm_1s_description/meshes/base.stl
+-- Installing: /home/secu4090/xarm_ws/install/xarm_1s_description/share/xarm_1s_description/meshes/link4.stl
+-- Installing: /home/secu4090/xarm_ws/install/xarm_1s_description/share/xarm_1s_description/meshes/link0_left_collision.stl
+-- Installing: /home/secu4090/xarm_ws/install/xarm_1s_description/share/xarm_1s_description/meshes/link3_collision.stl
+-- Installing: /home/secu4090/xarm_ws/install/xarm_1s_description/share/xarm_1s_description/meshes/link1_left.stl
+-- Installing: /home/secu4090/xarm_ws/install/xarm_1s_description/share/xarm_1s_description/meshes/base_collision.stl
+-- Installing: /home/secu4090/xarm_ws/install/xarm_1s_description/share/xarm_1s_description/meshes/link6_collision.stl
+-- Installing: /home/secu4090/xarm_ws/install/xarm_1s_description/share/xarm_1s_description/rviz
+-- Installing: /home/secu4090/xarm_ws/install/xarm_1s_description/share/xarm_1s_description/rviz/xarm_1s.rviz
+-- Installing: /home/secu4090/xarm_ws/install/xarm_1s_description/share/xarm_1s_description/urdf
+-- Installing: /home/secu4090/xarm_ws/install/xarm_1s_description/share/xarm_1s_description/urdf/xarm_1s.urdf.xacro
+-- Installing: /home/secu4090/xarm_ws/install/xarm_1s_description/share/ament_index/resource_index/package_run_dependencies/xarm_1s_description
+-- Installing: /home/secu4090/xarm_ws/install/xarm_1s_description/share/ament_index/resource_index/parent_prefix_path/xarm_1s_description
+-- Installing: /home/secu4090/xarm_ws/install/xarm_1s_description/share/xarm_1s_description/environment/ament_prefix_path.sh
+-- Installing: /home/secu4090/xarm_ws/install/xarm_1s_description/share/xarm_1s_description/environment/ament_prefix_path.dsv
+-- Installing: /home/secu4090/xarm_ws/install/xarm_1s_description/share/xarm_1s_description/environment/path.sh
+-- Installing: /home/secu4090/xarm_ws/install/xarm_1s_description/share/xarm_1s_description/environment/path.dsv
+-- Installing: /home/secu4090/xarm_ws/install/xarm_1s_description/share/xarm_1s_description/local_setup.bash
+-- Installing: /home/secu4090/xarm_ws/install/xarm_1s_description/share/xarm_1s_description/local_setup.sh
+-- Installing: /home/secu4090/xarm_ws/install/xarm_1s_description/share/xarm_1s_description/local_setup.zsh
+-- Installing: /home/secu4090/xarm_ws/install/xarm_1s_description/share/xarm_1s_description/local_setup.dsv
+-- Installing: /home/secu4090/xarm_ws/install/xarm_1s_description/share/xarm_1s_description/package.dsv
+-- Installing: /home/secu4090/xarm_ws/install/xarm_1s_description/share/ament_index/resource_index/packages/xarm_1s_description
+-- Installing: /home/secu4090/xarm_ws/install/xarm_1s_description/share/xarm_1s_description/cmake/xarm_1s_descriptionConfig.cmake
+-- Installing: /home/secu4090/xarm_ws/install/xarm_1s_description/share/xarm_1s_description/cmake/xarm_1s_descriptionConfig-version.cmake
+-- Installing: /home/secu4090/xarm_ws/install/xarm_1s_description/share/xarm_1s_description/package.xml

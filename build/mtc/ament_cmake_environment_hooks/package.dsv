@@ -1,0 +1,4 @@
+source;share/mtc/local_setup.bash
+source;share/mtc/local_setup.dsv
+source;share/mtc/local_setup.sh
+source;share/mtc/local_setup.zsh

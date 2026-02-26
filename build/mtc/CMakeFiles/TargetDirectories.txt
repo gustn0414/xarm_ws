@@ -1,0 +1,10 @@
+/home/secu4090/xarm_ws/build/mtc/CMakeFiles/uninstall.dir
+/home/secu4090/xarm_ws/build/mtc/CMakeFiles/mtc_uninstall.dir
+/home/secu4090/xarm_ws/build/mtc/CMakeFiles/mtc_node.dir
+/home/secu4090/xarm_ws/build/mtc/CMakeFiles/test.dir
+/home/secu4090/xarm_ws/build/mtc/CMakeFiles/edit_cache.dir
+/home/secu4090/xarm_ws/build/mtc/CMakeFiles/rebuild_cache.dir
+/home/secu4090/xarm_ws/build/mtc/CMakeFiles/list_install_components.dir
+/home/secu4090/xarm_ws/build/mtc/CMakeFiles/install.dir
+/home/secu4090/xarm_ws/build/mtc/CMakeFiles/install/local.dir
+/home/secu4090/xarm_ws/build/mtc/CMakeFiles/install/strip.dir
