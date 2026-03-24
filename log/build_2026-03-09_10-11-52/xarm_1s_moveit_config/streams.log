@@ -1,0 +1,94 @@
+[0.010s] Invoking command in '/home/hyeonsu/xarm_ws/build/xarm_1s_moveit_config': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/hyeonsu/xarm_ws/build/xarm_1s_moveit_config -- -j24 -l24
+[0.044s] -- Found ament_cmake: 2.5.5 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.239s] -- Found moveit_ros_planning_interface: 2.12.4 (/opt/ros/jazzy/share/moveit_ros_planning_interface/cmake)
+[0.387s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found version "1.83.0") found components: date_time filesystem program_options system thread 
+[0.441s] -- Found rosidl_generator_c: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[0.454s] -- Found rosidl_generator_cpp: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[0.472s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.490s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.746s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found version "1.83.0") found components: chrono date_time filesystem iostreams program_options regex serialization system thread 
+[0.797s] -- Found parameter_traits: 0.6.0 (/opt/ros/jazzy/share/parameter_traits/cmake)
+[0.832s] -- Found rmw_implementation_cmake: 7.3.3 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[0.835s] -- Found rmw_fastrtps_cpp: 8.4.3 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[0.905s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  
+[0.919s] -- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") 
+[0.941s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.003s] -- Found rclcpp_lifecycle: 28.1.16 (/opt/ros/jazzy/share/rclcpp_lifecycle/cmake)
+[1.029s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found version "1.83.0") found components: filesystem 
+[1.079s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[1.079s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[1.217s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found version "1.83.0") found components: system filesystem date_time program_options thread chrono 
+[1.250s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found version "1.83.0") found components: thread system filesystem regex date_time program_options 
+[1.267s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found version "1.83.0") found components: system filesystem date_time program_options thread 
+[1.292s] -- Found moveit_kinematics: 2.12.4 (/opt/ros/jazzy/share/moveit_kinematics/cmake)
+[1.294s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found version "1.83.0") found components: program_options system 
+[1.306s] -- Found moveit_planners_ompl: 2.12.4 (/opt/ros/jazzy/share/moveit_planners_ompl/cmake)
+[1.317s] -- Found moveit_ros_visualization: 2.12.4 (/opt/ros/jazzy/share/moveit_ros_visualization/cmake)
+[1.319s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found version "1.83.0") found components: thread date_time system filesystem 
+[1.355s] -- Setting OGRE_DIR to: '/opt/ros/jazzy/share/rviz_ogre_vendor/cmake/../../../opt/rviz_ogre_vendor/lib/OGRE/cmake'
+[1.356s] -- Found OGRE
+[1.356s] --   static     : OFF
+[1.356s] --   components : MeshLodGenerator;Overlay;Paging;Property;RTShaderSystem;Terrain;Volume
+[1.357s] --   plugins    : Plugin_BSPSceneManager;Plugin_OctreeSceneManager;Plugin_PCZSceneManager;Plugin_ParticleFX;RenderSystem_GL;RenderSystem_GL3Plus;Codec_STBI
+[1.357s] --   media      : /opt/ros/jazzy/opt/rviz_ogre_vendor/share/OGRE/Media
+[1.357s] -- OGRE_LIBRARIES: OgreMeshLodGenerator;OgreOverlay;OgrePaging;OgreProperty;OgreRTShaderSystem;OgreTerrain;OgreVolume;OgreMain
+[1.357s] -- OGRE_LIBRARY_DIRS: /opt/ros/jazzy/opt/rviz_ogre_vendor/lib
+[1.357s] -- OGRE_PLUGINS: Plugin_BSPSceneManager;Plugin_OctreeSceneManager;Plugin_PCZSceneManager;Plugin_ParticleFX;RenderSystem_GL;RenderSystem_GL3Plus;Codec_STBI
+[1.357s] -- OGRE_PLUGIN_DIR: /opt/ros/jazzy/opt/rviz_ogre_vendor/lib/OGRE
+[1.357s] -- rviz_ogre_vendor::OgreOverlay for IMPORTED_LOCATION_RELEASE: /opt/ros/jazzy/opt/rviz_ogre_vendor/lib/libOgreOverlay.so
+[1.357s] -- rviz_ogre_vendor::OgreOverlay for IMPORTED_LOCATION_DEBUG: /opt/ros/jazzy/opt/rviz_ogre_vendor/lib/libOgreOverlay.so
+[1.357s] -- rviz_ogre_vendor::OgreMain for IMPORTED_LOCATION_RELEASE: /opt/ros/jazzy/opt/rviz_ogre_vendor/lib/libOgreMain.so
+[1.357s] -- rviz_ogre_vendor::OgreMain for IMPORTED_LOCATION_DEBUG: /opt/ros/jazzy/opt/rviz_ogre_vendor/lib/libOgreMain.so
+[1.379s] -- Found ZLIB: /usr/lib/x86_64-linux-gnu/libz.so (found version "1.3")  
+[1.386s] -- Found OpenGL: /usr/lib/x86_64-linux-gnu/libOpenGL.so   
+[1.502s] -- Found X11: /usr/include   
+[1.502s] -- Looking for XOpenDisplay in /usr/lib/x86_64-linux-gnu/libX11.so;/usr/lib/x86_64-linux-gnu/libXext.so
+[1.572s] -- Looking for XOpenDisplay in /usr/lib/x86_64-linux-gnu/libX11.so;/usr/lib/x86_64-linux-gnu/libXext.so - found
+[1.572s] -- Looking for gethostbyname
+[1.646s] -- Looking for gethostbyname - found
+[1.646s] -- Looking for connect
+[1.718s] -- Looking for connect - found
+[1.719s] -- Looking for remove
+[1.789s] -- Looking for remove - found
+[1.789s] -- Looking for shmat
+[1.857s] -- Looking for shmat - found
+[1.857s] -- Looking for IceConnectionNumber in ICE
+[1.926s] -- Looking for IceConnectionNumber in ICE - found
+[1.955s] -- Setting yaml-cpp_DIR to: '/opt/ros/jazzy/share/yaml_cpp_vendor/cmake/../../../opt/yaml_cpp_vendor/share/cmake/yaml-cpp'
+[1.960s] -- Found PkgConfig: /usr/bin/pkg-config (found version "1.8.1") 
+[1.961s] -- Checking for module 'yaml-cpp'
+[1.973s] --   Found yaml-cpp, version 0.8.0
+[2.078s] -- Found rviz_visual_tools: 4.1.4 (/opt/ros/jazzy/share/rviz_visual_tools/cmake)
+[2.090s] -- Found ament_lint_auto: 0.17.4 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[2.147s] -- Added test 'flake8' to check Python code syntax and style conventions
+[2.147s] -- Configured 'flake8' exclude dirs and/or files: 
+[2.147s] -- Added test 'lint_cmake' to check CMake code style
+[2.147s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[2.147s] -- Added test 'xmllint' to check XML markup files
+[2.148s] -- Configuring done (2.1s)
+[2.153s] -- Generating done (0.0s)
+[2.155s] -- Build files have been written to: /home/hyeonsu/xarm_ws/build/xarm_1s_moveit_config
+[2.182s] Invoked command in '/home/hyeonsu/xarm_ws/build/xarm_1s_moveit_config' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/hyeonsu/xarm_ws/build/xarm_1s_moveit_config -- -j24 -l24
+[2.183s] Invoking command in '/home/hyeonsu/xarm_ws/build/xarm_1s_moveit_config': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/hyeonsu/xarm_ws/build/xarm_1s_moveit_config
+[2.191s] -- Install configuration: ""
+[2.191s] -- Up-to-date: /home/hyeonsu/xarm_ws/install/xarm_1s_moveit_config/share/xarm_1s_moveit_config/config
+[2.191s] -- Up-to-date: /home/hyeonsu/xarm_ws/install/xarm_1s_moveit_config/share/xarm_1s_moveit_config/config/moveit.rviz
+[2.191s] -- Up-to-date: /home/hyeonsu/xarm_ws/install/xarm_1s_moveit_config/share/xarm_1s_moveit_config/config/ros2_controllers.yaml
+[2.191s] -- Up-to-date: /home/hyeonsu/xarm_ws/install/xarm_1s_moveit_config/share/xarm_1s_moveit_config/config/sensors_3d.yaml
+[2.191s] -- Installing: /home/hyeonsu/xarm_ws/install/xarm_1s_moveit_config/share/xarm_1s_moveit_config/config/initial_positions.yaml
+[2.191s] -- Installing: /home/hyeonsu/xarm_ws/install/xarm_1s_moveit_config/share/xarm_1s_moveit_config/config/kinematics.yaml
+[2.191s] -- Up-to-date: /home/hyeonsu/xarm_ws/install/xarm_1s_moveit_config/share/xarm_1s_moveit_config/config/xarm_1s.ros2_control.xacro
+[2.192s] -- Up-to-date: /home/hyeonsu/xarm_ws/install/xarm_1s_moveit_config/share/xarm_1s_moveit_config/config/joint_limits.yaml
+[2.192s] -- Installing: /home/hyeonsu/xarm_ws/install/xarm_1s_moveit_config/share/xarm_1s_moveit_config/config/xarm_1s.srdf
+[2.192s] [31mCMake Error at cmake_install.cmake:46 (file):
+[2.192s]   file INSTALL cannot find
+[2.192s]   "/home/hyeonsu/xarm_ws/src/xarm_1s_moveit_config/rviz": No such file or
+[2.192s]   directory.
+[2.192s] 
+[2.192s] [0m
+[2.192s] -- Up-to-date: /home/hyeonsu/xarm_ws/install/xarm_1s_moveit_config/share/xarm_1s_moveit_config/config/pilz_cartesian_limits.yaml
+[2.192s] -- Up-to-date: /home/hyeonsu/xarm_ws/install/xarm_1s_moveit_config/share/xarm_1s_moveit_config/config/xarm_1s.urdf.xacro
+[2.192s] -- Up-to-date: /home/hyeonsu/xarm_ws/install/xarm_1s_moveit_config/share/xarm_1s_moveit_config/config/moveit_controllers.yaml
+[2.192s] -- Up-to-date: /home/hyeonsu/xarm_ws/install/xarm_1s_moveit_config/share/xarm_1s_moveit_config/launch
+[2.192s] -- Up-to-date: /home/hyeonsu/xarm_ws/install/xarm_1s_moveit_config/share/xarm_1s_moveit_config/launch/demo.launch.py
+[2.193s] Invoked command in '/home/hyeonsu/xarm_ws/build/xarm_1s_moveit_config' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/hyeonsu/xarm_ws/build/xarm_1s_moveit_config

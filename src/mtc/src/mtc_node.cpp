@@ -56,12 +56,12 @@ void MTCTaskNode::setupPlanningScene()
   object.header.frame_id = "world";
   object.primitives.resize(1);
   object.primitives[0].type = shape_msgs::msg::SolidPrimitive::CYLINDER;
-  object.primitives[0].dimensions = { 0.05, 0.02 };
+  object.primitives[0].dimensions = { 0.3, 0.01 };
 
   geometry_msgs::msg::Pose pose;
-  pose.position.x = 0.2; // 0.5;
-  pose.position.y = 0.0; // -0.25;
-  pose.position.z = 0.05;
+  pose.position.x = 0.17; // 0.5;
+  pose.position.y = 0.17; // -0.25;
+  pose.position.z = 0.15;
   pose.orientation.w = 1.0;
   object.pose = pose;
 
@@ -72,6 +72,9 @@ void MTCTaskNode::setupPlanningScene()
 void MTCTaskNode::doTask()
 {
   task_ = createTask();
+
+  // task tree 출력 (RViz)
+  task_.enableIntrospection(true);
 
   try
   {
@@ -156,7 +159,7 @@ mtc::Task MTCTaskNode::createTask()
       stage->properties().set("marker_ns", "approach_object");
       stage->properties().set("link", hand_frame);
       stage->properties().configureInitFrom(mtc::Stage::PARENT, { "group" });
-      stage->setMinMaxDistance(0.01, 0.05); //(0.1, 0.15);
+      stage->setMinMaxDistance(0.01, 0.15); //(0.1, 0.15);
 
       geometry_msgs::msg::Vector3Stamped vec;
       vec.header.frame_id = hand_frame;
@@ -167,32 +170,18 @@ mtc::Task MTCTaskNode::createTask()
 
 
     {
-      auto stage = std::make_unique<mtc::stages::ModifyPlanningScene>("allow collision (hand,object)");
-      stage->allowCollisions(
-        "object",
-        task.getRobotModel()
-          ->getJointModelGroup(hand_group_name)
-          ->getLinkModelNamesWithCollisionGeometry(),
-        true
-      );
-      grasp->insert(std::move(stage));
-    }
-
-    {
       auto stage = std::make_unique<mtc::stages::GenerateGraspPose>("generate grasp pose");
       stage->properties().configureInitFrom(mtc::Stage::PARENT);
       stage->properties().set("marker_ns", "grasp_pose");
       stage->setPreGraspPose("open");
       stage->setObject("object");
-      stage->setAngleDelta(M_PI / 12);
+      stage->setAngleDelta(M_PI / 24);
       stage->setMonitoredStage(current_state_ptr);
 
       Eigen::Isometry3d grasp_frame_transform;
-      Eigen::Quaterniond q = Eigen::AngleAxisd(M_PI / 2, Eigen::Vector3d::UnitX()) * 
-                              Eigen::AngleAxisd(M_PI / 2, Eigen::Vector3d::UnitY()) *
-                              Eigen::AngleAxisd(M_PI / 2, Eigen::Vector3d::UnitZ());
-      grasp_frame_transform.linear() = q.matrix();
-      grasp_frame_transform.translation().z() = 0.05;
+      grasp_frame_transform = Eigen::Isometry3d::Identity();
+      grasp_frame_transform.linear() = Eigen::AngleAxisd(-M_PI / 2, Eigen::Vector3d::UnitY()).toRotationMatrix();
+      grasp_frame_transform.translation().z() = 0.1;  // link2에서 파지 중심까지 거리 (조정 필요)
 
       auto wrapper = std::make_unique<mtc::stages::ComputeIK>("grasp pose IK", std::move(stage));
       wrapper->setMaxIKSolutions(8);
@@ -203,17 +192,16 @@ mtc::Task MTCTaskNode::createTask()
       grasp->insert(std::move(wrapper));
     }
 
-    // {
-    //   auto stage = std::make_unique<mtc::stages::ModifyPlanningScene>("allow collision (hand,object)");
-    //   stage->allowCollisions(
-    //     "object",
-    //     task.getRobotModel()
-    //       ->getJointModelGroup(hand_group_name)
-    //       ->getLinkModelNamesWithCollisionGeometry(),
-    //     true
-    //   );
-    //   grasp->insert(std::move(stage));
-    // }
+    {
+      auto stage = std::make_unique<mtc::stages::ModifyPlanningScene>("allow collision (hand,object)");
+      // hand 그룹(arm1) + 미믹 조인트 링크(link0, link0_left)를 명시적으로 모두 허용
+      stage->allowCollisions(
+        "object",
+        std::vector<std::string>{ "link1", "link1_left", "link0", "link0_left" },
+        true
+      );
+      grasp->insert(std::move(stage));
+    }
 
     {
       auto stage = std::make_unique<mtc::stages::MoveTo>("close hand", interpolation_planner);
@@ -230,16 +218,11 @@ mtc::Task MTCTaskNode::createTask()
     }
 
     {
-      auto stage = std::make_unique<mtc::stages::MoveRelative>("lift object", cartesian_planner);
+      // OMPL플래너로 교체 (수직 이동시 5DOF 움직임 제약이 너무 많음)
+      auto stage = std::make_unique<mtc::stages::MoveTo>("lift object", sampling_planner);
       stage->properties().configureInitFrom(mtc::Stage::PARENT, { "group" });
-      stage->setMinMaxDistance(0.01, 0.05); // (0.1, 0.3);
-      stage->setIKFrame(hand_frame);
-      stage->properties().set("marker_ns", "lift_object");
-
-      geometry_msgs::msg::Vector3Stamped vec;
-      vec.header.frame_id = "world";
-      vec.vector.z = 1.0;
-      stage->setDirection(vec);
+      stage->setGroup(arm_group_name);
+      stage->setGoal("Home");
       grasp->insert(std::move(stage));
     }
     task.add(std::move(grasp));
@@ -270,14 +253,14 @@ mtc::Task MTCTaskNode::createTask()
 
       geometry_msgs::msg::PoseStamped target_pose_msg;
       target_pose_msg.header.frame_id = "object";
-      target_pose_msg.pose.position.y = 0.5;
+      target_pose_msg.pose.position.y = -0.34;
       target_pose_msg.pose.orientation.w = 1.0;
       stage->setPose(target_pose_msg);
       stage->setMonitoredStage(attach_object_stage);
 
       auto wrapper = std::make_unique<mtc::stages::ComputeIK>("place pose IK", std::move(stage));
-      wrapper->setMaxIKSolutions(2);
-      wrapper->setMinSolutionDistance(1.0);
+      wrapper->setMaxIKSolutions(32);
+      wrapper->setMinSolutionDistance(0.5);
       wrapper->setIKFrame("object");
       wrapper->properties().configureInitFrom(mtc::Stage::PARENT, { "eef", "group" });
       wrapper->properties().configureInitFrom(mtc::Stage::INTERFACE, { "target_pose" });
@@ -312,13 +295,13 @@ mtc::Task MTCTaskNode::createTask()
     {
       auto stage = std::make_unique<mtc::stages::MoveRelative>("retreat", cartesian_planner);
       stage->properties().configureInitFrom(mtc::Stage::PARENT, { "group" });
-      stage->setMinMaxDistance(0.1, 0.3);
+      stage->setMinMaxDistance(0.01, 0.3);
       stage->setIKFrame(hand_frame);
       stage->properties().set("marker_ns", "retreat");
 
       geometry_msgs::msg::Vector3Stamped vec;
-      vec.header.frame_id = "world";
-      vec.vector.x = -0.5;
+      vec.header.frame_id = hand_frame;
+      vec.vector.z = -1.0;
       stage->setDirection(vec);
       place->insert(std::move(stage));
     }

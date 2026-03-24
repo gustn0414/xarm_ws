@@ -1,0 +1,31 @@
+[0.010s] Invoking command in '/home/hyeonsu/xarm_ws/build/mtc': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/hyeonsu/xarm_ws/build/mtc -- -j24 -l24
+[0.107s] [ 50%] Building CXX object CMakeFiles/mtc_node.dir/src/mtc_node.cpp.o
+[5.042s] /home/hyeonsu/xarm_ws/src/mtc/src/mtc_node.cpp: In member function ‘moveit::task_constructor::Task MTCTaskNode::createTask()’:
+[5.042s] /home/hyeonsu/xarm_ws/src/mtc/src/mtc_node.cpp:147:15: warning: variable ‘attach_object_stage’ set but not used [-Wunused-but-set-variable]
+[5.042s]   147 |   mtc::Stage* attach_object_stage = nullptr;
+[5.042s]       |               ^~~~~~~~~~~~~~~~~~~
+[8.384s] [100%] Linking CXX executable mtc_node
+[8.620s] [100%] Built target mtc_node
+[8.630s] Invoked command in '/home/hyeonsu/xarm_ws/build/mtc' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/hyeonsu/xarm_ws/build/mtc -- -j24 -l24
+[8.639s] Invoking command in '/home/hyeonsu/xarm_ws/build/mtc': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/hyeonsu/xarm_ws/build/mtc
+[8.646s] -- Install configuration: ""
+[8.647s] -- Installing: /home/hyeonsu/xarm_ws/install/mtc/lib/mtc/mtc_node
+[8.647s] -- Set non-toolchain portion of runtime path of "/home/hyeonsu/xarm_ws/install/mtc/lib/mtc/mtc_node" to ""
+[8.647s] -- Up-to-date: /home/hyeonsu/xarm_ws/install/mtc/share/mtc/launch
+[8.647s] -- Up-to-date: /home/hyeonsu/xarm_ws/install/mtc/share/mtc/launch/pick_place_demo.launch.py
+[8.647s] -- Up-to-date: /home/hyeonsu/xarm_ws/install/mtc/share/ament_index/resource_index/package_run_dependencies/mtc
+[8.647s] -- Up-to-date: /home/hyeonsu/xarm_ws/install/mtc/share/ament_index/resource_index/parent_prefix_path/mtc
+[8.647s] -- Up-to-date: /home/hyeonsu/xarm_ws/install/mtc/share/mtc/environment/ament_prefix_path.sh
+[8.647s] -- Up-to-date: /home/hyeonsu/xarm_ws/install/mtc/share/mtc/environment/ament_prefix_path.dsv
+[8.647s] -- Up-to-date: /home/hyeonsu/xarm_ws/install/mtc/share/mtc/environment/path.sh
+[8.647s] -- Up-to-date: /home/hyeonsu/xarm_ws/install/mtc/share/mtc/environment/path.dsv
+[8.647s] -- Up-to-date: /home/hyeonsu/xarm_ws/install/mtc/share/mtc/local_setup.bash
+[8.647s] -- Up-to-date: /home/hyeonsu/xarm_ws/install/mtc/share/mtc/local_setup.sh
+[8.647s] -- Up-to-date: /home/hyeonsu/xarm_ws/install/mtc/share/mtc/local_setup.zsh
+[8.647s] -- Up-to-date: /home/hyeonsu/xarm_ws/install/mtc/share/mtc/local_setup.dsv
+[8.647s] -- Installing: /home/hyeonsu/xarm_ws/install/mtc/share/mtc/package.dsv
+[8.647s] -- Up-to-date: /home/hyeonsu/xarm_ws/install/mtc/share/ament_index/resource_index/packages/mtc
+[8.647s] -- Up-to-date: /home/hyeonsu/xarm_ws/install/mtc/share/mtc/cmake/mtcConfig.cmake
+[8.647s] -- Up-to-date: /home/hyeonsu/xarm_ws/install/mtc/share/mtc/cmake/mtcConfig-version.cmake
+[8.647s] -- Up-to-date: /home/hyeonsu/xarm_ws/install/mtc/share/mtc/package.xml
+[8.648s] Invoked command in '/home/hyeonsu/xarm_ws/build/mtc' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/hyeonsu/xarm_ws/build/mtc

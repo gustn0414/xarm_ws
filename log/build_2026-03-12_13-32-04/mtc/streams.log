@@ -1,0 +1,93 @@
+[0.009s] Invoking command in '/home/hyeonsu/xarm_ws/build/mtc': CMAKE_PREFIX_PATH=/home/hyeonsu/xarm_ws/install/xarm_1s_moveit_config:/home/hyeonsu/xarm_ws/install/mtc:/home/hyeonsu/xarm_ws/install/xarm_1s_description:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/hyeonsu/xarm_ws/build/mtc -- -j24 -l24
+[0.082s] [ 50%] Building CXX object CMakeFiles/mtc_node.dir/src/mtc_node.cpp.o
+[3.188s] /home/hyeonsu/xarm_ws/src/mtc/src/mtc_node.cpp: In member function ‘moveit::task_constructor::Task MTCTaskNode::createTask()’:
+[3.188s] /home/hyeonsu/xarm_ws/src/mtc/src/mtc_node.cpp:200:29: error: no matching function for call to ‘moveit::task_constructor::stages::ModifyPlanningScene::allowCollisions(const char [7], <brace-enclosed initializer list>, bool)’
+[3.188s]   200 |       stage->allowCollisions(
+[3.188s]       |       ~~~~~~~~~~~~~~~~~~~~~~^
+[3.188s]   201 |         "object",
+[3.188s]       |         ~~~~~~~~~            
+[3.188s]   202 |         { "link1", "link1_left", "link0", "link0_left" },
+[3.188s]       |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[3.188s]   203 |         true
+[3.188s]       |         ~~~~                 
+[3.188s]   204 |       );
+[3.188s]       |       ~                      
+[3.188s] In file included from /opt/ros/jazzy/include/moveit/task_constructor/stages.h:52,
+[3.188s]                  from /home/hyeonsu/xarm_ws/src/mtc/src/mtc_node.cpp:6:
+[3.188s] /opt/ros/jazzy/include/moveit/task_constructor/stages/modify_planning_scene.h:157:14: note: candidate: ‘void moveit::task_constructor::stages::ModifyPlanningScene::allowCollisions(planning_scene::PlanningScene&, const CollisionMatrixPairs&, bool)’
+[3.188s]   157 |         void allowCollisions(planning_scene::PlanningScene& scene, const CollisionMatrixPairs& pairs, bool invert);
+[3.188s]       |              ^~~~~~~~~~~~~~~
+[3.188s] /opt/ros/jazzy/include/moveit/task_constructor/stages/modify_planning_scene.h:157:61: note:   no known conversion for argument 1 from ‘const char [7]’ to ‘planning_scene::PlanningScene&’
+[3.188s]   157 |         void allowCollisions(planning_scene::PlanningScene& scene, const CollisionMatrixPairs& pairs, bool invert);
+[3.188s]       |                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~
+[3.188s] /opt/ros/jazzy/include/moveit/task_constructor/stages/modify_planning_scene.h:116:21: note: candidate: ‘template<class T1, class T2, class E1, class E2> void moveit::task_constructor::stages::ModifyPlanningScene::allowCollisions(const T1&, const T2&, bool)’
+[3.189s]   116 |         inline void allowCollisions(const T1& first, const T2& second, bool enable_collision) {
+[3.189s]       |                     ^~~~~~~~~~~~~~~
+[3.189s] /opt/ros/jazzy/include/moveit/task_constructor/stages/modify_planning_scene.h:116:21: note:   template argument deduction/substitution failed:
+[3.189s] /home/hyeonsu/xarm_ws/src/mtc/src/mtc_node.cpp:200:29: note:   couldn’t deduce template parameter ‘T2’
+[3.189s]   200 |       stage->allowCollisions(
+[3.189s]       |       ~~~~~~~~~~~~~~~~~~~~~~^
+[3.189s]   201 |         "object",
+[3.189s]       |         ~~~~~~~~~            
+[3.189s]   202 |         { "link1", "link1_left", "link0", "link0_left" },
+[3.189s]       |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[3.189s]   203 |         true
+[3.189s]       |         ~~~~                 
+[3.189s]   204 |       );
+[3.189s]       |       ~                      
+[3.189s] /opt/ros/jazzy/include/moveit/task_constructor/stages/modify_planning_scene.h:122:21: note: candidate: ‘template<class T, class E> void moveit::task_constructor::stages::ModifyPlanningScene::allowCollisions(const std::string&, const T&, bool)’
+[3.189s]   122 |         inline void allowCollisions(const std::string& first, const T& second, bool enable_collision) {
+[3.189s]       |                     ^~~~~~~~~~~~~~~
+[3.189s] /opt/ros/jazzy/include/moveit/task_constructor/stages/modify_planning_scene.h:122:21: note:   template argument deduction/substitution failed:
+[3.189s] /home/hyeonsu/xarm_ws/src/mtc/src/mtc_node.cpp:200:29: note:   couldn’t deduce template parameter ‘T’
+[3.189s]   200 |       stage->allowCollisions(
+[3.189s]       |       ~~~~~~~~~~~~~~~~~~~~~~^
+[3.189s]   201 |         "object",
+[3.189s]       |         ~~~~~~~~~            
+[3.189s]   202 |         { "link1", "link1_left", "link0", "link0_left" },
+[3.189s]       |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[3.189s]   203 |         true
+[3.189s]       |         ~~~~                 
+[3.189s]   204 |       );
+[3.189s]       |       ~                      
+[3.189s] /opt/ros/jazzy/include/moveit/task_constructor/stages/modify_planning_scene.h:128:21: note: candidate: ‘template<class T, class E> void moveit::task_constructor::stages::ModifyPlanningScene::allowCollisions(const char*, const T&, bool)’
+[3.189s]   128 |         inline void allowCollisions(const char* first, const T& second, bool enable_collision) {
+[3.189s]       |                     ^~~~~~~~~~~~~~~
+[3.189s] /opt/ros/jazzy/include/moveit/task_constructor/stages/modify_planning_scene.h:128:21: note:   template argument deduction/substitution failed:
+[3.189s] /home/hyeonsu/xarm_ws/src/mtc/src/mtc_node.cpp:200:29: note:   couldn’t deduce template parameter ‘T’
+[3.189s]   200 |       stage->allowCollisions(
+[3.189s]       |       ~~~~~~~~~~~~~~~~~~~~~~^
+[3.189s]   201 |         "object",
+[3.189s]       |         ~~~~~~~~~            
+[3.189s]   202 |         { "link1", "link1_left", "link0", "link0_left" },
+[3.189s]       |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[3.189s]   203 |         true
+[3.189s]       |         ~~~~                 
+[3.189s]   204 |       );
+[3.189s]       |       ~                      
+[3.189s] /opt/ros/jazzy/include/moveit/task_constructor/stages/modify_planning_scene.h:102:14: note: candidate: ‘void moveit::task_constructor::stages::ModifyPlanningScene::allowCollisions(const Names&, const Names&, bool)’
+[3.189s]   102 |         void allowCollisions(const Names& first, const Names& second, bool allow);
+[3.189s]       |              ^~~~~~~~~~~~~~~
+[3.189s] /opt/ros/jazzy/include/moveit/task_constructor/stages/modify_planning_scene.h:102:43: note:   no known conversion for argument 1 from ‘const char [7]’ to ‘const moveit::task_constructor::stages::ModifyPlanningScene::Names&’ {aka ‘const std::vector<std::__cxx11::basic_string<char>, std::allocator<std::__cxx11::basic_string<char> > >&’}
+[3.189s]   102 |         void allowCollisions(const Names& first, const Names& second, bool allow);
+[3.189s]       |                              ~~~~~~~~~~~~~^~~~~
+[3.190s] /opt/ros/jazzy/include/moveit/task_constructor/stages/modify_planning_scene.h:104:14: note: candidate: ‘void moveit::task_constructor::stages::ModifyPlanningScene::allowCollisions(const std::string&, const std::string&, bool)’
+[3.190s]   104 |         void allowCollisions(const std::string& first, const std::string& second, bool allow) {
+[3.190s]       |              ^~~~~~~~~~~~~~~
+[3.190s] /opt/ros/jazzy/include/moveit/task_constructor/stages/modify_planning_scene.h:104:75: note:   no known conversion for argument 2 from ‘<brace-enclosed initializer list>’ to ‘const std::string&’ {aka ‘const std::__cxx11::basic_string<char>&’}
+[3.190s]   104 |         void allowCollisions(const std::string& first, const std::string& second, bool allow) {
+[3.190s]       |                                                        ~~~~~~~~~~~~~~~~~~~^~~~~~
+[3.190s] /opt/ros/jazzy/include/moveit/task_constructor/stages/modify_planning_scene.h:108:14: note: candidate: ‘void moveit::task_constructor::stages::ModifyPlanningScene::allowCollisions(const std::string&, bool)’
+[3.190s]   108 |         void allowCollisions(const std::string& object, bool allow) { allowCollisions(Names({ object }), Names(), allow); }
+[3.190s]       |              ^~~~~~~~~~~~~~~
+[3.190s] /opt/ros/jazzy/include/moveit/task_constructor/stages/modify_planning_scene.h:108:14: note:   candidate expects 2 arguments, 3 provided
+[3.190s] /opt/ros/jazzy/include/moveit/task_constructor/stages/modify_planning_scene.h:132:14: note: candidate: ‘void moveit::task_constructor::stages::ModifyPlanningScene::allowCollisions(const std::string&, const moveit::core::JointModelGroup&, bool)’
+[3.190s]   132 |         void allowCollisions(const std::string& first, const moveit::core::JointModelGroup& jmg, bool allow);
+[3.190s]       |              ^~~~~~~~~~~~~~~
+[3.190s] /opt/ros/jazzy/include/moveit/task_constructor/stages/modify_planning_scene.h:132:93: note:   no known conversion for argument 2 from ‘<brace-enclosed initializer list>’ to ‘const moveit::core::JointModelGroup&’
+[3.190s]   132 |         void allowCollisions(const std::string& first, const moveit::core::JointModelGroup& jmg, bool allow);
+[3.190s]       |                                                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+[5.761s] gmake[2]: *** [CMakeFiles/mtc_node.dir/build.make:76: CMakeFiles/mtc_node.dir/src/mtc_node.cpp.o] Error 1
+[5.761s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/mtc_node.dir/all] Error 2
+[5.761s] gmake: *** [Makefile:146: all] Error 2
+[5.763s] Invoked command in '/home/hyeonsu/xarm_ws/build/mtc' returned '2': CMAKE_PREFIX_PATH=/home/hyeonsu/xarm_ws/install/xarm_1s_moveit_config:/home/hyeonsu/xarm_ws/install/mtc:/home/hyeonsu/xarm_ws/install/xarm_1s_description:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/hyeonsu/xarm_ws/build/mtc -- -j24 -l24

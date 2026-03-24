@@ -7,13 +7,21 @@ from ament_index_python.packages import get_package_share_directory
 
 def generate_launch_description():
     package_name = "xarm_1s_moveit_config"
+    urdf_path = os.path.join(
+        get_package_share_directory("xarm_1s_description"),
+        "urdf", "xarm_1s.urdf.xacro",
+    )
 
     moveit_config = (
-        MoveItConfigsBuilder("xarm_1s_moveit_config", package_name="xarm_1s_moveit_config")
-        .robot_description(file_path="config/xarm_1s.urdf.xacro")
+        MoveItConfigsBuilder("xarm_1s_moveit_config", package_name=package_name)
+        .robot_description(file_path=urdf_path)
         .robot_description_semantic(file_path="config/xarm_1s.srdf")
+        .robot_description_kinematics(file_path="config/kinematics.yaml")
+        .joint_limits(file_path="config/joint_limits.yaml")
         .trajectory_execution(file_path="config/moveit_controllers.yaml")
-        .planning_pipelines(pipelines=["ompl"])
+        .planning_pipelines(
+            pipelines=["ompl", "stomp", "pilz_industrial_motion_planner"]
+        )
         .to_moveit_configs()
     )
 
@@ -23,16 +31,22 @@ def generate_launch_description():
         "ros2_controllers.yaml",
     )
 
+    rviz_config = os.path.join(
+        get_package_share_directory(package_name),
+        "rviz", "moveit.rviz",
+    )
+
     run_move_group_node = Node(
         package="moveit_ros_move_group",
         executable="move_group",
         name="move_group",
         output="screen",
-        parameters=[moveit_config.to_dict()],
+        parameters=[
+            moveit_config.to_dict(),
+            {"capabilities": "move_group/ExecuteTaskSolutionCapability"},
+        ],
     )
 
-    rviz_base = os.path.join(moveit_config.package_path, "config")
-    rviz_config = os.path.join(rviz_base, "moveit.rviz")
     run_rviz_node = Node(
         package="rviz2",
         executable="rviz2",
@@ -55,12 +69,6 @@ def generate_launch_description():
         parameters=[moveit_config.robot_description],
     )
 
-    # joint_state_publisher = Node(
-    #     package="joint_state_publisher",
-    #     executable="joint_state_publisher",
-    #     name="joint_state_publisher",
-    # )
-    
     ros2_control_node = Node(
         package="controller_manager",
         executable="ros2_control_node",
@@ -81,7 +89,7 @@ def generate_launch_description():
         ]
     )
 
-    arm_controller_manager = Node(
+    arm_controller_spawner = Node(
         package="controller_manager",
         executable="spawner",
         arguments=[
@@ -91,7 +99,7 @@ def generate_launch_description():
         ]
     )
 
-    hand_controller_manager = Node(
+    hand_controller_spawner = Node(
         package="controller_manager",
         executable="spawner",
         arguments=[
@@ -101,21 +109,12 @@ def generate_launch_description():
         ]
     )
 
-    # mtc_node = Node(
-    #     package="mtc_tutorial",
-    #     executable="mtc_node",
-    #     output="screen",
-    #     parameters=[moveit_config.to_dict()],
-    # )
-
     return LaunchDescription([
         run_move_group_node,
         run_rviz_node,
         robot_state_publisher,
-        # joint_state_publisher,
-        joint_state_broadcaster_spawner,
         ros2_control_node,
-        arm_controller_manager,
-        hand_controller_manager,
-        # mtc_node,
+        joint_state_broadcaster_spawner,
+        arm_controller_spawner,
+        hand_controller_spawner,
     ])

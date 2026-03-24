@@ -1,8 +1,8 @@
-# Install script for directory: /home/secu4090/xarm_ws/src/mtc
+# Install script for directory: /home/hyeonsu/xarm_ws/src/mtc
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/secu4090/xarm_ws/install/mtc")
+  set(CMAKE_INSTALL_PREFIX "/home/hyeonsu/xarm_ws/install/mtc")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -12,7 +12,7 @@ if(NOT DEFINED CMAKE_INSTALL_CONFIG_NAME)
     string(REGEX REPLACE "^[^A-Za-z0-9_]+" ""
            CMAKE_INSTALL_CONFIG_NAME "${BUILD_TYPE}")
   else()
-    set(CMAKE_INSTALL_CONFIG_NAME "")
+    set(CMAKE_INSTALL_CONFIG_NAME "Release")
   endif()
   message(STATUS "Install configuration: \"${CMAKE_INSTALL_CONFIG_NAME}\"")
 endif()
@@ -49,7 +49,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/mtc/mtc_node"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/mtc" TYPE EXECUTABLE FILES "/home/secu4090/xarm_ws/build/mtc/mtc_node")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/mtc" TYPE EXECUTABLE FILES "/home/hyeonsu/xarm_ws/build/mtc/mtc_node")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/mtc/mtc_node" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/mtc/mtc_node")
     file(RPATH_CHANGE
@@ -63,19 +63,19 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  include("/home/secu4090/xarm_ws/build/mtc/CMakeFiles/mtc_node.dir/install-cxx-module-bmi-noconfig.cmake" OPTIONAL)
+  include("/home/hyeonsu/xarm_ws/build/mtc/CMakeFiles/mtc_node.dir/install-cxx-module-bmi-Release.cmake" OPTIONAL)
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/mtc" TYPE DIRECTORY FILES "/home/secu4090/xarm_ws/src/mtc/launch")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/mtc" TYPE DIRECTORY FILES "/home/hyeonsu/xarm_ws/src/mtc/launch")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/package_run_dependencies" TYPE FILE FILES "/home/secu4090/xarm_ws/build/mtc/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/mtc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/package_run_dependencies" TYPE FILE FILES "/home/hyeonsu/xarm_ws/build/mtc/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/mtc")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/parent_prefix_path" TYPE FILE FILES "/home/secu4090/xarm_ws/build/mtc/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/mtc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/parent_prefix_path" TYPE FILE FILES "/home/hyeonsu/xarm_ws/build/mtc/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/mtc")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -83,7 +83,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/mtc/environment" TYPE FILE FILES "/home/secu4090/xarm_ws/build/mtc/ament_cmake_environment_hooks/ament_prefix_path.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/mtc/environment" TYPE FILE FILES "/home/hyeonsu/xarm_ws/build/mtc/ament_cmake_environment_hooks/ament_prefix_path.dsv")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -91,42 +91,42 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/mtc/environment" TYPE FILE FILES "/home/secu4090/xarm_ws/build/mtc/ament_cmake_environment_hooks/path.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/mtc/environment" TYPE FILE FILES "/home/hyeonsu/xarm_ws/build/mtc/ament_cmake_environment_hooks/path.dsv")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/mtc" TYPE FILE FILES "/home/secu4090/xarm_ws/build/mtc/ament_cmake_environment_hooks/local_setup.bash")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/mtc" TYPE FILE FILES "/home/hyeonsu/xarm_ws/build/mtc/ament_cmake_environment_hooks/local_setup.bash")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/mtc" TYPE FILE FILES "/home/secu4090/xarm_ws/build/mtc/ament_cmake_environment_hooks/local_setup.sh")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/mtc" TYPE FILE FILES "/home/hyeonsu/xarm_ws/build/mtc/ament_cmake_environment_hooks/local_setup.sh")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/mtc" TYPE FILE FILES "/home/secu4090/xarm_ws/build/mtc/ament_cmake_environment_hooks/local_setup.zsh")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/mtc" TYPE FILE FILES "/home/hyeonsu/xarm_ws/build/mtc/ament_cmake_environment_hooks/local_setup.zsh")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/mtc" TYPE FILE FILES "/home/secu4090/xarm_ws/build/mtc/ament_cmake_environment_hooks/local_setup.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/mtc" TYPE FILE FILES "/home/hyeonsu/xarm_ws/build/mtc/ament_cmake_environment_hooks/local_setup.dsv")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/mtc" TYPE FILE FILES "/home/secu4090/xarm_ws/build/mtc/ament_cmake_environment_hooks/package.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/mtc" TYPE FILE FILES "/home/hyeonsu/xarm_ws/build/mtc/ament_cmake_environment_hooks/package.dsv")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/packages" TYPE FILE FILES "/home/secu4090/xarm_ws/build/mtc/ament_cmake_index/share/ament_index/resource_index/packages/mtc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/packages" TYPE FILE FILES "/home/hyeonsu/xarm_ws/build/mtc/ament_cmake_index/share/ament_index/resource_index/packages/mtc")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/mtc/cmake" TYPE FILE FILES
-    "/home/secu4090/xarm_ws/build/mtc/ament_cmake_core/mtcConfig.cmake"
-    "/home/secu4090/xarm_ws/build/mtc/ament_cmake_core/mtcConfig-version.cmake"
+    "/home/hyeonsu/xarm_ws/build/mtc/ament_cmake_core/mtcConfig.cmake"
+    "/home/hyeonsu/xarm_ws/build/mtc/ament_cmake_core/mtcConfig-version.cmake"
     )
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/mtc" TYPE FILE FILES "/home/secu4090/xarm_ws/src/mtc/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/mtc" TYPE FILE FILES "/home/hyeonsu/xarm_ws/src/mtc/package.xml")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -137,5 +137,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/secu4090/xarm_ws/build/mtc/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/hyeonsu/xarm_ws/build/mtc/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

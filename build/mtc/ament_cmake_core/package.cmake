@@ -5,7 +5,7 @@ set(mtc_BUILD_DEPENDS "rclcpp" "moveit_ros_planning_interface" "moveit_task_cons
 set(mtc_BUILDTOOL_DEPENDS )
 set(mtc_BUILD_EXPORT_DEPENDS "rclcpp" "moveit_ros_planning_interface" "moveit_task_constructor_core" "tf2_geometry_msgs" "tf2_eigen")
 set(mtc_BUILDTOOL_EXPORT_DEPENDS )
-set(mtc_EXEC_DEPENDS "rclcpp" "moveit_ros_planning_interface" "moveit_task_constructor_core" "tf2_geometry_msgs" "tf2_eigen")
+set(mtc_EXEC_DEPENDS "moveit_configs_utils" "moveit_ros_move_group" "moveit_task_constructor_capabilities" "xarm_1s_moveit_config" "rclcpp" "moveit_ros_planning_interface" "moveit_task_constructor_core" "tf2_geometry_msgs" "tf2_eigen")
 set(mtc_TEST_DEPENDS "ament_lint_auto" "ament_lint_common")
 set(mtc_GROUP_DEPENDS )
 set(mtc_MEMBER_OF_GROUPS )

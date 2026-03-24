@@ -1,0 +1,22 @@
+-- Install configuration: ""
+-- Up-to-date: /home/hyeonsu/xarm_ws/install/xarm_1s_moveit_config/share/xarm_1s_moveit_config/config
+-- Up-to-date: /home/hyeonsu/xarm_ws/install/xarm_1s_moveit_config/share/xarm_1s_moveit_config/config/ros2_controllers.yaml
+-- Up-to-date: /home/hyeonsu/xarm_ws/install/xarm_1s_moveit_config/share/xarm_1s_moveit_config/config/sensors_3d.yaml
+-- Up-to-date: /home/hyeonsu/xarm_ws/install/xarm_1s_moveit_config/share/xarm_1s_moveit_config/config/initial_positions.yaml
+-- Up-to-date: /home/hyeonsu/xarm_ws/install/xarm_1s_moveit_config/share/xarm_1s_moveit_config/config/kinematics.yaml
+-- Up-to-date: /home/hyeonsu/xarm_ws/install/xarm_1s_moveit_config/share/xarm_1s_moveit_config/config/xarm_1s.ros2_control.xacro
+-- Up-to-date: /home/hyeonsu/xarm_ws/install/xarm_1s_moveit_config/share/xarm_1s_moveit_config/config/joint_limits.yaml
+-- Up-to-date: /home/hyeonsu/xarm_ws/install/xarm_1s_moveit_config/share/xarm_1s_moveit_config/config/xarm_1s.srdf
+-- Up-to-date: /home/hyeonsu/xarm_ws/install/xarm_1s_moveit_config/share/xarm_1s_moveit_config/config/pilz_cartesian_limits.yaml
+-- Up-to-date: /home/hyeonsu/xarm_ws/install/xarm_1s_moveit_config/share/xarm_1s_moveit_config/config/xarm_1s.urdf.xacro
+-- Up-to-date: /home/hyeonsu/xarm_ws/install/xarm_1s_moveit_config/share/xarm_1s_moveit_config/config/moveit_controllers.yaml
+-- Up-to-date: /home/hyeonsu/xarm_ws/install/xarm_1s_moveit_config/share/xarm_1s_moveit_config/launch
+-- Up-to-date: /home/hyeonsu/xarm_ws/install/xarm_1s_moveit_config/share/xarm_1s_moveit_config/launch/demo.launch.py
+-- Up-to-date: /home/hyeonsu/xarm_ws/install/xarm_1s_moveit_config/share/xarm_1s_moveit_config/rviz
+-- Up-to-date: /home/hyeonsu/xarm_ws/install/xarm_1s_moveit_config/share/xarm_1s_moveit_config/rviz/moveit.rviz
+[31mCMake Error at cmake_install.cmake:54 (file):
+  file INSTALL cannot find
+  "/home/hyeonsu/xarm_ws/src/xarm_1s_moveit_config/.setup_assistant": No such
+  file or directory.
+
+[0m

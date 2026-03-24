@@ -1,0 +1,101 @@
+[0.000000] (-) TimerEvent: {}
+[0.000147] (-) JobUnselected: {'identifier': 'xarm_1s_description'}
+[0.000216] (-) JobUnselected: {'identifier': 'xarm_1s_moveit_config'}
+[0.000306] (mtc) JobQueued: {'identifier': 'mtc', 'dependencies': OrderedDict({'xarm_1s_moveit_config': '/home/hyeonsu/xarm_ws/install/xarm_1s_moveit_config'})}
+[0.000351] (mtc) JobStarted: {'identifier': 'mtc'}
+[0.006275] (mtc) JobProgress: {'identifier': 'mtc', 'progress': 'cmake'}
+[0.006927] (mtc) JobProgress: {'identifier': 'mtc', 'progress': 'build'}
+[0.007591] (mtc) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/hyeonsu/xarm_ws/build/mtc', '--', '-j24', '-l24'], 'cwd': '/home/hyeonsu/xarm_ws/build/mtc', 'env': OrderedDict({'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'VSCODE_CWD': '/home/hyeonsu', 'CURSOR_EXTENSION_HOST_ROLE': 'agent-exec', 'VSCODE_ESM_ENTRYPOINT': 'vs/workbench/api/node/extensionHostProcess', 'GZ_SIM_RESOURCE_PATH': '/opt/ros/jazzy/share', 'USER': 'hyeonsu', 'VSCODE_NLS_CONFIG': '{"userLocale":"en-us","osLocale":"en-us","resolvedLanguage":"en","defaultMessagesFile":"/usr/share/cursor/resources/app/out/nls.messages.json","locale":"en-us","availableLanguages":{}}', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'CI': '1', 'VSCODE_HANDLES_UNCAUGHT_ERRORS': 'true', 'XDG_SESSION_TYPE': 'wayland', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/hyeonsu', 'CHROME_DESKTOP': 'cursor.desktop', 'DESKTOP_SESSION': 'ubuntu', 'VSCODE_IPC_HOOK': '/run/user/1000/vscode-102b83de-2.5.-main.sock', 'GIO_LAUNCHED_DESKTOP_FILE': '/usr/share/applications/cursor.desktop', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge:appmenu-gtk-module', 'MANAGERPID': '2670', 'SYSTEMD_EXEC_PID': '2963', 'IM_CONFIG_CHECK_ENV': '1', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'NO_COLOR': '1', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '4150', 'VSCODE_CRASH_REPORTER_PROCESS_TYPE': 'extensionHost', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/hyeonsu/xarm_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'hyeonsu', 'FORCE_COLOR': '0', 'JOURNAL_STREAM': '9:29271', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@wayland.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'hyeonsu', 'TERM': 'dumb', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'FC_FONTATIONS': '1', 'PATH': '/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/home/hyeonsu/.local/bin:/home/hyeonsu/.local/bin:/home/hyeonsu/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/hyeonsu/.local/bin:/home/hyeonsu/.local/bin:/home/hyeonsu/.local/bin', 'SESSION_MANAGER': 'local/om:@/tmp/.ICE-unix/2901,unix/om:/tmp/.ICE-unix/2901', 'INVOCATION_ID': 'aeae974ceb764caca71cf6a76b88eb5a', 'XDG_MENU_PREFIX': 'gnome-', 'VSCODE_PROCESS_TITLE': 'extension-host (agent-exec) [1-3]', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'GDK_BACKEND': 'wayland', 'CURSOR_AGENT': '1', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.JYHLL3', 'LS_COLORS': '', 'SBX_CHROME_API_RQ': '1', 'CURSOR_TRACE_ID': '75e309d286c1448ca93465d00990a353', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/hyeonsu/xarm_ws/install/mtc:/home/hyeonsu/xarm_ws/install/xarm_1s_moveit_config:/home/hyeonsu/xarm_ws/install/xarm_1s_description:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GJS_DEBUG_OUTPUT': 'stderr', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/hyeonsu/xarm_ws/build/mtc', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'VSCODE_CODE_CACHE_PATH': '/home/hyeonsu/.config/Cursor/CachedData/7d96c2a03bb088ad367615e9da1a3fe20fbbc6a0', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'QTWEBENGINE_DICTIONARIES_PATH': '/usr/share/hunspell-bdic/', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', '_ZO_DOCTOR': '0', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'CMAKE_PREFIX_PATH': '/home/hyeonsu/xarm_ws/install/xarm_1s_moveit_config:/home/hyeonsu/xarm_ws/install/mtc:/home/hyeonsu/xarm_ws/install/xarm_1s_description:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy', 'VSCODE_PID': '4150'}), 'shell': False}
+[0.069190] (mtc) StdoutLine: {'line': b'[ 50%] Building CXX object CMakeFiles/mtc_node.dir/src/mtc_node.cpp.o\n'}
+[0.099452] (-) TimerEvent: {}
+[0.199663] (-) TimerEvent: {}
+[0.299882] (-) TimerEvent: {}
+[0.400094] (-) TimerEvent: {}
+[0.500306] (-) TimerEvent: {}
+[0.600523] (-) TimerEvent: {}
+[0.700806] (-) TimerEvent: {}
+[0.801119] (-) TimerEvent: {}
+[0.901330] (-) TimerEvent: {}
+[1.001527] (-) TimerEvent: {}
+[1.101713] (-) TimerEvent: {}
+[1.201932] (-) TimerEvent: {}
+[1.302100] (-) TimerEvent: {}
+[1.402265] (-) TimerEvent: {}
+[1.502429] (-) TimerEvent: {}
+[1.602592] (-) TimerEvent: {}
+[1.702756] (-) TimerEvent: {}
+[1.802917] (-) TimerEvent: {}
+[1.903115] (-) TimerEvent: {}
+[2.003312] (-) TimerEvent: {}
+[2.103471] (-) TimerEvent: {}
+[2.203662] (-) TimerEvent: {}
+[2.303896] (-) TimerEvent: {}
+[2.404137] (-) TimerEvent: {}
+[2.504301] (-) TimerEvent: {}
+[2.604463] (-) TimerEvent: {}
+[2.704622] (-) TimerEvent: {}
+[2.804818] (-) TimerEvent: {}
+[2.905032] (-) TimerEvent: {}
+[3.005195] (-) TimerEvent: {}
+[3.105373] (-) TimerEvent: {}
+[3.205562] (-) TimerEvent: {}
+[3.305722] (-) TimerEvent: {}
+[3.405917] (-) TimerEvent: {}
+[3.506103] (-) TimerEvent: {}
+[3.606289] (-) TimerEvent: {}
+[3.706477] (-) TimerEvent: {}
+[3.806661] (-) TimerEvent: {}
+[3.906848] (-) TimerEvent: {}
+[4.007071] (-) TimerEvent: {}
+[4.107264] (-) TimerEvent: {}
+[4.207430] (-) TimerEvent: {}
+[4.307594] (-) TimerEvent: {}
+[4.407791] (-) TimerEvent: {}
+[4.508033] (-) TimerEvent: {}
+[4.608237] (-) TimerEvent: {}
+[4.708400] (-) TimerEvent: {}
+[4.808566] (-) TimerEvent: {}
+[4.908744] (-) TimerEvent: {}
+[5.008935] (-) TimerEvent: {}
+[5.109132] (-) TimerEvent: {}
+[5.209310] (-) TimerEvent: {}
+[5.309475] (-) TimerEvent: {}
+[5.409637] (-) TimerEvent: {}
+[5.509804] (-) TimerEvent: {}
+[5.610001] (-) TimerEvent: {}
+[5.710223] (-) TimerEvent: {}
+[5.810424] (-) TimerEvent: {}
+[5.910684] (-) TimerEvent: {}
+[6.010894] (-) TimerEvent: {}
+[6.014074] (mtc) StdoutLine: {'line': b'[100%] Linking CXX executable mtc_node\n'}
+[6.110986] (-) TimerEvent: {}
+[6.211147] (-) TimerEvent: {}
+[6.256455] (mtc) StdoutLine: {'line': b'[100%] Built target mtc_node\n'}
+[6.266703] (mtc) CommandEnded: {'returncode': 0}
+[6.267722] (mtc) JobProgress: {'identifier': 'mtc', 'progress': 'install'}
+[6.274935] (mtc) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/hyeonsu/xarm_ws/build/mtc'], 'cwd': '/home/hyeonsu/xarm_ws/build/mtc', 'env': OrderedDict({'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'VSCODE_CWD': '/home/hyeonsu', 'CURSOR_EXTENSION_HOST_ROLE': 'agent-exec', 'VSCODE_ESM_ENTRYPOINT': 'vs/workbench/api/node/extensionHostProcess', 'GZ_SIM_RESOURCE_PATH': '/opt/ros/jazzy/share', 'USER': 'hyeonsu', 'VSCODE_NLS_CONFIG': '{"userLocale":"en-us","osLocale":"en-us","resolvedLanguage":"en","defaultMessagesFile":"/usr/share/cursor/resources/app/out/nls.messages.json","locale":"en-us","availableLanguages":{}}', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'CI': '1', 'VSCODE_HANDLES_UNCAUGHT_ERRORS': 'true', 'XDG_SESSION_TYPE': 'wayland', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/hyeonsu', 'CHROME_DESKTOP': 'cursor.desktop', 'DESKTOP_SESSION': 'ubuntu', 'VSCODE_IPC_HOOK': '/run/user/1000/vscode-102b83de-2.5.-main.sock', 'GIO_LAUNCHED_DESKTOP_FILE': '/usr/share/applications/cursor.desktop', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge:appmenu-gtk-module', 'MANAGERPID': '2670', 'SYSTEMD_EXEC_PID': '2963', 'IM_CONFIG_CHECK_ENV': '1', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'NO_COLOR': '1', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '4150', 'VSCODE_CRASH_REPORTER_PROCESS_TYPE': 'extensionHost', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/hyeonsu/xarm_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'hyeonsu', 'FORCE_COLOR': '0', 'JOURNAL_STREAM': '9:29271', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@wayland.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'hyeonsu', 'TERM': 'dumb', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'FC_FONTATIONS': '1', 'PATH': '/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/home/hyeonsu/.local/bin:/home/hyeonsu/.local/bin:/home/hyeonsu/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/hyeonsu/.local/bin:/home/hyeonsu/.local/bin:/home/hyeonsu/.local/bin', 'SESSION_MANAGER': 'local/om:@/tmp/.ICE-unix/2901,unix/om:/tmp/.ICE-unix/2901', 'INVOCATION_ID': 'aeae974ceb764caca71cf6a76b88eb5a', 'XDG_MENU_PREFIX': 'gnome-', 'VSCODE_PROCESS_TITLE': 'extension-host (agent-exec) [1-3]', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'GDK_BACKEND': 'wayland', 'CURSOR_AGENT': '1', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.JYHLL3', 'LS_COLORS': '', 'SBX_CHROME_API_RQ': '1', 'CURSOR_TRACE_ID': '75e309d286c1448ca93465d00990a353', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/hyeonsu/xarm_ws/install/mtc:/home/hyeonsu/xarm_ws/install/xarm_1s_moveit_config:/home/hyeonsu/xarm_ws/install/xarm_1s_description:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GJS_DEBUG_OUTPUT': 'stderr', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/hyeonsu/xarm_ws/build/mtc', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'VSCODE_CODE_CACHE_PATH': '/home/hyeonsu/.config/Cursor/CachedData/7d96c2a03bb088ad367615e9da1a3fe20fbbc6a0', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'QTWEBENGINE_DICTIONARIES_PATH': '/usr/share/hunspell-bdic/', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', '_ZO_DOCTOR': '0', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'CMAKE_PREFIX_PATH': '/home/hyeonsu/xarm_ws/install/xarm_1s_moveit_config:/home/hyeonsu/xarm_ws/install/mtc:/home/hyeonsu/xarm_ws/install/xarm_1s_description:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy', 'VSCODE_PID': '4150'}), 'shell': False}
+[6.283202] (mtc) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[6.283448] (mtc) StdoutLine: {'line': b'-- Installing: /home/hyeonsu/xarm_ws/install/mtc/lib/mtc/mtc_node\n'}
+[6.284349] (mtc) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/hyeonsu/xarm_ws/install/mtc/lib/mtc/mtc_node" to ""\n'}
+[6.284442] (mtc) StdoutLine: {'line': b'-- Up-to-date: /home/hyeonsu/xarm_ws/install/mtc/share/mtc/launch\n'}
+[6.284494] (mtc) StdoutLine: {'line': b'-- Installing: /home/hyeonsu/xarm_ws/install/mtc/share/mtc/launch/pick_place_demo.launch.py\n'}
+[6.284578] (mtc) StdoutLine: {'line': b'-- Up-to-date: /home/hyeonsu/xarm_ws/install/mtc/share/mtc/launch/__pycache__\n'}
+[6.284628] (mtc) StdoutLine: {'line': b'-- Installing: /home/hyeonsu/xarm_ws/install/mtc/share/mtc/launch/__pycache__/pick_place_demo.launch.cpython-312.pyc\n'}
+[6.284709] (mtc) StdoutLine: {'line': b'-- Up-to-date: /home/hyeonsu/xarm_ws/install/mtc/share/ament_index/resource_index/package_run_dependencies/mtc\n'}
+[6.284758] (mtc) StdoutLine: {'line': b'-- Up-to-date: /home/hyeonsu/xarm_ws/install/mtc/share/ament_index/resource_index/parent_prefix_path/mtc\n'}
+[6.284804] (mtc) StdoutLine: {'line': b'-- Up-to-date: /home/hyeonsu/xarm_ws/install/mtc/share/mtc/environment/ament_prefix_path.sh\n'}
+[6.284899] (mtc) StdoutLine: {'line': b'-- Up-to-date: /home/hyeonsu/xarm_ws/install/mtc/share/mtc/environment/ament_prefix_path.dsv\n'}
+[6.284982] (mtc) StdoutLine: {'line': b'-- Up-to-date: /home/hyeonsu/xarm_ws/install/mtc/share/mtc/environment/path.sh\n'}
+[6.285029] (mtc) StdoutLine: {'line': b'-- Up-to-date: /home/hyeonsu/xarm_ws/install/mtc/share/mtc/environment/path.dsv\n'}
+[6.285074] (mtc) StdoutLine: {'line': b'-- Up-to-date: /home/hyeonsu/xarm_ws/install/mtc/share/mtc/local_setup.bash\n'}
+[6.285118] (mtc) StdoutLine: {'line': b'-- Up-to-date: /home/hyeonsu/xarm_ws/install/mtc/share/mtc/local_setup.sh\n'}
+[6.285163] (mtc) StdoutLine: {'line': b'-- Up-to-date: /home/hyeonsu/xarm_ws/install/mtc/share/mtc/local_setup.zsh\n'}
+[6.285207] (mtc) StdoutLine: {'line': b'-- Up-to-date: /home/hyeonsu/xarm_ws/install/mtc/share/mtc/local_setup.dsv\n'}
+[6.285251] (mtc) StdoutLine: {'line': b'-- Installing: /home/hyeonsu/xarm_ws/install/mtc/share/mtc/package.dsv\n'}
+[6.285294] (mtc) StdoutLine: {'line': b'-- Up-to-date: /home/hyeonsu/xarm_ws/install/mtc/share/ament_index/resource_index/packages/mtc\n'}
+[6.285367] (mtc) StdoutLine: {'line': b'-- Up-to-date: /home/hyeonsu/xarm_ws/install/mtc/share/mtc/cmake/mtcConfig.cmake\n'}
+[6.285409] (mtc) StdoutLine: {'line': b'-- Up-to-date: /home/hyeonsu/xarm_ws/install/mtc/share/mtc/cmake/mtcConfig-version.cmake\n'}
+[6.285450] (mtc) StdoutLine: {'line': b'-- Up-to-date: /home/hyeonsu/xarm_ws/install/mtc/share/mtc/package.xml\n'}
+[6.286433] (mtc) CommandEnded: {'returncode': 0}
+[6.300375] (mtc) JobEnded: {'identifier': 'mtc', 'rc': 0}
+[6.301047] (-) EventReactorShutdown: {}

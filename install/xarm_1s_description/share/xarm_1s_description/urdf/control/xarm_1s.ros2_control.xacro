@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+    <xacro:macro name="xarm_1s_ros2_control" params="name">
+        <ros2_control name="${name}" type="system">
+            <hardware>
+                <!--plugin>ros2_control_xarm_1s/XArm1SSystemHardware</plugin-->
+                <plugin>mock_components/GenericSystem</plugin>
+            </hardware>
+            <joint name="arm6">
+                <command_interface name="position">
+                    <param name="min">-2.09439435</param>
+                    <param name="max">2.09439435</param>
+                </command_interface>
+                <state_interface name="position"/>
+            </joint>
+            <joint name="arm5">
+                <command_interface name="position">
+                    <param name="min">-2.09439435</param>
+                    <param name="max">2.09439435</param>
+                </command_interface>
+                <state_interface name="position"/>
+            </joint>
+            <joint name="arm4">
+                <command_interface name="position">
+                    <param name="min">-2.09439435</param>
+                    <param name="max">2.09439435</param>
+                </command_interface>
+                <state_interface name="position"/>
+            </joint>
+            <joint name="arm3">
+                <command_interface name="position">
+                    <param name="min">-2.09439435</param>
+                    <param name="max">2.09439435</param>
+                </command_interface>
+                <state_interface name="position"/>
+            </joint>
+            <joint name="arm2">
+                <command_interface name="position">
+                    <param name="min">-2.09439435</param>
+                    <param name="max">2.09439435</param>
+                </command_interface>
+                <state_interface name="position"/>
+            </joint>
+            <joint name="arm1">
+                <command_interface name="position">
+                    <param name="min">0</param>
+                    <param name="max">0.8464847</param>
+                </command_interface>
+                <state_interface name="position"/>
+                <!--속도 추가 그리퍼 컨트롤러 에러 원인??-->
+                <state_interface name="velocity"/>
+            </joint>
+            <joint name="arm1_left">
+                <mimic joint="arm1" multiplier="-1" offset="0"/>
+                <state_interface name="position"/>
+            </joint>
+            <joint name="arm0">
+                <mimic joint="arm1" multiplier="-1.01" offset="-0.3"/>
+                <state_interface name="position"/>
+            </joint>
+            <joint name="arm0_left">
+                <mimic joint="arm1" multiplier="1.01" offset="0.3"/>
+                <state_interface name="position"/>
+            </joint>
+        </ros2_control>
+    </xacro:macro>
+</robot>

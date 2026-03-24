@@ -1,0 +1,26 @@
+[0.007s] Invoking command in '/home/hyeonsu/xarm_ws/build/mtc': CMAKE_PREFIX_PATH=/home/hyeonsu/xarm_ws/install/xarm_1s_moveit_config:/home/hyeonsu/xarm_ws/install/mtc:/home/hyeonsu/xarm_ws/install/xarm_1s_description:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/hyeonsu/xarm_ws/build/mtc -- -j24 -l24
+[0.064s] [ 50%] Building CXX object CMakeFiles/mtc_node.dir/src/mtc_node.cpp.o
+[2.919s] /home/hyeonsu/xarm_ws/src/mtc/src/mtc_node.cpp: In member function ‘void MTCTaskNode::run()’:
+[2.919s] /home/hyeonsu/xarm_ws/src/mtc/src/mtc_node.cpp:101:40: error: invalid initialization of reference of type ‘const std::chrono::nanoseconds&’ {aka ‘const std::chrono::duration<long int, std::ratio<1, 1000000000> >&’} from expression of type ‘std::chrono::duration<double>’
+[2.919s]   101 |         rclcpp::sleep_for(std::chrono::duration<double>(hold_sec));
+[2.919s]       |                                        ^~~~~~~~~~~~~~~~~~~~~~~~~~
+[2.919s] In file included from /opt/ros/jazzy/include/rclcpp/rclcpp/logging.hpp:25,
+[2.919s]                  from /opt/ros/jazzy/include/moveit_core/moveit/kinematics_base/kinematics_base.hpp:42,
+[2.919s]                  from /opt/ros/jazzy/include/moveit_core/moveit/robot_model/joint_model_group.hpp:42,
+[2.919s]                  from /opt/ros/jazzy/include/moveit_core/moveit/robot_model/robot_model.hpp:45,
+[2.919s]                  from /opt/ros/jazzy/include/moveit_core/moveit/robot_state/robot_state.hpp:40,
+[2.919s]                  from /opt/ros/jazzy/include/moveit_ros_planning_interface/moveit/planning_scene_interface/planning_scene_interface.hpp:40,
+[2.919s]                  from /home/hyeonsu/xarm_ws/src/mtc/src/mtc_node.cpp:11:
+[2.919s] /opt/ros/jazzy/include/rclcpp/rclcpp/utilities.hpp:233:36: note: in passing argument 1 of ‘bool rclcpp::sleep_for(const std::chrono::nanoseconds&, Context::SharedPtr)’
+[2.919s]   233 |   const std::chrono::nanoseconds & nanoseconds,
+[2.919s]       |   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~
+[2.920s] /home/hyeonsu/xarm_ws/src/mtc/src/mtc_node.cpp:116:38: error: invalid initialization of reference of type ‘const std::chrono::nanoseconds&’ {aka ‘const std::chrono::duration<long int, std::ratio<1, 1000000000> >&’} from expression of type ‘std::chrono::duration<double>’
+[2.920s]   116 |       rclcpp::sleep_for(std::chrono::duration<double>(hold_sec));
+[2.920s]       |                                      ^~~~~~~~~~~~~~~~~~~~~~~~~~
+[2.920s] /opt/ros/jazzy/include/rclcpp/rclcpp/utilities.hpp:233:36: note: in passing argument 1 of ‘bool rclcpp::sleep_for(const std::chrono::nanoseconds&, Context::SharedPtr)’
+[2.920s]   233 |   const std::chrono::nanoseconds & nanoseconds,
+[2.920s]       |   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~
+[5.109s] gmake[2]: *** [CMakeFiles/mtc_node.dir/build.make:76: CMakeFiles/mtc_node.dir/src/mtc_node.cpp.o] Error 1
+[5.109s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/mtc_node.dir/all] Error 2
+[5.110s] gmake: *** [Makefile:146: all] Error 2
+[5.111s] Invoked command in '/home/hyeonsu/xarm_ws/build/mtc' returned '2': CMAKE_PREFIX_PATH=/home/hyeonsu/xarm_ws/install/xarm_1s_moveit_config:/home/hyeonsu/xarm_ws/install/mtc:/home/hyeonsu/xarm_ws/install/xarm_1s_description:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/hyeonsu/xarm_ws/build/mtc -- -j24 -l24

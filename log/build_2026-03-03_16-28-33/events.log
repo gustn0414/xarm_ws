@@ -1,0 +1,113 @@
+[0.000000] (-) TimerEvent: {}
+[0.000401] (-) JobUnselected: {'identifier': 'xarm_1s_description'}
+[0.000455] (-) JobUnselected: {'identifier': 'xarm_1s_moveit_config'}
+[0.000482] (mtc) JobQueued: {'identifier': 'mtc', 'dependencies': OrderedDict()}
+[0.001223] (mtc) JobStarted: {'identifier': 'mtc'}
+[0.006380] (mtc) JobProgress: {'identifier': 'mtc', 'progress': 'cmake'}
+[0.007408] (mtc) JobProgress: {'identifier': 'mtc', 'progress': 'build'}
+[0.008429] (mtc) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/hyeonsu/xarm_ws/build/mtc', '--', '-j24', '-l24'], 'cwd': '/home/hyeonsu/xarm_ws/build/mtc', 'env': OrderedDict({'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'VSCODE_CWD': '/home/hyeonsu', 'CURSOR_EXTENSION_HOST_ROLE': 'agent-exec', 'VSCODE_ESM_ENTRYPOINT': 'vs/workbench/api/node/extensionHostProcess', 'USER': 'hyeonsu', 'VSCODE_NLS_CONFIG': '{"userLocale":"en-us","osLocale":"en-us","resolvedLanguage":"en","defaultMessagesFile":"/usr/share/cursor/resources/app/out/nls.messages.json","locale":"en-us","availableLanguages":{}}', 'CI': '1', 'VSCODE_HANDLES_UNCAUGHT_ERRORS': 'true', 'XDG_SESSION_TYPE': 'wayland', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '1', 'HOME': '/home/hyeonsu', 'CHROME_DESKTOP': 'cursor.desktop', 'DESKTOP_SESSION': 'ubuntu', 'VSCODE_IPC_HOOK': '/run/user/1000/vscode-102b83de-2.5.-main.sock', 'GIO_LAUNCHED_DESKTOP_FILE': '/usr/share/applications/cursor.desktop', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge:appmenu-gtk-module', 'MANAGERPID': '2600', 'SYSTEMD_EXEC_PID': '2905', 'IM_CONFIG_CHECK_ENV': '1', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'NO_COLOR': '1', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '4070', 'VSCODE_CRASH_REPORTER_PROCESS_TYPE': 'extensionHost', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'LOGNAME': 'hyeonsu', 'FORCE_COLOR': '0', 'JOURNAL_STREAM': '9:31119', '_': '/usr/bin/colcon', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@wayland.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'hyeonsu', 'TERM': 'dumb', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'FC_FONTATIONS': '1', 'PATH': '/home/hyeonsu/.local/bin:/home/hyeonsu/.local/bin:/home/hyeonsu/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/hyeonsu/.local/bin:/home/hyeonsu/.local/bin:/home/hyeonsu/.local/bin', 'SESSION_MANAGER': 'local/om:@/tmp/.ICE-unix/2841,unix/om:/tmp/.ICE-unix/2841', 'INVOCATION_ID': '1bac59652940484eabea8909008ae7a2', 'XDG_MENU_PREFIX': 'gnome-', 'VSCODE_PROCESS_TITLE': 'extension-host (agent-exec) [1-3]', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'GDK_BACKEND': 'wayland', 'CURSOR_AGENT': '1', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.UFCRL3', 'LS_COLORS': '', 'SBX_CHROME_API_RQ': '1', 'CURSOR_TRACE_ID': '341ba74fbbbf4a34be8d94617a5e4fbf', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GJS_DEBUG_OUTPUT': 'stderr', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/hyeonsu/xarm_ws/build/mtc', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'VSCODE_CODE_CACHE_PATH': '/home/hyeonsu/.config/Cursor/CachedData/7d96c2a03bb088ad367615e9da1a3fe20fbbc6a0', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'QTWEBENGINE_DICTIONARIES_PATH': '/usr/share/hunspell-bdic/', 'COLCON': '1', '_ZO_DOCTOR': '0', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VSCODE_PID': '4070'}), 'shell': False}
+[0.093079] (mtc) StdoutLine: {'line': b'[ 50%] Building CXX object CMakeFiles/mtc_node.dir/src/mtc_node.cpp.o\n'}
+[0.099493] (-) TimerEvent: {}
+[0.199799] (-) TimerEvent: {}
+[0.300229] (-) TimerEvent: {}
+[0.400671] (-) TimerEvent: {}
+[0.500896] (-) TimerEvent: {}
+[0.601105] (-) TimerEvent: {}
+[0.701312] (-) TimerEvent: {}
+[0.801528] (-) TimerEvent: {}
+[0.901740] (-) TimerEvent: {}
+[1.001991] (-) TimerEvent: {}
+[1.102256] (-) TimerEvent: {}
+[1.202447] (-) TimerEvent: {}
+[1.302618] (-) TimerEvent: {}
+[1.402815] (-) TimerEvent: {}
+[1.503016] (-) TimerEvent: {}
+[1.603177] (-) TimerEvent: {}
+[1.703346] (-) TimerEvent: {}
+[1.803517] (-) TimerEvent: {}
+[1.903688] (-) TimerEvent: {}
+[2.003873] (-) TimerEvent: {}
+[2.104096] (-) TimerEvent: {}
+[2.204298] (-) TimerEvent: {}
+[2.304481] (-) TimerEvent: {}
+[2.404708] (-) TimerEvent: {}
+[2.505013] (-) TimerEvent: {}
+[2.605369] (-) TimerEvent: {}
+[2.705755] (-) TimerEvent: {}
+[2.805983] (-) TimerEvent: {}
+[2.906223] (-) TimerEvent: {}
+[3.006458] (-) TimerEvent: {}
+[3.106649] (-) TimerEvent: {}
+[3.206847] (-) TimerEvent: {}
+[3.307033] (-) TimerEvent: {}
+[3.407222] (-) TimerEvent: {}
+[3.507381] (-) TimerEvent: {}
+[3.591051] (mtc) StderrLine: {'line': b'/home/hyeonsu/xarm_ws/src/mtc/src/mtc_node.cpp: In member function \xe2\x80\x98moveit::task_constructor::Task MTCTaskNode::createTask()\xe2\x80\x99:\n'}
+[3.591224] (mtc) StderrLine: {'line': b'/home/hyeonsu/xarm_ws/src/mtc/src/mtc_node.cpp:147:15: warning: variable \xe2\x80\x98attach_object_stage\xe2\x80\x99 set but not used [-Wunused-but-set-variable]\n'}
+[3.591270] (mtc) StderrLine: {'line': b'  147 |   mtc::Stage* attach_object_stage = nullptr;\n'}
+[3.591308] (mtc) StderrLine: {'line': b'      |               ^~~~~~~~~~~~~~~~~~~\n'}
+[3.607444] (-) TimerEvent: {}
+[3.707607] (-) TimerEvent: {}
+[3.807802] (-) TimerEvent: {}
+[3.907996] (-) TimerEvent: {}
+[4.008201] (-) TimerEvent: {}
+[4.108433] (-) TimerEvent: {}
+[4.208644] (-) TimerEvent: {}
+[4.308880] (-) TimerEvent: {}
+[4.409216] (-) TimerEvent: {}
+[4.509408] (-) TimerEvent: {}
+[4.609702] (-) TimerEvent: {}
+[4.710026] (-) TimerEvent: {}
+[4.810258] (-) TimerEvent: {}
+[4.910446] (-) TimerEvent: {}
+[5.010663] (-) TimerEvent: {}
+[5.110883] (-) TimerEvent: {}
+[5.211079] (-) TimerEvent: {}
+[5.311240] (-) TimerEvent: {}
+[5.411408] (-) TimerEvent: {}
+[5.511572] (-) TimerEvent: {}
+[5.611755] (-) TimerEvent: {}
+[5.711933] (-) TimerEvent: {}
+[5.812103] (-) TimerEvent: {}
+[5.912276] (-) TimerEvent: {}
+[6.012459] (-) TimerEvent: {}
+[6.112675] (-) TimerEvent: {}
+[6.212866] (-) TimerEvent: {}
+[6.313066] (-) TimerEvent: {}
+[6.413337] (-) TimerEvent: {}
+[6.513630] (-) TimerEvent: {}
+[6.613893] (-) TimerEvent: {}
+[6.714135] (-) TimerEvent: {}
+[6.814345] (-) TimerEvent: {}
+[6.914563] (-) TimerEvent: {}
+[7.009272] (mtc) StdoutLine: {'line': b'[100%] Linking CXX executable mtc_node\n'}
+[7.014623] (-) TimerEvent: {}
+[7.114859] (-) TimerEvent: {}
+[7.215100] (-) TimerEvent: {}
+[7.267568] (mtc) StdoutLine: {'line': b'[100%] Built target mtc_node\n'}
+[7.277995] (mtc) CommandEnded: {'returncode': 0}
+[7.278654] (mtc) JobProgress: {'identifier': 'mtc', 'progress': 'install'}
+[7.288458] (mtc) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/hyeonsu/xarm_ws/build/mtc'], 'cwd': '/home/hyeonsu/xarm_ws/build/mtc', 'env': OrderedDict({'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'VSCODE_CWD': '/home/hyeonsu', 'CURSOR_EXTENSION_HOST_ROLE': 'agent-exec', 'VSCODE_ESM_ENTRYPOINT': 'vs/workbench/api/node/extensionHostProcess', 'USER': 'hyeonsu', 'VSCODE_NLS_CONFIG': '{"userLocale":"en-us","osLocale":"en-us","resolvedLanguage":"en","defaultMessagesFile":"/usr/share/cursor/resources/app/out/nls.messages.json","locale":"en-us","availableLanguages":{}}', 'CI': '1', 'VSCODE_HANDLES_UNCAUGHT_ERRORS': 'true', 'XDG_SESSION_TYPE': 'wayland', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '1', 'HOME': '/home/hyeonsu', 'CHROME_DESKTOP': 'cursor.desktop', 'DESKTOP_SESSION': 'ubuntu', 'VSCODE_IPC_HOOK': '/run/user/1000/vscode-102b83de-2.5.-main.sock', 'GIO_LAUNCHED_DESKTOP_FILE': '/usr/share/applications/cursor.desktop', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge:appmenu-gtk-module', 'MANAGERPID': '2600', 'SYSTEMD_EXEC_PID': '2905', 'IM_CONFIG_CHECK_ENV': '1', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'NO_COLOR': '1', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '4070', 'VSCODE_CRASH_REPORTER_PROCESS_TYPE': 'extensionHost', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'LOGNAME': 'hyeonsu', 'FORCE_COLOR': '0', 'JOURNAL_STREAM': '9:31119', '_': '/usr/bin/colcon', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@wayland.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'hyeonsu', 'TERM': 'dumb', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'FC_FONTATIONS': '1', 'PATH': '/home/hyeonsu/.local/bin:/home/hyeonsu/.local/bin:/home/hyeonsu/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/hyeonsu/.local/bin:/home/hyeonsu/.local/bin:/home/hyeonsu/.local/bin', 'SESSION_MANAGER': 'local/om:@/tmp/.ICE-unix/2841,unix/om:/tmp/.ICE-unix/2841', 'INVOCATION_ID': '1bac59652940484eabea8909008ae7a2', 'XDG_MENU_PREFIX': 'gnome-', 'VSCODE_PROCESS_TITLE': 'extension-host (agent-exec) [1-3]', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'GDK_BACKEND': 'wayland', 'CURSOR_AGENT': '1', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.UFCRL3', 'LS_COLORS': '', 'SBX_CHROME_API_RQ': '1', 'CURSOR_TRACE_ID': '341ba74fbbbf4a34be8d94617a5e4fbf', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GJS_DEBUG_OUTPUT': 'stderr', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/hyeonsu/xarm_ws/build/mtc', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'VSCODE_CODE_CACHE_PATH': '/home/hyeonsu/.config/Cursor/CachedData/7d96c2a03bb088ad367615e9da1a3fe20fbbc6a0', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'QTWEBENGINE_DICTIONARIES_PATH': '/usr/share/hunspell-bdic/', 'COLCON': '1', '_ZO_DOCTOR': '0', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VSCODE_PID': '4070'}), 'shell': False}
+[7.295750] (mtc) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[7.296007] (mtc) StdoutLine: {'line': b'-- Installing: /home/hyeonsu/xarm_ws/install/mtc/lib/mtc/mtc_node\n'}
+[7.296360] (mtc) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/hyeonsu/xarm_ws/install/mtc/lib/mtc/mtc_node" to ""\n'}
+[7.296549] (mtc) StdoutLine: {'line': b'-- Up-to-date: /home/hyeonsu/xarm_ws/install/mtc/share/mtc/launch\n'}
+[7.296786] (mtc) StdoutLine: {'line': b'-- Up-to-date: /home/hyeonsu/xarm_ws/install/mtc/share/mtc/launch/pick_place_demo.launch.py\n'}
+[7.296836] (mtc) StdoutLine: {'line': b'-- Up-to-date: /home/hyeonsu/xarm_ws/install/mtc/share/ament_index/resource_index/package_run_dependencies/mtc\n'}
+[7.296868] (mtc) StdoutLine: {'line': b'-- Up-to-date: /home/hyeonsu/xarm_ws/install/mtc/share/ament_index/resource_index/parent_prefix_path/mtc\n'}
+[7.296901] (mtc) StdoutLine: {'line': b'-- Up-to-date: /home/hyeonsu/xarm_ws/install/mtc/share/mtc/environment/ament_prefix_path.sh\n'}
+[7.296942] (mtc) StdoutLine: {'line': b'-- Up-to-date: /home/hyeonsu/xarm_ws/install/mtc/share/mtc/environment/ament_prefix_path.dsv\n'}
+[7.296983] (mtc) StdoutLine: {'line': b'-- Up-to-date: /home/hyeonsu/xarm_ws/install/mtc/share/mtc/environment/path.sh\n'}
+[7.297023] (mtc) StdoutLine: {'line': b'-- Up-to-date: /home/hyeonsu/xarm_ws/install/mtc/share/mtc/environment/path.dsv\n'}
+[7.297059] (mtc) StdoutLine: {'line': b'-- Up-to-date: /home/hyeonsu/xarm_ws/install/mtc/share/mtc/local_setup.bash\n'}
+[7.297091] (mtc) StdoutLine: {'line': b'-- Up-to-date: /home/hyeonsu/xarm_ws/install/mtc/share/mtc/local_setup.sh\n'}
+[7.297122] (mtc) StdoutLine: {'line': b'-- Up-to-date: /home/hyeonsu/xarm_ws/install/mtc/share/mtc/local_setup.zsh\n'}
+[7.297163] (mtc) StdoutLine: {'line': b'-- Up-to-date: /home/hyeonsu/xarm_ws/install/mtc/share/mtc/local_setup.dsv\n'}
+[7.297192] (mtc) StdoutLine: {'line': b'-- Installing: /home/hyeonsu/xarm_ws/install/mtc/share/mtc/package.dsv\n'}
+[7.297214] (mtc) StdoutLine: {'line': b'-- Up-to-date: /home/hyeonsu/xarm_ws/install/mtc/share/ament_index/resource_index/packages/mtc\n'}
+[7.297235] (mtc) StdoutLine: {'line': b'-- Up-to-date: /home/hyeonsu/xarm_ws/install/mtc/share/mtc/cmake/mtcConfig.cmake\n'}
+[7.297255] (mtc) StdoutLine: {'line': b'-- Up-to-date: /home/hyeonsu/xarm_ws/install/mtc/share/mtc/cmake/mtcConfig-version.cmake\n'}
+[7.297276] (mtc) StdoutLine: {'line': b'-- Up-to-date: /home/hyeonsu/xarm_ws/install/mtc/share/mtc/package.xml\n'}
+[7.297670] (mtc) CommandEnded: {'returncode': 0}
+[7.307372] (mtc) JobEnded: {'identifier': 'mtc', 'rc': 0}
+[7.307871] (-) EventReactorShutdown: {}

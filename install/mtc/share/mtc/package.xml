@@ -12,6 +12,10 @@
   <depend>moveit_task_constructor_core</depend>
   <depend>tf2_geometry_msgs</depend>
   <depend>tf2_eigen</depend>
+  <exec_depend>moveit_configs_utils</exec_depend>
+  <exec_depend>moveit_ros_move_group</exec_depend>
+  <exec_depend>moveit_task_constructor_capabilities</exec_depend>
+  <exec_depend>xarm_1s_moveit_config</exec_depend>
 
   <test_depend>ament_lint_auto</test_depend>
   <test_depend>ament_lint_common</test_depend>

@@ -33,21 +33,10 @@ joint_limits:
     max_velocity: 1.0
     has_acceleration_limits: true
     max_acceleration: 2.0
+
+  # 그리퍼 설정
   arm1:
     has_velocity_limits: true
     max_velocity: 1.0
     has_acceleration_limits: true
     max_acceleration: 2.0
-  # 그리퍼 관련(mimic joints)은 보통 가속도 제한을 끄거나 크게 잡습니다.
-  arm1_left:
-    has_velocity_limits: true
-    max_velocity: 1.0
-    has_acceleration_limits: false
-  arm0:
-    has_velocity_limits: true
-    max_velocity: 1.0
-    has_acceleration_limits: false
-  arm0_left:
-    has_velocity_limits: true
-    max_velocity: 1.0
-    has_acceleration_limits: false

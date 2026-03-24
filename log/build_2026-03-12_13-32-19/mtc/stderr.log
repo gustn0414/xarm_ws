@@ -1,0 +1,90 @@
+/home/hyeonsu/xarm_ws/src/mtc/src/mtc_node.cpp: In member function ‘moveit::task_constructor::Task MTCTaskNode::createTask()’:
+/home/hyeonsu/xarm_ws/src/mtc/src/mtc_node.cpp:200:29: error: no matching function for call to ‘moveit::task_constructor::stages::ModifyPlanningScene::allowCollisions(const char [7], <brace-enclosed initializer list>, bool)’
+  200 |       stage->allowCollisions(
+      |       ~~~~~~~~~~~~~~~~~~~~~~^
+  201 |         "object",
+      |         ~~~~~~~~~            
+  202 |         { "link1", "link1_left", "link0", "link0_left" },
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  203 |         true
+      |         ~~~~                 
+  204 |       );
+      |       ~                      
+In file included from /opt/ros/jazzy/include/moveit/task_constructor/stages.h:52,
+                 from /home/hyeonsu/xarm_ws/src/mtc/src/mtc_node.cpp:6:
+/opt/ros/jazzy/include/moveit/task_constructor/stages/modify_planning_scene.h:157:14: note: candidate: ‘void moveit::task_constructor::stages::ModifyPlanningScene::allowCollisions(planning_scene::PlanningScene&, const CollisionMatrixPairs&, bool)’
+  157 |         void allowCollisions(planning_scene::PlanningScene& scene, const CollisionMatrixPairs& pairs, bool invert);
+      |              ^~~~~~~~~~~~~~~
+/opt/ros/jazzy/include/moveit/task_constructor/stages/modify_planning_scene.h:157:61: note:   no known conversion for argument 1 from ‘const char [7]’ to ‘planning_scene::PlanningScene&’
+  157 |         void allowCollisions(planning_scene::PlanningScene& scene, const CollisionMatrixPairs& pairs, bool invert);
+      |                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~
+/opt/ros/jazzy/include/moveit/task_constructor/stages/modify_planning_scene.h:116:21: note: candidate: ‘template<class T1, class T2, class E1, class E2> void moveit::task_constructor::stages::ModifyPlanningScene::allowCollisions(const T1&, const T2&, bool)’
+  116 |         inline void allowCollisions(const T1& first, const T2& second, bool enable_collision) {
+      |                     ^~~~~~~~~~~~~~~
+/opt/ros/jazzy/include/moveit/task_constructor/stages/modify_planning_scene.h:116:21: note:   template argument deduction/substitution failed:
+/home/hyeonsu/xarm_ws/src/mtc/src/mtc_node.cpp:200:29: note:   couldn’t deduce template parameter ‘T2’
+  200 |       stage->allowCollisions(
+      |       ~~~~~~~~~~~~~~~~~~~~~~^
+  201 |         "object",
+      |         ~~~~~~~~~            
+  202 |         { "link1", "link1_left", "link0", "link0_left" },
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  203 |         true
+      |         ~~~~                 
+  204 |       );
+      |       ~                      
+/opt/ros/jazzy/include/moveit/task_constructor/stages/modify_planning_scene.h:122:21: note: candidate: ‘template<class T, class E> void moveit::task_constructor::stages::ModifyPlanningScene::allowCollisions(const std::string&, const T&, bool)’
+  122 |         inline void allowCollisions(const std::string& first, const T& second, bool enable_collision) {
+      |                     ^~~~~~~~~~~~~~~
+/opt/ros/jazzy/include/moveit/task_constructor/stages/modify_planning_scene.h:122:21: note:   template argument deduction/substitution failed:
+/home/hyeonsu/xarm_ws/src/mtc/src/mtc_node.cpp:200:29: note:   couldn’t deduce template parameter ‘T’
+  200 |       stage->allowCollisions(
+      |       ~~~~~~~~~~~~~~~~~~~~~~^
+  201 |         "object",
+      |         ~~~~~~~~~            
+  202 |         { "link1", "link1_left", "link0", "link0_left" },
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  203 |         true
+      |         ~~~~                 
+  204 |       );
+      |       ~                      
+/opt/ros/jazzy/include/moveit/task_constructor/stages/modify_planning_scene.h:128:21: note: candidate: ‘template<class T, class E> void moveit::task_constructor::stages::ModifyPlanningScene::allowCollisions(const char*, const T&, bool)’
+  128 |         inline void allowCollisions(const char* first, const T& second, bool enable_collision) {
+      |                     ^~~~~~~~~~~~~~~
+/opt/ros/jazzy/include/moveit/task_constructor/stages/modify_planning_scene.h:128:21: note:   template argument deduction/substitution failed:
+/home/hyeonsu/xarm_ws/src/mtc/src/mtc_node.cpp:200:29: note:   couldn’t deduce template parameter ‘T’
+  200 |       stage->allowCollisions(
+      |       ~~~~~~~~~~~~~~~~~~~~~~^
+  201 |         "object",
+      |         ~~~~~~~~~            
+  202 |         { "link1", "link1_left", "link0", "link0_left" },
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  203 |         true
+      |         ~~~~                 
+  204 |       );
+      |       ~                      
+/opt/ros/jazzy/include/moveit/task_constructor/stages/modify_planning_scene.h:102:14: note: candidate: ‘void moveit::task_constructor::stages::ModifyPlanningScene::allowCollisions(const Names&, const Names&, bool)’
+  102 |         void allowCollisions(const Names& first, const Names& second, bool allow);
+      |              ^~~~~~~~~~~~~~~
+/opt/ros/jazzy/include/moveit/task_constructor/stages/modify_planning_scene.h:102:43: note:   no known conversion for argument 1 from ‘const char [7]’ to ‘const moveit::task_constructor::stages::ModifyPlanningScene::Names&’ {aka ‘const std::vector<std::__cxx11::basic_string<char>, std::allocator<std::__cxx11::basic_string<char> > >&’}
+  102 |         void allowCollisions(const Names& first, const Names& second, bool allow);
+      |                              ~~~~~~~~~~~~~^~~~~
+/opt/ros/jazzy/include/moveit/task_constructor/stages/modify_planning_scene.h:104:14: note: candidate: ‘void moveit::task_constructor::stages::ModifyPlanningScene::allowCollisions(const std::string&, const std::string&, bool)’
+  104 |         void allowCollisions(const std::string& first, const std::string& second, bool allow) {
+      |              ^~~~~~~~~~~~~~~
+/opt/ros/jazzy/include/moveit/task_constructor/stages/modify_planning_scene.h:104:75: note:   no known conversion for argument 2 from ‘<brace-enclosed initializer list>’ to ‘const std::string&’ {aka ‘const std::__cxx11::basic_string<char>&’}
+  104 |         void allowCollisions(const std::string& first, const std::string& second, bool allow) {
+      |                                                        ~~~~~~~~~~~~~~~~~~~^~~~~~
+/opt/ros/jazzy/include/moveit/task_constructor/stages/modify_planning_scene.h:108:14: note: candidate: ‘void moveit::task_constructor::stages::ModifyPlanningScene::allowCollisions(const std::string&, bool)’
+  108 |         void allowCollisions(const std::string& object, bool allow) { allowCollisions(Names({ object }), Names(), allow); }
+      |              ^~~~~~~~~~~~~~~
+/opt/ros/jazzy/include/moveit/task_constructor/stages/modify_planning_scene.h:108:14: note:   candidate expects 2 arguments, 3 provided
+/opt/ros/jazzy/include/moveit/task_constructor/stages/modify_planning_scene.h:132:14: note: candidate: ‘void moveit::task_constructor::stages::ModifyPlanningScene::allowCollisions(const std::string&, const moveit::core::JointModelGroup&, bool)’
+  132 |         void allowCollisions(const std::string& first, const moveit::core::JointModelGroup& jmg, bool allow);
+      |              ^~~~~~~~~~~~~~~
+/opt/ros/jazzy/include/moveit/task_constructor/stages/modify_planning_scene.h:132:93: note:   no known conversion for argument 2 from ‘<brace-enclosed initializer list>’ to ‘const moveit::core::JointModelGroup&’
+  132 |         void allowCollisions(const std::string& first, const moveit::core::JointModelGroup& jmg, bool allow);
+      |                                                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+gmake[2]: *** [CMakeFiles/mtc_node.dir/build.make:76: CMakeFiles/mtc_node.dir/src/mtc_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/mtc_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2
