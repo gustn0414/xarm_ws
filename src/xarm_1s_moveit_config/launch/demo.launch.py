@@ -54,6 +54,11 @@ def generate_launch_description():
         parameters=[
             moveit_config.to_dict(),
             {"capabilities": "move_group/ExecuteTaskSolutionCapability"},
+            # 그리퍼 stall 허용 시간 확보를 위한 실행 timeout 설정
+            {"trajectory_execution.allowed_execution_duration_scaling": 5.0},
+            {"trajectory_execution.allowed_goal_duration_margin": 3.0},
+            # start state 검증 비활성화 → 0-duration 궤적 2포인트 문제 해결
+            {"trajectory_execution.allowed_start_tolerance": 0.0},
         ],
     )
 

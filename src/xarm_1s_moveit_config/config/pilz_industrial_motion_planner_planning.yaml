@@ -3,10 +3,18 @@ planning_plugins:
   - pilz_industrial_motion_planner/CommandPlanner
 
 # 플래닝 요청전 검사단계 (추가 및 삭제 가능)
-request_adapters:
-  - default_planning_request_adapters/ValidateWorkspaceBounds
-  - default_planning_request_adapters/CheckStartStateBounds
-  - default_planning_request_adapters/CheckStartStateCollision
+
+# ── Jazzy: 리스트 형식 + default_planning_request_adapters ──────────────
+# request_adapters:
+#   - default_planning_request_adapters/ValidateWorkspaceBounds
+#   - default_planning_request_adapters/CheckStartStateBounds
+#   - default_planning_request_adapters/CheckStartStateCollision
+
+# ── Humble: 문자열 형식 + default_planner_request_adapters ──────────────
+request_adapters: >-
+  default_planner_request_adapters/ValidateWorkspaceBounds
+  default_planner_request_adapters/CheckStartStateBounds
+  default_planner_request_adapters/CheckStartStateCollision
 
 # PTP 부분은 로봇에 맞게 수정
 default_planner_config: PTP
