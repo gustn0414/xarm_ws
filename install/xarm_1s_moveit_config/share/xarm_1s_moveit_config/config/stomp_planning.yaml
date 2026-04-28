@@ -1,6 +1,7 @@
 planning_plugins:
   - stomp_moveit/StompPlanner
-# The order of the elements in the adapter corresponds to the order they are processed by the motion planning pipeline.
+
+# ── Jazzy: 리스트 형식 + default_planning_request_adapters ──────────────
 request_adapters:
   - default_planning_request_adapters/ResolveConstraintFrames
   - default_planning_request_adapters/ValidateWorkspaceBounds
@@ -10,6 +11,17 @@ response_adapters:
   - default_planning_response_adapters/AddTimeOptimalParameterization
   - default_planning_response_adapters/ValidateSolution
   - default_planning_response_adapters/DisplayMotionPath
+
+# ── Humble: 문자열 형식 + default_planner_request_adapters ──────────────
+# request_adapters: >-
+#   default_planner_request_adapters/ResolveConstraintFrames
+#   default_planner_request_adapters/ValidateWorkspaceBounds
+#   default_planner_request_adapters/CheckStartStateBounds
+#   default_planner_request_adapters/CheckStartStateCollision
+# response_adapters: >-
+#   default_planning_response_adapters/AddTimeOptimalParameterization
+#   default_planning_response_adapters/ValidateSolution
+#   default_planning_response_adapters/DisplayMotionPath
 
 stomp_moveit:
   num_timesteps: 60
