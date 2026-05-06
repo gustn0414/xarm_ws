@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>xarm_1s_bringup</name>
+  <version>0.1.0</version>
+  <description>
+    xArm 1S 통합 bringup 패키지.
+    실 로봇/시뮬레이션 launch, MoveIt 데모, MTC pick&amp;place demo 를 한 곳에 모아둔다.
+  </description>
+  <maintainer email="secu4090@todo.todo">secu4090</maintainer>
+  <license>Apache-2.0</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <!-- 런타임 의존성 (launch 가 부르는 노드 / 패키지) -->
+  <exec_depend>controller_manager</exec_depend>
+  <exec_depend>joint_state_broadcaster</exec_depend>
+  <exec_depend>joint_trajectory_controller</exec_depend>
+  <exec_depend>position_controllers</exec_depend>
+  <exec_depend>robot_state_publisher</exec_depend>
+  <exec_depend>rviz2</exec_depend>
+  <exec_depend>xacro</exec_depend>
+
+  <exec_depend>moveit_configs_utils</exec_depend>
+  <exec_depend>moveit_ros_move_group</exec_depend>
+  <exec_depend>moveit_task_constructor_capabilities</exec_depend>
+
+  <!-- 같은 워크스페이스 내 패키지 -->
+  <exec_depend>xarm_1s_description</exec_depend>
+  <exec_depend>xarm_1s_hardware</exec_depend>
+  <exec_depend>xarm_1s_moveit_config</exec_depend>
+  <exec_depend>mtc</exec_depend>
+
+  <test_depend>ament_lint_auto</test_depend>
+  <test_depend>ament_lint_common</test_depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>

@@ -1,0 +1,3 @@
+/home/hyeon/xarm_ws/install/xarm_1s_hardware/lib/libxarm_1s_hardware.so
+/home/hyeon/xarm_ws/install/xarm_1s_hardware/share/xarm_1s_hardware/cmake/export_xarm_1s_hardwareExport.cmake
+/home/hyeon/xarm_ws/install/xarm_1s_hardware/share/xarm_1s_hardware/cmake/export_xarm_1s_hardwareExport-noconfig.cmake

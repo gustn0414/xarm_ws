@@ -1,4 +1,0 @@
-/home/hyeonsu/xarm_ws/src/mtc/src/mtc_node.cpp: In member function ‘moveit::task_constructor::Task MTCTaskNode::createTask()’:
-/home/hyeonsu/xarm_ws/src/mtc/src/mtc_node.cpp:162:15: warning: variable ‘attach_object_stage’ set but not used [-Wunused-but-set-variable]
-  162 |   mtc::Stage* attach_object_stage = nullptr;
-      |               ^~~~~~~~~~~~~~~~~~~

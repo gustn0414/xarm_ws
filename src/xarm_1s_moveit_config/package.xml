@@ -21,6 +21,11 @@
   <exec_depend>moveit_configs_utils</exec_depend>
   <exec_depend>pilz_industrial_motion_planner</exec_depend>
 
+  <!-- 주의: launch/demo.launch.py 는 xarm_1s_bringup 의 launch 를 include 하지만,
+       bringup 이 이 패키지에 역으로 의존하므로 cycle 방지를 위해 exec_depend 는 선언하지 않는다.
+       워크스페이스 전체를 함께 빌드하면 정상 동작. -->
+
+
   <test_depend>ament_lint_auto</test_depend>
   <test_depend>ament_lint_common</test_depend>
 

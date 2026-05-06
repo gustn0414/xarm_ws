@@ -1,0 +1,1 @@
+Invoking command in '/home/hyeon/xarm_ws/build/xarm_1s_hardware': /usr/bin/cmake /home/hyeon/xarm_ws/src/xarm_1s_hardware -DCMAKE_INSTALL_PREFIX=/home/hyeon/xarm_ws/install/xarm_1s_hardware

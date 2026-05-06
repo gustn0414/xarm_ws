@@ -1,4 +1,0 @@
-Invoking command in '/home/hyeonsu/xarm_ws/build/mtc': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/hyeonsu/xarm_ws/build/mtc -- -j24 -l24
-Invoked command in '/home/hyeonsu/xarm_ws/build/mtc' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/hyeonsu/xarm_ws/build/mtc -- -j24 -l24
-Invoking command in '/home/hyeonsu/xarm_ws/build/mtc': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/hyeonsu/xarm_ws/build/mtc
-Invoked command in '/home/hyeonsu/xarm_ws/build/mtc' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/hyeonsu/xarm_ws/build/mtc

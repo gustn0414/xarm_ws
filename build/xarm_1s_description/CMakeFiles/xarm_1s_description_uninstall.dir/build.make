@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/hyeonsu/xarm_ws/src/xarm_1s_description
+CMAKE_SOURCE_DIR = /home/hyeon/xarm_ws/src/xarm_1s_description
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/hyeonsu/xarm_ws/build/xarm_1s_description
+CMAKE_BINARY_DIR = /home/hyeon/xarm_ws/build/xarm_1s_description
 
 # Utility rule file for xarm_1s_description_uninstall.
 
@@ -67,7 +67,7 @@ include CMakeFiles/xarm_1s_description_uninstall.dir/compiler_depend.make
 include CMakeFiles/xarm_1s_description_uninstall.dir/progress.make
 
 CMakeFiles/xarm_1s_description_uninstall:
-	/usr/bin/cmake -P /home/hyeonsu/xarm_ws/build/xarm_1s_description/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
+	/usr/bin/cmake -P /home/hyeon/xarm_ws/build/xarm_1s_description/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
 
 xarm_1s_description_uninstall: CMakeFiles/xarm_1s_description_uninstall
 xarm_1s_description_uninstall: CMakeFiles/xarm_1s_description_uninstall.dir/build.make
@@ -82,6 +82,6 @@ CMakeFiles/xarm_1s_description_uninstall.dir/clean:
 .PHONY : CMakeFiles/xarm_1s_description_uninstall.dir/clean
 
 CMakeFiles/xarm_1s_description_uninstall.dir/depend:
-	cd /home/hyeonsu/xarm_ws/build/xarm_1s_description && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/hyeonsu/xarm_ws/src/xarm_1s_description /home/hyeonsu/xarm_ws/src/xarm_1s_description /home/hyeonsu/xarm_ws/build/xarm_1s_description /home/hyeonsu/xarm_ws/build/xarm_1s_description /home/hyeonsu/xarm_ws/build/xarm_1s_description/CMakeFiles/xarm_1s_description_uninstall.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/hyeon/xarm_ws/build/xarm_1s_description && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/hyeon/xarm_ws/src/xarm_1s_description /home/hyeon/xarm_ws/src/xarm_1s_description /home/hyeon/xarm_ws/build/xarm_1s_description /home/hyeon/xarm_ws/build/xarm_1s_description /home/hyeon/xarm_ws/build/xarm_1s_description/CMakeFiles/xarm_1s_description_uninstall.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/xarm_1s_description_uninstall.dir/depend
 

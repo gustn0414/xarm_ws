@@ -1,0 +1,121 @@
+[0.013s] Invoking command in '/home/hyeon/xarm_ws/build/xarm_1s_moveit_config': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /home/hyeon/xarm_ws/src/xarm_1s_moveit_config -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/hyeon/xarm_ws/install/xarm_1s_moveit_config
+[0.127s] -- The C compiler identification is GNU 13.3.0
+[0.844s] -- The CXX compiler identification is GNU 13.3.0
+[1.337s] -- Detecting C compiler ABI info
+[1.632s] -- Detecting C compiler ABI info - done
+[1.636s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.637s] -- Detecting C compile features
+[1.637s] -- Detecting C compile features - done
+[1.742s] -- Detecting CXX compiler ABI info
+[2.030s] -- Detecting CXX compiler ABI info - done
+[2.036s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[2.036s] -- Detecting CXX compile features
+[2.036s] -- Detecting CXX compile features - done
+[2.038s] -- Found ament_cmake: 2.5.6 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[2.128s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[2.173s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[2.188s] -- Found moveit_ros_planning_interface: 2.12.4 (/opt/ros/jazzy/share/moveit_ros_planning_interface/cmake)
+[2.391s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found version "1.83.0") found components: date_time filesystem program_options system thread 
+[2.563s] -- Found rosidl_generator_c: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[2.570s] -- Found rosidl_generator_cpp: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[2.578s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.587s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.773s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found version "1.83.0") found components: chrono date_time filesystem iostreams program_options regex serialization system thread 
+[4.528s] -- Found parameter_traits: 0.7.1 (/opt/ros/jazzy/share/parameter_traits/cmake)
+[4.559s] -- Found rmw_implementation_cmake: 7.3.3 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[4.560s] -- Found rmw_fastrtps_cpp: 8.4.3 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[4.605s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  
+[4.808s] -- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") 
+[4.931s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[5.123s] -- Found rclcpp_lifecycle: 28.1.18 (/opt/ros/jazzy/share/rclcpp_lifecycle/cmake)
+[5.146s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found version "1.83.0") found components: filesystem 
+[5.229s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[5.229s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[5.326s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found version "1.83.0") found components: system filesystem date_time program_options thread chrono 
+[5.360s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found version "1.83.0") found components: thread system filesystem regex date_time program_options 
+[5.377s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found version "1.83.0") found components: system filesystem date_time program_options thread 
+[5.402s] -- Found moveit_kinematics: 2.12.4 (/opt/ros/jazzy/share/moveit_kinematics/cmake)
+[5.404s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found version "1.83.0") found components: program_options system 
+[5.415s] -- Found moveit_planners_ompl: 2.12.4 (/opt/ros/jazzy/share/moveit_planners_ompl/cmake)
+[5.425s] -- Found moveit_ros_visualization: 2.12.4 (/opt/ros/jazzy/share/moveit_ros_visualization/cmake)
+[5.428s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found version "1.83.0") found components: thread date_time system filesystem 
+[5.462s] -- Setting OGRE_DIR to: '/opt/ros/jazzy/share/rviz_ogre_vendor/cmake/../../../opt/rviz_ogre_vendor/lib/OGRE/cmake'
+[5.463s] -- Found OGRE
+[5.463s] --   static     : OFF
+[5.464s] --   components : MeshLodGenerator;Overlay;Paging;Property;RTShaderSystem;Terrain;Volume
+[5.464s] --   plugins    : Plugin_BSPSceneManager;Plugin_OctreeSceneManager;Plugin_PCZSceneManager;Plugin_ParticleFX;RenderSystem_GL;RenderSystem_GL3Plus;Codec_STBI
+[5.464s] --   media      : /opt/ros/jazzy/opt/rviz_ogre_vendor/share/OGRE/Media
+[5.464s] -- OGRE_LIBRARIES: OgreMeshLodGenerator;OgreOverlay;OgrePaging;OgreProperty;OgreRTShaderSystem;OgreTerrain;OgreVolume;OgreMain
+[5.464s] -- OGRE_LIBRARY_DIRS: /opt/ros/jazzy/opt/rviz_ogre_vendor/lib
+[5.464s] -- OGRE_PLUGINS: Plugin_BSPSceneManager;Plugin_OctreeSceneManager;Plugin_PCZSceneManager;Plugin_ParticleFX;RenderSystem_GL;RenderSystem_GL3Plus;Codec_STBI
+[5.464s] -- OGRE_PLUGIN_DIR: /opt/ros/jazzy/opt/rviz_ogre_vendor/lib/OGRE
+[5.464s] -- rviz_ogre_vendor::OgreOverlay for IMPORTED_LOCATION_RELEASE: /opt/ros/jazzy/opt/rviz_ogre_vendor/lib/libOgreOverlay.so
+[5.464s] -- rviz_ogre_vendor::OgreOverlay for IMPORTED_LOCATION_DEBUG: /opt/ros/jazzy/opt/rviz_ogre_vendor/lib/libOgreOverlay.so
+[5.464s] -- rviz_ogre_vendor::OgreMain for IMPORTED_LOCATION_RELEASE: /opt/ros/jazzy/opt/rviz_ogre_vendor/lib/libOgreMain.so
+[5.464s] -- rviz_ogre_vendor::OgreMain for IMPORTED_LOCATION_DEBUG: /opt/ros/jazzy/opt/rviz_ogre_vendor/lib/libOgreMain.so
+[5.514s] -- Could not find freeimage library
+[8.183s] -- Found ZLIB: /usr/lib/x86_64-linux-gnu/libz.so (found version "1.3")  
+[8.976s] -- Found OpenGL: /usr/lib/x86_64-linux-gnu/libOpenGL.so   
+[15.665s] -- Found X11: /usr/include   
+[15.666s] -- Looking for XOpenDisplay in /usr/lib/x86_64-linux-gnu/libX11.so;/usr/lib/x86_64-linux-gnu/libXext.so
+[15.829s] -- Looking for XOpenDisplay in /usr/lib/x86_64-linux-gnu/libX11.so;/usr/lib/x86_64-linux-gnu/libXext.so - found
+[15.829s] -- Looking for gethostbyname
+[15.997s] -- Looking for gethostbyname - found
+[15.997s] -- Looking for connect
+[16.158s] -- Looking for connect - found
+[16.158s] -- Looking for remove
+[16.321s] -- Looking for remove - found
+[16.321s] -- Looking for shmat
+[16.483s] -- Looking for shmat - found
+[16.483s] -- Looking for IceConnectionNumber in ICE
+[16.642s] -- Looking for IceConnectionNumber in ICE - found
+[16.822s] -- Setting yaml-cpp_DIR to: '/opt/ros/jazzy/share/yaml_cpp_vendor/cmake/../../../opt/yaml_cpp_vendor/share/cmake/yaml-cpp'
+[16.822s] -- Found PkgConfig: /usr/bin/pkg-config (found version "1.8.1") 
+[16.822s] -- Checking for module 'yaml-cpp'
+[16.824s] --   Found yaml-cpp, version 0.8.0
+[16.915s] -- Found rviz_visual_tools: 4.1.4 (/opt/ros/jazzy/share/rviz_visual_tools/cmake)
+[16.928s] -- Found ament_lint_auto: 0.17.5 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[16.992s] -- Added test 'flake8' to check Python code syntax and style conventions
+[16.992s] -- Configured 'flake8' exclude dirs and/or files: 
+[16.992s] -- Added test 'lint_cmake' to check CMake code style
+[16.992s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[16.994s] -- Added test 'xmllint' to check XML markup files
+[16.994s] -- Configuring done (17.0s)
+[17.003s] -- Generating done (0.0s)
+[17.004s] -- Build files have been written to: /home/hyeon/xarm_ws/build/xarm_1s_moveit_config
+[17.016s] Invoked command in '/home/hyeon/xarm_ws/build/xarm_1s_moveit_config' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /home/hyeon/xarm_ws/src/xarm_1s_moveit_config -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/hyeon/xarm_ws/install/xarm_1s_moveit_config
+[17.017s] Invoking command in '/home/hyeon/xarm_ws/build/xarm_1s_moveit_config': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/hyeon/xarm_ws/build/xarm_1s_moveit_config -- -j24 -l24
+[17.048s] Invoked command in '/home/hyeon/xarm_ws/build/xarm_1s_moveit_config' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/hyeon/xarm_ws/build/xarm_1s_moveit_config -- -j24 -l24
+[17.049s] Invoking command in '/home/hyeon/xarm_ws/build/xarm_1s_moveit_config': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/hyeon/xarm_ws/build/xarm_1s_moveit_config
+[17.054s] -- Install configuration: ""
+[17.054s] -- Execute custom install script
+[17.055s] -- Symlinking: /home/hyeon/xarm_ws/install/xarm_1s_moveit_config/share/xarm_1s_moveit_config/config/initial_positions.yaml
+[17.060s] -- Symlinking: /home/hyeon/xarm_ws/install/xarm_1s_moveit_config/share/xarm_1s_moveit_config/config/joint_limits.yaml
+[17.066s] -- Symlinking: /home/hyeon/xarm_ws/install/xarm_1s_moveit_config/share/xarm_1s_moveit_config/config/kinematics.yaml
+[17.071s] -- Symlinking: /home/hyeon/xarm_ws/install/xarm_1s_moveit_config/share/xarm_1s_moveit_config/config/moveit_controllers.yaml
+[17.076s] -- Symlinking: /home/hyeon/xarm_ws/install/xarm_1s_moveit_config/share/xarm_1s_moveit_config/config/ompl_planning.yaml
+[17.081s] -- Symlinking: /home/hyeon/xarm_ws/install/xarm_1s_moveit_config/share/xarm_1s_moveit_config/config/pilz_cartesian_limits.yaml
+[17.086s] -- Symlinking: /home/hyeon/xarm_ws/install/xarm_1s_moveit_config/share/xarm_1s_moveit_config/config/pilz_industrial_motion_planner_planning.yaml
+[17.091s] -- Symlinking: /home/hyeon/xarm_ws/install/xarm_1s_moveit_config/share/xarm_1s_moveit_config/config/ros2_controllers.yaml
+[17.096s] -- Symlinking: /home/hyeon/xarm_ws/install/xarm_1s_moveit_config/share/xarm_1s_moveit_config/config/sensors_3d.yaml
+[17.102s] -- Symlinking: /home/hyeon/xarm_ws/install/xarm_1s_moveit_config/share/xarm_1s_moveit_config/config/stomp_planning.yaml
+[17.107s] -- Symlinking: /home/hyeon/xarm_ws/install/xarm_1s_moveit_config/share/xarm_1s_moveit_config/config/xarm_1s.srdf
+[17.113s] -- Symlinking: /home/hyeon/xarm_ws/install/xarm_1s_moveit_config/share/xarm_1s_moveit_config/launch/demo.launch.py
+[17.119s] -- Symlinking: /home/hyeon/xarm_ws/install/xarm_1s_moveit_config/share/xarm_1s_moveit_config/rviz/moveit.rviz
+[17.124s] -- Symlinking: /home/hyeon/xarm_ws/install/xarm_1s_moveit_config/share/xarm_1s_moveit_config/.setup_assistant
+[17.129s] -- Symlinking: /home/hyeon/xarm_ws/install/xarm_1s_moveit_config/share/ament_index/resource_index/package_run_dependencies/xarm_1s_moveit_config
+[17.135s] -- Symlinking: /home/hyeon/xarm_ws/install/xarm_1s_moveit_config/share/ament_index/resource_index/parent_prefix_path/xarm_1s_moveit_config
+[17.139s] -- Symlinking: /home/hyeon/xarm_ws/install/xarm_1s_moveit_config/share/xarm_1s_moveit_config/environment/ament_prefix_path.sh
+[17.145s] -- Symlinking: /home/hyeon/xarm_ws/install/xarm_1s_moveit_config/share/xarm_1s_moveit_config/environment/ament_prefix_path.dsv
+[17.150s] -- Symlinking: /home/hyeon/xarm_ws/install/xarm_1s_moveit_config/share/xarm_1s_moveit_config/environment/path.sh
+[17.155s] -- Symlinking: /home/hyeon/xarm_ws/install/xarm_1s_moveit_config/share/xarm_1s_moveit_config/environment/path.dsv
+[17.160s] -- Symlinking: /home/hyeon/xarm_ws/install/xarm_1s_moveit_config/share/xarm_1s_moveit_config/local_setup.bash
+[17.165s] -- Symlinking: /home/hyeon/xarm_ws/install/xarm_1s_moveit_config/share/xarm_1s_moveit_config/local_setup.sh
+[17.170s] -- Symlinking: /home/hyeon/xarm_ws/install/xarm_1s_moveit_config/share/xarm_1s_moveit_config/local_setup.zsh
+[17.176s] -- Symlinking: /home/hyeon/xarm_ws/install/xarm_1s_moveit_config/share/xarm_1s_moveit_config/local_setup.dsv
+[17.181s] -- Symlinking: /home/hyeon/xarm_ws/install/xarm_1s_moveit_config/share/xarm_1s_moveit_config/package.dsv
+[17.187s] -- Symlinking: /home/hyeon/xarm_ws/install/xarm_1s_moveit_config/share/ament_index/resource_index/packages/xarm_1s_moveit_config
+[17.192s] -- Symlinking: /home/hyeon/xarm_ws/install/xarm_1s_moveit_config/share/xarm_1s_moveit_config/cmake/xarm_1s_moveit_configConfig.cmake
+[17.197s] -- Symlinking: /home/hyeon/xarm_ws/install/xarm_1s_moveit_config/share/xarm_1s_moveit_config/cmake/xarm_1s_moveit_configConfig-version.cmake
+[17.202s] -- Symlinking: /home/hyeon/xarm_ws/install/xarm_1s_moveit_config/share/xarm_1s_moveit_config/package.xml
+[17.208s] Invoked command in '/home/hyeon/xarm_ws/build/xarm_1s_moveit_config' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/hyeon/xarm_ws/build/xarm_1s_moveit_config

@@ -1,2 +1,1 @@
-source;share/mtc/environment/ament_prefix_path.sh
-source;share/mtc/environment/path.sh
+/home/hyeon/xarm_ws/build/mtc/ament_cmake_environment_hooks/local_setup.dsv

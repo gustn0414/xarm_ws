@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/hyeonsu/xarm_ws/src/mtc
+CMAKE_SOURCE_DIR = /home/hyeon/xarm_ws/src/mtc
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/hyeonsu/xarm_ws/build/mtc
+CMAKE_BINARY_DIR = /home/hyeon/xarm_ws/build/mtc
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -142,9 +142,9 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/hyeonsu/xarm_ws/build/mtc/CMakeFiles /home/hyeonsu/xarm_ws/build/mtc//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hyeon/xarm_ws/build/mtc/CMakeFiles /home/hyeon/xarm_ws/build/mtc//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/hyeonsu/xarm_ws/build/mtc/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hyeon/xarm_ws/build/mtc/CMakeFiles 0
 .PHONY : all
 
 # The main clean target

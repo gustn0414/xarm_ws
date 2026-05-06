@@ -1,0 +1,4 @@
+source;share/xarm_1s_hardware/local_setup.bash
+source;share/xarm_1s_hardware/local_setup.dsv
+source;share/xarm_1s_hardware/local_setup.sh
+source;share/xarm_1s_hardware/local_setup.zsh
