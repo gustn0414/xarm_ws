@@ -1,0 +1,10 @@
+<library path="xarm_1s_hardware">
+  <class
+    name="xarm_1s_hardware/XArm1SHardwareInterface"
+    type="xarm_1s_hardware::XArm1SHardwareInterface"
+    base_class_type="hardware_interface::SystemInterface">
+    <description>
+      Hiwonder xArm 1S hardware interface via USB HID
+    </description>
+  </class>
+</library>

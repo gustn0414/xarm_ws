@@ -1,0 +1,685 @@
+[0.000000] (-) TimerEvent: {}
+[0.000546] (xarm_1s_description) JobQueued: {'identifier': 'xarm_1s_description', 'dependencies': OrderedDict()}
+[0.000603] (xarm_1s_hardware) JobQueued: {'identifier': 'xarm_1s_hardware', 'dependencies': OrderedDict()}
+[0.000648] (xarm_1s_moveit_config) JobQueued: {'identifier': 'xarm_1s_moveit_config', 'dependencies': OrderedDict()}
+[0.000690] (mtc) JobQueued: {'identifier': 'mtc', 'dependencies': OrderedDict({'xarm_1s_moveit_config': '/home/hyeon/xarm_ws/install/xarm_1s_moveit_config'})}
+[0.000736] (xarm_1s_moveit_config) JobStarted: {'identifier': 'xarm_1s_moveit_config'}
+[0.004498] (xarm_1s_description) JobStarted: {'identifier': 'xarm_1s_description'}
+[0.007200] (xarm_1s_hardware) JobStarted: {'identifier': 'xarm_1s_hardware'}
+[0.010771] (xarm_1s_moveit_config) JobProgress: {'identifier': 'xarm_1s_moveit_config', 'progress': 'cmake'}
+[0.012067] (xarm_1s_moveit_config) Command: {'cmd': ['/usr/bin/cmake', '/home/hyeon/xarm_ws/src/xarm_1s_moveit_config', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/hyeon/xarm_ws/install/xarm_1s_moveit_config'], 'cwd': '/home/hyeon/xarm_ws/build/xarm_1s_moveit_config', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'hyeon', 'ROS_APT_SOURCE_VERSION': '1.2.0', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/hyeon', 'OLDPWD': '/home/hyeon/xarm_ws', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'WSL_DISTRO_NAME': 'Ubuntu-24.04', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/hyeon/xarm_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'hyeon', 'NAME': 'HsJung', 'WSL_INTEROP': '/run/WSL/2194_interop', 'PULSE_SERVER': 'unix:/mnt/wslg/PulseServer', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'PATH': '/opt/ros/jazzy/bin:/home/hyeon/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/WindowsApps/MicrosoftCorporationII.WindowsSubsystemForLinux_2.6.1.0_x64__8wekyb3d8bbwe:/mnt/c/windows/system32:/mnt/c/windows:/mnt/c/windows/System32/Wbem:/mnt/c/windows/System32/WindowsPowerShell/v1.0/:/mnt/c/windows/System32/OpenSSH/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA app/NvDLISR:/mnt/c/Users/Administrator/AppData/Local/Microsoft/WindowsApps:/mnt/c/Program Files/HP/OMEN-Broadcast/Common:/mnt/c/Program Files/cursor/resources/app/bin:/mnt/c/Program Files/nodejs/:/mnt/c/Program Files/Git/cmd:/mnt/c/msys64/mingw64/bin:/Docker/host/bin:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/tools/dart-sdk/bin:/mnt/c/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/:/mnt/c/Program Files/PuTTY/:/mnt/c/Users/jhs04/.local/bin:/mnt/c/Users/jhs04/AppData/Local/Programs/Python/Python311/Scripts/:/mnt/c/Users/jhs04/AppData/Local/Programs/Python/Python311/:/mnt/c/Users/jhs04/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/jhs04/AppData/Local/Python/bin:/mnt/c/Users/jhs04/AppData/Roaming/npm:/mnt/c/Users/jhs04/AppData/Local/Programs/Ollama:/mnt/c/msys64/mingw64/bin:/mnt/c/tools/dart-sdk/bin:/mnt/c/Users/jhs04/AppData/Local/Pub/Cache/bin:/mnt/c/Users/jhs04/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/jhs04/.local/bin:/snap/bin:/home/hyeonsu/.local/bin', 'XDG_RUNTIME_DIR': '/run/user/1000/', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'ROS_DOMAIN_ID': '13', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy:/home/hyeon/xarm_ws/install/mtc:/home/hyeon/xarm_ws/install/xarm_1s_moveit_config:/home/hyeon/xarm_ws/install/xarm_1s_description', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/hyeon/xarm_ws/build/xarm_1s_moveit_config', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'WSL2_GUI_APPS_ENABLED': '1', 'HOSTTYPE': 'x86_64', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/hyeon/xarm_ws/install/mtc:/home/hyeon/xarm_ws/install/xarm_1s_moveit_config:/home/hyeon/xarm_ws/install/xarm_1s_description:/opt/ros/jazzy', 'WSLENV': ''}), 'shell': False}
+[0.014550] (xarm_1s_description) JobProgress: {'identifier': 'xarm_1s_description', 'progress': 'cmake'}
+[0.015567] (xarm_1s_description) Command: {'cmd': ['/usr/bin/cmake', '/home/hyeon/xarm_ws/src/xarm_1s_description', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/hyeon/xarm_ws/install/xarm_1s_description'], 'cwd': '/home/hyeon/xarm_ws/build/xarm_1s_description', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'hyeon', 'ROS_APT_SOURCE_VERSION': '1.2.0', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/hyeon', 'OLDPWD': '/home/hyeon/xarm_ws', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'WSL_DISTRO_NAME': 'Ubuntu-24.04', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/hyeon/xarm_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'hyeon', 'NAME': 'HsJung', 'WSL_INTEROP': '/run/WSL/2194_interop', 'PULSE_SERVER': 'unix:/mnt/wslg/PulseServer', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'PATH': '/opt/ros/jazzy/bin:/home/hyeon/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/WindowsApps/MicrosoftCorporationII.WindowsSubsystemForLinux_2.6.1.0_x64__8wekyb3d8bbwe:/mnt/c/windows/system32:/mnt/c/windows:/mnt/c/windows/System32/Wbem:/mnt/c/windows/System32/WindowsPowerShell/v1.0/:/mnt/c/windows/System32/OpenSSH/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA app/NvDLISR:/mnt/c/Users/Administrator/AppData/Local/Microsoft/WindowsApps:/mnt/c/Program Files/HP/OMEN-Broadcast/Common:/mnt/c/Program Files/cursor/resources/app/bin:/mnt/c/Program Files/nodejs/:/mnt/c/Program Files/Git/cmd:/mnt/c/msys64/mingw64/bin:/Docker/host/bin:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/tools/dart-sdk/bin:/mnt/c/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/:/mnt/c/Program Files/PuTTY/:/mnt/c/Users/jhs04/.local/bin:/mnt/c/Users/jhs04/AppData/Local/Programs/Python/Python311/Scripts/:/mnt/c/Users/jhs04/AppData/Local/Programs/Python/Python311/:/mnt/c/Users/jhs04/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/jhs04/AppData/Local/Python/bin:/mnt/c/Users/jhs04/AppData/Roaming/npm:/mnt/c/Users/jhs04/AppData/Local/Programs/Ollama:/mnt/c/msys64/mingw64/bin:/mnt/c/tools/dart-sdk/bin:/mnt/c/Users/jhs04/AppData/Local/Pub/Cache/bin:/mnt/c/Users/jhs04/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/jhs04/.local/bin:/snap/bin:/home/hyeonsu/.local/bin', 'XDG_RUNTIME_DIR': '/run/user/1000/', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'ROS_DOMAIN_ID': '13', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy:/home/hyeon/xarm_ws/install/mtc:/home/hyeon/xarm_ws/install/xarm_1s_moveit_config:/home/hyeon/xarm_ws/install/xarm_1s_description', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/hyeon/xarm_ws/build/xarm_1s_description', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'WSL2_GUI_APPS_ENABLED': '1', 'HOSTTYPE': 'x86_64', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/hyeon/xarm_ws/install/mtc:/home/hyeon/xarm_ws/install/xarm_1s_moveit_config:/home/hyeon/xarm_ws/install/xarm_1s_description:/opt/ros/jazzy', 'WSLENV': ''}), 'shell': False}
+[0.021525] (xarm_1s_hardware) JobProgress: {'identifier': 'xarm_1s_hardware', 'progress': 'cmake'}
+[0.022570] (xarm_1s_hardware) Command: {'cmd': ['/usr/bin/cmake', '/home/hyeon/xarm_ws/src/xarm_1s_hardware', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/hyeon/xarm_ws/install/xarm_1s_hardware'], 'cwd': '/home/hyeon/xarm_ws/build/xarm_1s_hardware', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'hyeon', 'ROS_APT_SOURCE_VERSION': '1.2.0', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/hyeon', 'OLDPWD': '/home/hyeon/xarm_ws', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'WSL_DISTRO_NAME': 'Ubuntu-24.04', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/hyeon/xarm_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'hyeon', 'NAME': 'HsJung', 'WSL_INTEROP': '/run/WSL/2194_interop', 'PULSE_SERVER': 'unix:/mnt/wslg/PulseServer', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'PATH': '/opt/ros/jazzy/bin:/home/hyeon/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/WindowsApps/MicrosoftCorporationII.WindowsSubsystemForLinux_2.6.1.0_x64__8wekyb3d8bbwe:/mnt/c/windows/system32:/mnt/c/windows:/mnt/c/windows/System32/Wbem:/mnt/c/windows/System32/WindowsPowerShell/v1.0/:/mnt/c/windows/System32/OpenSSH/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA app/NvDLISR:/mnt/c/Users/Administrator/AppData/Local/Microsoft/WindowsApps:/mnt/c/Program Files/HP/OMEN-Broadcast/Common:/mnt/c/Program Files/cursor/resources/app/bin:/mnt/c/Program Files/nodejs/:/mnt/c/Program Files/Git/cmd:/mnt/c/msys64/mingw64/bin:/Docker/host/bin:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/tools/dart-sdk/bin:/mnt/c/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/:/mnt/c/Program Files/PuTTY/:/mnt/c/Users/jhs04/.local/bin:/mnt/c/Users/jhs04/AppData/Local/Programs/Python/Python311/Scripts/:/mnt/c/Users/jhs04/AppData/Local/Programs/Python/Python311/:/mnt/c/Users/jhs04/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/jhs04/AppData/Local/Python/bin:/mnt/c/Users/jhs04/AppData/Roaming/npm:/mnt/c/Users/jhs04/AppData/Local/Programs/Ollama:/mnt/c/msys64/mingw64/bin:/mnt/c/tools/dart-sdk/bin:/mnt/c/Users/jhs04/AppData/Local/Pub/Cache/bin:/mnt/c/Users/jhs04/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/jhs04/.local/bin:/snap/bin:/home/hyeonsu/.local/bin', 'XDG_RUNTIME_DIR': '/run/user/1000/', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'ROS_DOMAIN_ID': '13', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy:/home/hyeon/xarm_ws/install/mtc:/home/hyeon/xarm_ws/install/xarm_1s_moveit_config:/home/hyeon/xarm_ws/install/xarm_1s_description', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/hyeon/xarm_ws/build/xarm_1s_hardware', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'WSL2_GUI_APPS_ENABLED': '1', 'HOSTTYPE': 'x86_64', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/hyeon/xarm_ws/install/mtc:/home/hyeon/xarm_ws/install/xarm_1s_moveit_config:/home/hyeon/xarm_ws/install/xarm_1s_description:/opt/ros/jazzy', 'WSLENV': ''}), 'shell': False}
+[0.099670] (-) TimerEvent: {}
+[0.127186] (xarm_1s_description) StdoutLine: {'line': b'-- The C compiler identification is GNU 13.3.0\n'}
+[0.127401] (xarm_1s_moveit_config) StdoutLine: {'line': b'-- The C compiler identification is GNU 13.3.0\n'}
+[0.190805] (xarm_1s_hardware) StdoutLine: {'line': b'-- The C compiler identification is GNU 13.3.0\n'}
+[0.199785] (-) TimerEvent: {}
+[0.300618] (-) TimerEvent: {}
+[0.403053] (-) TimerEvent: {}
+[0.504933] (-) TimerEvent: {}
+[0.607309] (-) TimerEvent: {}
+[0.709689] (-) TimerEvent: {}
+[0.719816] (xarm_1s_description) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 13.3.0\n'}
+[0.809906] (-) TimerEvent: {}
+[0.844242] (xarm_1s_moveit_config) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 13.3.0\n'}
+[0.885885] (xarm_1s_hardware) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 13.3.0\n'}
+[0.910538] (-) TimerEvent: {}
+[1.012982] (-) TimerEvent: {}
+[1.113905] (-) TimerEvent: {}
+[1.215014] (-) TimerEvent: {}
+[1.290912] (xarm_1s_description) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[1.315625] (-) TimerEvent: {}
+[1.337059] (xarm_1s_moveit_config) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[1.417348] (-) TimerEvent: {}
+[1.519746] (-) TimerEvent: {}
+[1.527267] (xarm_1s_hardware) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[1.572040] (xarm_1s_description) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[1.577259] (xarm_1s_description) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[1.577514] (xarm_1s_description) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[1.577785] (xarm_1s_description) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[1.619903] (-) TimerEvent: {}
+[1.632132] (xarm_1s_moveit_config) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[1.637131] (xarm_1s_moveit_config) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[1.637362] (xarm_1s_moveit_config) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[1.637623] (xarm_1s_moveit_config) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[1.678563] (xarm_1s_description) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[1.720078] (-) TimerEvent: {}
+[1.742340] (xarm_1s_moveit_config) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[1.785232] (xarm_1s_hardware) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[1.790342] (xarm_1s_hardware) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[1.790980] (xarm_1s_hardware) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[1.791051] (xarm_1s_hardware) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[1.820259] (-) TimerEvent: {}
+[1.896427] (xarm_1s_hardware) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[1.911382] (xarm_1s_description) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[1.916378] (xarm_1s_description) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[1.916640] (xarm_1s_description) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[1.916920] (xarm_1s_description) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[1.918540] (xarm_1s_description) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.6 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[1.920402] (-) TimerEvent: {}
+[2.008400] (xarm_1s_description) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter \n'}
+[2.020767] (-) TimerEvent: {}
+[2.031075] (xarm_1s_moveit_config) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[2.036163] (xarm_1s_moveit_config) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[2.036741] (xarm_1s_moveit_config) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[2.036846] (xarm_1s_moveit_config) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[2.038247] (xarm_1s_moveit_config) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.6 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[2.055615] (xarm_1s_description) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[2.072895] (xarm_1s_description) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.17.5 (/opt/ros/jazzy/share/ament_lint_auto/cmake)\n'}
+[2.121858] (-) TimerEvent: {}
+[2.128259] (xarm_1s_moveit_config) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter \n'}
+[2.137419] (xarm_1s_description) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[2.138376] (xarm_1s_description) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[2.139445] (xarm_1s_description) StdoutLine: {'line': b'-- Configuring done (2.1s)\n'}
+[2.141798] (xarm_1s_description) StdoutLine: {'line': b'-- Generating done (0.0s)\n'}
+[2.142794] (xarm_1s_description) StdoutLine: {'line': b'-- Build files have been written to: /home/hyeon/xarm_ws/build/xarm_1s_description\n'}
+[2.147364] (xarm_1s_description) CommandEnded: {'returncode': 0}
+[2.148708] (xarm_1s_description) JobProgress: {'identifier': 'xarm_1s_description', 'progress': 'build'}
+[2.148762] (xarm_1s_description) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/hyeon/xarm_ws/build/xarm_1s_description', '--', '-j24', '-l24'], 'cwd': '/home/hyeon/xarm_ws/build/xarm_1s_description', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'hyeon', 'ROS_APT_SOURCE_VERSION': '1.2.0', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/hyeon', 'OLDPWD': '/home/hyeon/xarm_ws', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'WSL_DISTRO_NAME': 'Ubuntu-24.04', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/hyeon/xarm_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'hyeon', 'NAME': 'HsJung', 'WSL_INTEROP': '/run/WSL/2194_interop', 'PULSE_SERVER': 'unix:/mnt/wslg/PulseServer', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'PATH': '/opt/ros/jazzy/bin:/home/hyeon/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/WindowsApps/MicrosoftCorporationII.WindowsSubsystemForLinux_2.6.1.0_x64__8wekyb3d8bbwe:/mnt/c/windows/system32:/mnt/c/windows:/mnt/c/windows/System32/Wbem:/mnt/c/windows/System32/WindowsPowerShell/v1.0/:/mnt/c/windows/System32/OpenSSH/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA app/NvDLISR:/mnt/c/Users/Administrator/AppData/Local/Microsoft/WindowsApps:/mnt/c/Program Files/HP/OMEN-Broadcast/Common:/mnt/c/Program Files/cursor/resources/app/bin:/mnt/c/Program Files/nodejs/:/mnt/c/Program Files/Git/cmd:/mnt/c/msys64/mingw64/bin:/Docker/host/bin:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/tools/dart-sdk/bin:/mnt/c/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/:/mnt/c/Program Files/PuTTY/:/mnt/c/Users/jhs04/.local/bin:/mnt/c/Users/jhs04/AppData/Local/Programs/Python/Python311/Scripts/:/mnt/c/Users/jhs04/AppData/Local/Programs/Python/Python311/:/mnt/c/Users/jhs04/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/jhs04/AppData/Local/Python/bin:/mnt/c/Users/jhs04/AppData/Roaming/npm:/mnt/c/Users/jhs04/AppData/Local/Programs/Ollama:/mnt/c/msys64/mingw64/bin:/mnt/c/tools/dart-sdk/bin:/mnt/c/Users/jhs04/AppData/Local/Pub/Cache/bin:/mnt/c/Users/jhs04/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/jhs04/.local/bin:/snap/bin:/home/hyeonsu/.local/bin', 'XDG_RUNTIME_DIR': '/run/user/1000/', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'ROS_DOMAIN_ID': '13', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy:/home/hyeon/xarm_ws/install/mtc:/home/hyeon/xarm_ws/install/xarm_1s_moveit_config:/home/hyeon/xarm_ws/install/xarm_1s_description', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/hyeon/xarm_ws/build/xarm_1s_description', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'WSL2_GUI_APPS_ENABLED': '1', 'HOSTTYPE': 'x86_64', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/hyeon/xarm_ws/install/mtc:/home/hyeon/xarm_ws/install/xarm_1s_moveit_config:/home/hyeon/xarm_ws/install/xarm_1s_description:/opt/ros/jazzy', 'WSLENV': ''}), 'shell': False}
+[2.173892] (xarm_1s_moveit_config) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[2.177249] (xarm_1s_description) CommandEnded: {'returncode': 0}
+[2.178064] (xarm_1s_description) JobProgress: {'identifier': 'xarm_1s_description', 'progress': 'install'}
+[2.183418] (xarm_1s_description) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/hyeon/xarm_ws/build/xarm_1s_description'], 'cwd': '/home/hyeon/xarm_ws/build/xarm_1s_description', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'hyeon', 'ROS_APT_SOURCE_VERSION': '1.2.0', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/hyeon', 'OLDPWD': '/home/hyeon/xarm_ws', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'WSL_DISTRO_NAME': 'Ubuntu-24.04', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/hyeon/xarm_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'hyeon', 'NAME': 'HsJung', 'WSL_INTEROP': '/run/WSL/2194_interop', 'PULSE_SERVER': 'unix:/mnt/wslg/PulseServer', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'PATH': '/opt/ros/jazzy/bin:/home/hyeon/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/WindowsApps/MicrosoftCorporationII.WindowsSubsystemForLinux_2.6.1.0_x64__8wekyb3d8bbwe:/mnt/c/windows/system32:/mnt/c/windows:/mnt/c/windows/System32/Wbem:/mnt/c/windows/System32/WindowsPowerShell/v1.0/:/mnt/c/windows/System32/OpenSSH/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA app/NvDLISR:/mnt/c/Users/Administrator/AppData/Local/Microsoft/WindowsApps:/mnt/c/Program Files/HP/OMEN-Broadcast/Common:/mnt/c/Program Files/cursor/resources/app/bin:/mnt/c/Program Files/nodejs/:/mnt/c/Program Files/Git/cmd:/mnt/c/msys64/mingw64/bin:/Docker/host/bin:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/tools/dart-sdk/bin:/mnt/c/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/:/mnt/c/Program Files/PuTTY/:/mnt/c/Users/jhs04/.local/bin:/mnt/c/Users/jhs04/AppData/Local/Programs/Python/Python311/Scripts/:/mnt/c/Users/jhs04/AppData/Local/Programs/Python/Python311/:/mnt/c/Users/jhs04/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/jhs04/AppData/Local/Python/bin:/mnt/c/Users/jhs04/AppData/Roaming/npm:/mnt/c/Users/jhs04/AppData/Local/Programs/Ollama:/mnt/c/msys64/mingw64/bin:/mnt/c/tools/dart-sdk/bin:/mnt/c/Users/jhs04/AppData/Local/Pub/Cache/bin:/mnt/c/Users/jhs04/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/jhs04/.local/bin:/snap/bin:/home/hyeonsu/.local/bin', 'XDG_RUNTIME_DIR': '/run/user/1000/', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'ROS_DOMAIN_ID': '13', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy:/home/hyeon/xarm_ws/install/mtc:/home/hyeon/xarm_ws/install/xarm_1s_moveit_config:/home/hyeon/xarm_ws/install/xarm_1s_description', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/hyeon/xarm_ws/build/xarm_1s_description', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'WSL2_GUI_APPS_ENABLED': '1', 'HOSTTYPE': 'x86_64', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/hyeon/xarm_ws/install/mtc:/home/hyeon/xarm_ws/install/xarm_1s_moveit_config:/home/hyeon/xarm_ws/install/xarm_1s_description:/opt/ros/jazzy', 'WSLENV': ''}), 'shell': False}
+[2.188239] (xarm_1s_description) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[2.188521] (xarm_1s_description) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[2.188697] (xarm_1s_moveit_config) StdoutLine: {'line': b'-- Found moveit_ros_planning_interface: 2.12.4 (/opt/ros/jazzy/share/moveit_ros_planning_interface/cmake)\n'}
+[2.189145] (xarm_1s_description) StdoutLine: {'line': b'-- Symlinking: /home/hyeon/xarm_ws/install/xarm_1s_description/share/xarm_1s_description/meshes/base.stl\n'}
+[2.194050] (xarm_1s_description) StdoutLine: {'line': b'-- Symlinking: /home/hyeon/xarm_ws/install/xarm_1s_description/share/xarm_1s_description/meshes/base_collision.stl\n'}
+[2.199498] (xarm_1s_description) StdoutLine: {'line': b'-- Symlinking: /home/hyeon/xarm_ws/install/xarm_1s_description/share/xarm_1s_description/meshes/link0.stl\n'}
+[2.205400] (xarm_1s_description) StdoutLine: {'line': b'-- Symlinking: /home/hyeon/xarm_ws/install/xarm_1s_description/share/xarm_1s_description/meshes/link0_collision.stl\n'}
+[2.207722] (xarm_1s_hardware) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[2.210478] (xarm_1s_description) StdoutLine: {'line': b'-- Symlinking: /home/hyeon/xarm_ws/install/xarm_1s_description/share/xarm_1s_description/meshes/link0_left.stl\n'}
+[2.212600] (xarm_1s_hardware) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[2.212819] (xarm_1s_hardware) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[2.213327] (xarm_1s_hardware) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[2.214821] (xarm_1s_hardware) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.6 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[2.216211] (xarm_1s_description) StdoutLine: {'line': b'-- Symlinking: /home/hyeon/xarm_ws/install/xarm_1s_description/share/xarm_1s_description/meshes/link0_left_collision.stl\n'}
+[2.222061] (-) TimerEvent: {}
+[2.222527] (xarm_1s_description) StdoutLine: {'line': b'-- Symlinking: /home/hyeon/xarm_ws/install/xarm_1s_description/share/xarm_1s_description/meshes/link1.stl\n'}
+[2.229849] (xarm_1s_description) StdoutLine: {'line': b'-- Symlinking: /home/hyeon/xarm_ws/install/xarm_1s_description/share/xarm_1s_description/meshes/link1_collision.stl\n'}
+[2.237412] (xarm_1s_description) StdoutLine: {'line': b'-- Symlinking: /home/hyeon/xarm_ws/install/xarm_1s_description/share/xarm_1s_description/meshes/link1_left.stl\n'}
+[2.243742] (xarm_1s_description) StdoutLine: {'line': b'-- Symlinking: /home/hyeon/xarm_ws/install/xarm_1s_description/share/xarm_1s_description/meshes/link1_left_collision.stl\n'}
+[2.249611] (xarm_1s_description) StdoutLine: {'line': b'-- Symlinking: /home/hyeon/xarm_ws/install/xarm_1s_description/share/xarm_1s_description/meshes/link2.stl\n'}
+[2.255844] (xarm_1s_description) StdoutLine: {'line': b'-- Symlinking: /home/hyeon/xarm_ws/install/xarm_1s_description/share/xarm_1s_description/meshes/link2_collision.stl\n'}
+[2.262863] (xarm_1s_description) StdoutLine: {'line': b'-- Symlinking: /home/hyeon/xarm_ws/install/xarm_1s_description/share/xarm_1s_description/meshes/link3.stl\n'}
+[2.269388] (xarm_1s_description) StdoutLine: {'line': b'-- Symlinking: /home/hyeon/xarm_ws/install/xarm_1s_description/share/xarm_1s_description/meshes/link3_collision.stl\n'}
+[2.275280] (xarm_1s_description) StdoutLine: {'line': b'-- Symlinking: /home/hyeon/xarm_ws/install/xarm_1s_description/share/xarm_1s_description/meshes/link4.stl\n'}
+[2.281220] (xarm_1s_description) StdoutLine: {'line': b'-- Symlinking: /home/hyeon/xarm_ws/install/xarm_1s_description/share/xarm_1s_description/meshes/link4_collision.stl\n'}
+[2.286486] (xarm_1s_description) StdoutLine: {'line': b'-- Symlinking: /home/hyeon/xarm_ws/install/xarm_1s_description/share/xarm_1s_description/meshes/link5.stl\n'}
+[2.293546] (xarm_1s_description) StdoutLine: {'line': b'-- Symlinking: /home/hyeon/xarm_ws/install/xarm_1s_description/share/xarm_1s_description/meshes/link5_collision.stl\n'}
+[2.299378] (xarm_1s_description) StdoutLine: {'line': b'-- Symlinking: /home/hyeon/xarm_ws/install/xarm_1s_description/share/xarm_1s_description/meshes/link6.stl\n'}
+[2.304692] (xarm_1s_description) StdoutLine: {'line': b'-- Symlinking: /home/hyeon/xarm_ws/install/xarm_1s_description/share/xarm_1s_description/meshes/link6_collision.stl\n'}
+[2.310043] (xarm_1s_description) StdoutLine: {'line': b'-- Symlinking: /home/hyeon/xarm_ws/install/xarm_1s_description/share/xarm_1s_description/rviz/xarm_1s.rviz\n'}
+[2.313809] (xarm_1s_hardware) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter \n'}
+[2.315611] (xarm_1s_description) StdoutLine: {'line': b'-- Symlinking: /home/hyeon/xarm_ws/install/xarm_1s_description/share/xarm_1s_description/urdf/control/xarm_1s.ros2_control.xacro\n'}
+[2.321070] (xarm_1s_description) StdoutLine: {'line': b'-- Symlinking: /home/hyeon/xarm_ws/install/xarm_1s_description/share/xarm_1s_description/urdf/xarm_1s.urdf.xacro\n'}
+[2.322174] (-) TimerEvent: {}
+[2.327037] (xarm_1s_description) StdoutLine: {'line': b'-- Symlinking: /home/hyeon/xarm_ws/install/xarm_1s_description/share/ament_index/resource_index/package_run_dependencies/xarm_1s_description\n'}
+[2.333170] (xarm_1s_description) StdoutLine: {'line': b'-- Symlinking: /home/hyeon/xarm_ws/install/xarm_1s_description/share/ament_index/resource_index/parent_prefix_path/xarm_1s_description\n'}
+[2.339226] (xarm_1s_description) StdoutLine: {'line': b'-- Symlinking: /home/hyeon/xarm_ws/install/xarm_1s_description/share/xarm_1s_description/environment/ament_prefix_path.sh\n'}
+[2.345324] (xarm_1s_description) StdoutLine: {'line': b'-- Symlinking: /home/hyeon/xarm_ws/install/xarm_1s_description/share/xarm_1s_description/environment/ament_prefix_path.dsv\n'}
+[2.350755] (xarm_1s_description) StdoutLine: {'line': b'-- Symlinking: /home/hyeon/xarm_ws/install/xarm_1s_description/share/xarm_1s_description/environment/path.sh\n'}
+[2.355943] (xarm_1s_description) StdoutLine: {'line': b'-- Symlinking: /home/hyeon/xarm_ws/install/xarm_1s_description/share/xarm_1s_description/environment/path.dsv\n'}
+[2.360625] (xarm_1s_hardware) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[2.361251] (xarm_1s_description) StdoutLine: {'line': b'-- Symlinking: /home/hyeon/xarm_ws/install/xarm_1s_description/share/xarm_1s_description/local_setup.bash\n'}
+[2.366928] (xarm_1s_description) StdoutLine: {'line': b'-- Symlinking: /home/hyeon/xarm_ws/install/xarm_1s_description/share/xarm_1s_description/local_setup.sh\n'}
+[2.372104] (xarm_1s_description) StdoutLine: {'line': b'-- Symlinking: /home/hyeon/xarm_ws/install/xarm_1s_description/share/xarm_1s_description/local_setup.zsh\n'}
+[2.375801] (xarm_1s_hardware) StdoutLine: {'line': b'-- Found rclcpp: 28.1.18 (/opt/ros/jazzy/share/rclcpp/cmake)\n'}
+[2.376684] (xarm_1s_description) StdoutLine: {'line': b'-- Symlinking: /home/hyeon/xarm_ws/install/xarm_1s_description/share/xarm_1s_description/local_setup.dsv\n'}
+[2.381615] (xarm_1s_description) StdoutLine: {'line': b'-- Symlinking: /home/hyeon/xarm_ws/install/xarm_1s_description/share/xarm_1s_description/package.dsv\n'}
+[2.387957] (xarm_1s_description) StdoutLine: {'line': b'-- Symlinking: /home/hyeon/xarm_ws/install/xarm_1s_description/share/ament_index/resource_index/packages/xarm_1s_description\n'}
+[2.391754] (xarm_1s_moveit_config) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found version "1.83.0") found components: date_time filesystem program_options system thread \n'}
+[2.393725] (xarm_1s_description) StdoutLine: {'line': b'-- Symlinking: /home/hyeon/xarm_ws/install/xarm_1s_description/share/xarm_1s_description/cmake/xarm_1s_descriptionConfig.cmake\n'}
+[2.399248] (xarm_1s_description) StdoutLine: {'line': b'-- Symlinking: /home/hyeon/xarm_ws/install/xarm_1s_description/share/xarm_1s_description/cmake/xarm_1s_descriptionConfig-version.cmake\n'}
+[2.404424] (xarm_1s_description) StdoutLine: {'line': b'-- Symlinking: /home/hyeon/xarm_ws/install/xarm_1s_description/share/xarm_1s_description/package.xml\n'}
+[2.411111] (xarm_1s_description) CommandEnded: {'returncode': 0}
+[2.419786] (xarm_1s_description) JobEnded: {'identifier': 'xarm_1s_description', 'rc': 0}
+[2.422308] (-) TimerEvent: {}
+[2.523549] (-) TimerEvent: {}
+[2.535506] (xarm_1s_hardware) StdoutLine: {'line': b'-- Found rosidl_generator_c: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)\n'}
+[2.541941] (xarm_1s_hardware) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)\n'}
+[2.550102] (xarm_1s_hardware) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[2.559418] (xarm_1s_hardware) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[2.563304] (xarm_1s_moveit_config) StdoutLine: {'line': b'-- Found rosidl_generator_c: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)\n'}
+[2.570357] (xarm_1s_moveit_config) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)\n'}
+[2.578517] (xarm_1s_moveit_config) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[2.587723] (xarm_1s_moveit_config) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[2.600829] (xarm_1s_hardware) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 7.3.3 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)\n'}
+[2.602247] (xarm_1s_hardware) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 8.4.3 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)\n'}
+[2.623761] (-) TimerEvent: {}
+[2.649447] (xarm_1s_hardware) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  \n'}
+[2.724359] (-) TimerEvent: {}
+[2.773117] (xarm_1s_moveit_config) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found version "1.83.0") found components: chrono date_time filesystem iostreams program_options regex serialization system thread \n'}
+[2.825512] (-) TimerEvent: {}
+[2.856960] (xarm_1s_hardware) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") \n'}
+[2.927016] (-) TimerEvent: {}
+[2.953015] (xarm_1s_hardware) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[3.028626] (-) TimerEvent: {}
+[3.129947] (-) TimerEvent: {}
+[3.146234] (xarm_1s_hardware) StdoutLine: {'line': b'-- Found hardware_interface: 4.44.0 (/opt/ros/jazzy/share/hardware_interface/cmake)\n'}
+[3.230195] (-) TimerEvent: {}
+[3.330708] (-) TimerEvent: {}
+[3.431549] (-) TimerEvent: {}
+[3.481831] (xarm_1s_hardware) StdoutLine: {'line': b'-- Found PkgConfig: /usr/bin/pkg-config (found version "1.8.1") \n'}
+[3.482283] (xarm_1s_hardware) StdoutLine: {'line': b"-- Checking for module 'hidapi-hidraw'\n"}
+[3.491135] (xarm_1s_hardware) StdoutLine: {'line': b'--   Found hidapi-hidraw, version 0.14.0\n'}
+[3.532486] (-) TimerEvent: {}
+[3.571772] (xarm_1s_hardware) StdoutLine: {'line': b'-- Configuring done (3.5s)\n'}
+[3.597649] (xarm_1s_hardware) StdoutLine: {'line': b'-- Generating done (0.0s)\n'}
+[3.600501] (xarm_1s_hardware) StdoutLine: {'line': b'-- Build files have been written to: /home/hyeon/xarm_ws/build/xarm_1s_hardware\n'}
+[3.609210] (xarm_1s_hardware) CommandEnded: {'returncode': 0}
+[3.609790] (xarm_1s_hardware) JobProgress: {'identifier': 'xarm_1s_hardware', 'progress': 'build'}
+[3.610266] (xarm_1s_hardware) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/hyeon/xarm_ws/build/xarm_1s_hardware', '--', '-j24', '-l24'], 'cwd': '/home/hyeon/xarm_ws/build/xarm_1s_hardware', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'hyeon', 'ROS_APT_SOURCE_VERSION': '1.2.0', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/hyeon', 'OLDPWD': '/home/hyeon/xarm_ws', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'WSL_DISTRO_NAME': 'Ubuntu-24.04', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/hyeon/xarm_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'hyeon', 'NAME': 'HsJung', 'WSL_INTEROP': '/run/WSL/2194_interop', 'PULSE_SERVER': 'unix:/mnt/wslg/PulseServer', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'PATH': '/opt/ros/jazzy/bin:/home/hyeon/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/WindowsApps/MicrosoftCorporationII.WindowsSubsystemForLinux_2.6.1.0_x64__8wekyb3d8bbwe:/mnt/c/windows/system32:/mnt/c/windows:/mnt/c/windows/System32/Wbem:/mnt/c/windows/System32/WindowsPowerShell/v1.0/:/mnt/c/windows/System32/OpenSSH/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA app/NvDLISR:/mnt/c/Users/Administrator/AppData/Local/Microsoft/WindowsApps:/mnt/c/Program Files/HP/OMEN-Broadcast/Common:/mnt/c/Program Files/cursor/resources/app/bin:/mnt/c/Program Files/nodejs/:/mnt/c/Program Files/Git/cmd:/mnt/c/msys64/mingw64/bin:/Docker/host/bin:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/tools/dart-sdk/bin:/mnt/c/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/:/mnt/c/Program Files/PuTTY/:/mnt/c/Users/jhs04/.local/bin:/mnt/c/Users/jhs04/AppData/Local/Programs/Python/Python311/Scripts/:/mnt/c/Users/jhs04/AppData/Local/Programs/Python/Python311/:/mnt/c/Users/jhs04/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/jhs04/AppData/Local/Python/bin:/mnt/c/Users/jhs04/AppData/Roaming/npm:/mnt/c/Users/jhs04/AppData/Local/Programs/Ollama:/mnt/c/msys64/mingw64/bin:/mnt/c/tools/dart-sdk/bin:/mnt/c/Users/jhs04/AppData/Local/Pub/Cache/bin:/mnt/c/Users/jhs04/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/jhs04/.local/bin:/snap/bin:/home/hyeonsu/.local/bin', 'XDG_RUNTIME_DIR': '/run/user/1000/', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'ROS_DOMAIN_ID': '13', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy:/home/hyeon/xarm_ws/install/mtc:/home/hyeon/xarm_ws/install/xarm_1s_moveit_config:/home/hyeon/xarm_ws/install/xarm_1s_description', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/hyeon/xarm_ws/build/xarm_1s_hardware', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'WSL2_GUI_APPS_ENABLED': '1', 'HOSTTYPE': 'x86_64', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/hyeon/xarm_ws/install/mtc:/home/hyeon/xarm_ws/install/xarm_1s_moveit_config:/home/hyeon/xarm_ws/install/xarm_1s_description:/opt/ros/jazzy', 'WSLENV': ''}), 'shell': False}
+[3.633018] (-) TimerEvent: {}
+[3.641286] (xarm_1s_hardware) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/xarm_1s_hardware.dir/src/xarm_1s_hardware_interface.cpp.o\x1b[0m\n'}
+[3.734593] (-) TimerEvent: {}
+[3.835220] (-) TimerEvent: {}
+[3.936150] (-) TimerEvent: {}
+[4.037032] (-) TimerEvent: {}
+[4.137926] (-) TimerEvent: {}
+[4.238851] (-) TimerEvent: {}
+[4.339788] (-) TimerEvent: {}
+[4.440749] (-) TimerEvent: {}
+[4.528376] (xarm_1s_moveit_config) StdoutLine: {'line': b'-- Found parameter_traits: 0.7.1 (/opt/ros/jazzy/share/parameter_traits/cmake)\n'}
+[4.541157] (-) TimerEvent: {}
+[4.559694] (xarm_1s_moveit_config) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 7.3.3 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)\n'}
+[4.560969] (xarm_1s_moveit_config) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 8.4.3 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)\n'}
+[4.605548] (xarm_1s_moveit_config) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  \n'}
+[4.641346] (-) TimerEvent: {}
+[4.743546] (-) TimerEvent: {}
+[4.808966] (xarm_1s_moveit_config) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") \n'}
+[4.844273] (-) TimerEvent: {}
+[4.931116] (xarm_1s_moveit_config) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[4.944647] (-) TimerEvent: {}
+[5.045524] (-) TimerEvent: {}
+[5.123464] (xarm_1s_moveit_config) StdoutLine: {'line': b'-- Found rclcpp_lifecycle: 28.1.18 (/opt/ros/jazzy/share/rclcpp_lifecycle/cmake)\n'}
+[5.146165] (-) TimerEvent: {}
+[5.146797] (xarm_1s_moveit_config) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found version "1.83.0") found components: filesystem \n'}
+[5.229219] (xarm_1s_moveit_config) StdoutLine: {'line': b'-- Found Eigen3: TRUE (found version "3.4.0") \n'}
+[5.229505] (xarm_1s_moveit_config) StdoutLine: {'line': b'-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target\n'}
+[5.246725] (-) TimerEvent: {}
+[5.326194] (xarm_1s_moveit_config) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found version "1.83.0") found components: system filesystem date_time program_options thread chrono \n'}
+[5.347356] (-) TimerEvent: {}
+[5.360189] (xarm_1s_moveit_config) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found version "1.83.0") found components: thread system filesystem regex date_time program_options \n'}
+[5.377278] (xarm_1s_moveit_config) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found version "1.83.0") found components: system filesystem date_time program_options thread \n'}
+[5.402217] (xarm_1s_moveit_config) StdoutLine: {'line': b'-- Found moveit_kinematics: 2.12.4 (/opt/ros/jazzy/share/moveit_kinematics/cmake)\n'}
+[5.404581] (xarm_1s_moveit_config) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found version "1.83.0") found components: program_options system \n'}
+[5.416119] (xarm_1s_moveit_config) StdoutLine: {'line': b'-- Found moveit_planners_ompl: 2.12.4 (/opt/ros/jazzy/share/moveit_planners_ompl/cmake)\n'}
+[5.425871] (xarm_1s_moveit_config) StdoutLine: {'line': b'-- Found moveit_ros_visualization: 2.12.4 (/opt/ros/jazzy/share/moveit_ros_visualization/cmake)\n'}
+[5.428390] (xarm_1s_moveit_config) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found version "1.83.0") found components: thread date_time system filesystem \n'}
+[5.447953] (-) TimerEvent: {}
+[5.462553] (xarm_1s_moveit_config) StdoutLine: {'line': b"-- Setting OGRE_DIR to: '/opt/ros/jazzy/share/rviz_ogre_vendor/cmake/../../../opt/rviz_ogre_vendor/lib/OGRE/cmake'\n"}
+[5.463389] (xarm_1s_moveit_config) StdoutLine: {'line': b'-- Found OGRE\n'}
+[5.464159] (xarm_1s_moveit_config) StdoutLine: {'line': b'--   static     : OFF\n'}
+[5.464254] (xarm_1s_moveit_config) StdoutLine: {'line': b'--   components : MeshLodGenerator;Overlay;Paging;Property;RTShaderSystem;Terrain;Volume\n'}
+[5.464306] (xarm_1s_moveit_config) StdoutLine: {'line': b'--   plugins    : Plugin_BSPSceneManager;Plugin_OctreeSceneManager;Plugin_PCZSceneManager;Plugin_ParticleFX;RenderSystem_GL;RenderSystem_GL3Plus;Codec_STBI\n'}
+[5.464440] (xarm_1s_moveit_config) StdoutLine: {'line': b'--   media      : /opt/ros/jazzy/opt/rviz_ogre_vendor/share/OGRE/Media\n'}
+[5.464488] (xarm_1s_moveit_config) StdoutLine: {'line': b'-- OGRE_LIBRARIES: OgreMeshLodGenerator;OgreOverlay;OgrePaging;OgreProperty;OgreRTShaderSystem;OgreTerrain;OgreVolume;OgreMain\n'}
+[5.464531] (xarm_1s_moveit_config) StdoutLine: {'line': b'-- OGRE_LIBRARY_DIRS: /opt/ros/jazzy/opt/rviz_ogre_vendor/lib\n'}
+[5.464555] (xarm_1s_moveit_config) StdoutLine: {'line': b'-- OGRE_PLUGINS: Plugin_BSPSceneManager;Plugin_OctreeSceneManager;Plugin_PCZSceneManager;Plugin_ParticleFX;RenderSystem_GL;RenderSystem_GL3Plus;Codec_STBI\n'}
+[5.464579] (xarm_1s_moveit_config) StdoutLine: {'line': b'-- OGRE_PLUGIN_DIR: /opt/ros/jazzy/opt/rviz_ogre_vendor/lib/OGRE\n'}
+[5.464602] (xarm_1s_moveit_config) StdoutLine: {'line': b'-- rviz_ogre_vendor::OgreOverlay for IMPORTED_LOCATION_RELEASE: /opt/ros/jazzy/opt/rviz_ogre_vendor/lib/libOgreOverlay.so\n'}
+[5.464624] (xarm_1s_moveit_config) StdoutLine: {'line': b'-- rviz_ogre_vendor::OgreOverlay for IMPORTED_LOCATION_DEBUG: /opt/ros/jazzy/opt/rviz_ogre_vendor/lib/libOgreOverlay.so\n'}
+[5.464646] (xarm_1s_moveit_config) StdoutLine: {'line': b'-- rviz_ogre_vendor::OgreMain for IMPORTED_LOCATION_RELEASE: /opt/ros/jazzy/opt/rviz_ogre_vendor/lib/libOgreMain.so\n'}
+[5.464669] (xarm_1s_moveit_config) StdoutLine: {'line': b'-- rviz_ogre_vendor::OgreMain for IMPORTED_LOCATION_DEBUG: /opt/ros/jazzy/opt/rviz_ogre_vendor/lib/libOgreMain.so\n'}
+[5.514863] (xarm_1s_moveit_config) StdoutLine: {'line': b'-- Could not find freeimage library\n'}
+[5.548765] (-) TimerEvent: {}
+[5.630527] (xarm_1s_hardware) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hyeon/xarm_ws/src/xarm_1s_hardware/src/xarm_1s_hardware_interface.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual hardware_interface::CallbackReturn xarm_1s_hardware::XArm1SHardwareInterface::\x1b[01;32m\x1b[Kon_init\x1b[m\x1b[K(const hardware_interface::HardwareInfo&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[5.630797] (xarm_1s_hardware) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hyeon/xarm_ws/src/xarm_1s_hardware/src/xarm_1s_hardware_interface.cpp:29:51:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kvirtual rclcpp_lifecycle::node_interfaces::LifecycleNodeInterface::CallbackReturn hardware_interface::HardwareComponentInterface::\x1b[01;32m\x1b[Kon_init\x1b[m\x1b[K(const hardware_interface::HardwareInfo&)\x1b[m\x1b[K\xe2\x80\x99 is deprecated: Use on_init(const HardwareComponentInterfaceParams & params) instead. [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations\x07-Wdeprecated-declarations\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[5.630837] (xarm_1s_hardware) StderrLine: {'line': b'   29 |   if (\x1b[01;35m\x1b[Khardware_interface::SystemInterface::on_init(info)\x1b[m\x1b[K !=\n'}
+[5.630869] (xarm_1s_hardware) StderrLine: {'line': b'      |       \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~\x1b[m\x1b[K\n'}
+[5.630892] (xarm_1s_hardware) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/jazzy/include/hardware_interface/hardware_interface/system_interface.hpp:18\x1b[m\x1b[K,\n'}
+[5.630918] (xarm_1s_hardware) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hyeon/xarm_ws/src/xarm_1s_hardware/include/xarm_1s_hardware/xarm_1s_hardware_interface.hpp:4\x1b[m\x1b[K,\n'}
+[5.630942] (xarm_1s_hardware) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hyeon/xarm_ws/src/xarm_1s_hardware/src/xarm_1s_hardware_interface.cpp:1\x1b[m\x1b[K:\n'}
+[5.630963] (xarm_1s_hardware) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/hardware_interface/hardware_interface/hardware_component_interface.hpp:140:26:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[5.630985] (xarm_1s_hardware) StderrLine: {'line': b'  140 |   virtual CallbackReturn \x1b[01;36m\x1b[Kon_init\x1b[m\x1b[K(const HardwareInfo & hardware_info);\n'}
+[5.631006] (xarm_1s_hardware) StderrLine: {'line': b'      |                          \x1b[01;36m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[5.649323] (-) TimerEvent: {}
+[5.750514] (-) TimerEvent: {}
+[5.851444] (-) TimerEvent: {}
+[5.952327] (-) TimerEvent: {}
+[6.053145] (-) TimerEvent: {}
+[6.154086] (-) TimerEvent: {}
+[6.255022] (-) TimerEvent: {}
+[6.355927] (-) TimerEvent: {}
+[6.456935] (-) TimerEvent: {}
+[6.559132] (-) TimerEvent: {}
+[6.660136] (-) TimerEvent: {}
+[6.761258] (-) TimerEvent: {}
+[6.861744] (-) TimerEvent: {}
+[6.962189] (-) TimerEvent: {}
+[7.062767] (-) TimerEvent: {}
+[7.151676] (xarm_1s_hardware) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX shared library libxarm_1s_hardware.so\x1b[0m\n'}
+[7.163094] (-) TimerEvent: {}
+[7.263983] (-) TimerEvent: {}
+[7.364862] (-) TimerEvent: {}
+[7.420370] (xarm_1s_hardware) StdoutLine: {'line': b'[100%] Built target xarm_1s_hardware\n'}
+[7.427906] (xarm_1s_hardware) CommandEnded: {'returncode': 0}
+[7.428550] (xarm_1s_hardware) JobProgress: {'identifier': 'xarm_1s_hardware', 'progress': 'install'}
+[7.429062] (xarm_1s_hardware) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/hyeon/xarm_ws/build/xarm_1s_hardware'], 'cwd': '/home/hyeon/xarm_ws/build/xarm_1s_hardware', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'hyeon', 'ROS_APT_SOURCE_VERSION': '1.2.0', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/hyeon', 'OLDPWD': '/home/hyeon/xarm_ws', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'WSL_DISTRO_NAME': 'Ubuntu-24.04', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/hyeon/xarm_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'hyeon', 'NAME': 'HsJung', 'WSL_INTEROP': '/run/WSL/2194_interop', 'PULSE_SERVER': 'unix:/mnt/wslg/PulseServer', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'PATH': '/opt/ros/jazzy/bin:/home/hyeon/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/WindowsApps/MicrosoftCorporationII.WindowsSubsystemForLinux_2.6.1.0_x64__8wekyb3d8bbwe:/mnt/c/windows/system32:/mnt/c/windows:/mnt/c/windows/System32/Wbem:/mnt/c/windows/System32/WindowsPowerShell/v1.0/:/mnt/c/windows/System32/OpenSSH/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA app/NvDLISR:/mnt/c/Users/Administrator/AppData/Local/Microsoft/WindowsApps:/mnt/c/Program Files/HP/OMEN-Broadcast/Common:/mnt/c/Program Files/cursor/resources/app/bin:/mnt/c/Program Files/nodejs/:/mnt/c/Program Files/Git/cmd:/mnt/c/msys64/mingw64/bin:/Docker/host/bin:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/tools/dart-sdk/bin:/mnt/c/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/:/mnt/c/Program Files/PuTTY/:/mnt/c/Users/jhs04/.local/bin:/mnt/c/Users/jhs04/AppData/Local/Programs/Python/Python311/Scripts/:/mnt/c/Users/jhs04/AppData/Local/Programs/Python/Python311/:/mnt/c/Users/jhs04/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/jhs04/AppData/Local/Python/bin:/mnt/c/Users/jhs04/AppData/Roaming/npm:/mnt/c/Users/jhs04/AppData/Local/Programs/Ollama:/mnt/c/msys64/mingw64/bin:/mnt/c/tools/dart-sdk/bin:/mnt/c/Users/jhs04/AppData/Local/Pub/Cache/bin:/mnt/c/Users/jhs04/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/jhs04/.local/bin:/snap/bin:/home/hyeonsu/.local/bin', 'XDG_RUNTIME_DIR': '/run/user/1000/', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'ROS_DOMAIN_ID': '13', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy:/home/hyeon/xarm_ws/install/mtc:/home/hyeon/xarm_ws/install/xarm_1s_moveit_config:/home/hyeon/xarm_ws/install/xarm_1s_description', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/hyeon/xarm_ws/build/xarm_1s_hardware', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'WSL2_GUI_APPS_ENABLED': '1', 'HOSTTYPE': 'x86_64', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/hyeon/xarm_ws/install/mtc:/home/hyeon/xarm_ws/install/xarm_1s_moveit_config:/home/hyeon/xarm_ws/install/xarm_1s_description:/opt/ros/jazzy', 'WSLENV': ''}), 'shell': False}
+[7.434176] (xarm_1s_hardware) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[7.434507] (xarm_1s_hardware) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[7.435061] (xarm_1s_hardware) StdoutLine: {'line': b'-- Symlinking: /home/hyeon/xarm_ws/install/xarm_1s_hardware/share/xarm_1s_hardware//xarm_1s_hardware_plugin.xml\n'}
+[7.441857] (xarm_1s_hardware) StdoutLine: {'line': b'-- Symlinking: /home/hyeon/xarm_ws/install/xarm_1s_hardware/include/xarm_1s_hardware/xarm_1s_hardware_interface.hpp\n'}
+[7.447131] (xarm_1s_hardware) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hyeon/xarm_ws/install/xarm_1s_hardware/share/xarm_1s_hardware/xarm_1s_hardware_plugin.xml\n'}
+[7.447413] (xarm_1s_hardware) StdoutLine: {'line': b'-- Symlinking: /home/hyeon/xarm_ws/install/xarm_1s_hardware/share/xarm_1s_hardware/environment/library_path.sh\n'}
+[7.452358] (xarm_1s_hardware) StdoutLine: {'line': b'-- Symlinking: /home/hyeon/xarm_ws/install/xarm_1s_hardware/share/xarm_1s_hardware/environment/library_path.dsv\n'}
+[7.457646] (xarm_1s_hardware) StdoutLine: {'line': b'-- Symlinking: /home/hyeon/xarm_ws/install/xarm_1s_hardware/share/ament_index/resource_index/package_run_dependencies/xarm_1s_hardware\n'}
+[7.462893] (xarm_1s_hardware) StdoutLine: {'line': b'-- Symlinking: /home/hyeon/xarm_ws/install/xarm_1s_hardware/share/ament_index/resource_index/parent_prefix_path/xarm_1s_hardware\n'}
+[7.464982] (-) TimerEvent: {}
+[7.468503] (xarm_1s_hardware) StdoutLine: {'line': b'-- Symlinking: /home/hyeon/xarm_ws/install/xarm_1s_hardware/share/xarm_1s_hardware/environment/ament_prefix_path.sh\n'}
+[7.473898] (xarm_1s_hardware) StdoutLine: {'line': b'-- Symlinking: /home/hyeon/xarm_ws/install/xarm_1s_hardware/share/xarm_1s_hardware/environment/ament_prefix_path.dsv\n'}
+[7.479023] (xarm_1s_hardware) StdoutLine: {'line': b'-- Symlinking: /home/hyeon/xarm_ws/install/xarm_1s_hardware/share/xarm_1s_hardware/environment/path.sh\n'}
+[7.483969] (xarm_1s_hardware) StdoutLine: {'line': b'-- Symlinking: /home/hyeon/xarm_ws/install/xarm_1s_hardware/share/xarm_1s_hardware/environment/path.dsv\n'}
+[7.488518] (xarm_1s_hardware) StdoutLine: {'line': b'-- Symlinking: /home/hyeon/xarm_ws/install/xarm_1s_hardware/share/xarm_1s_hardware/local_setup.bash\n'}
+[7.493127] (xarm_1s_hardware) StdoutLine: {'line': b'-- Symlinking: /home/hyeon/xarm_ws/install/xarm_1s_hardware/share/xarm_1s_hardware/local_setup.sh\n'}
+[7.497874] (xarm_1s_hardware) StdoutLine: {'line': b'-- Symlinking: /home/hyeon/xarm_ws/install/xarm_1s_hardware/share/xarm_1s_hardware/local_setup.zsh\n'}
+[7.502983] (xarm_1s_hardware) StdoutLine: {'line': b'-- Symlinking: /home/hyeon/xarm_ws/install/xarm_1s_hardware/share/xarm_1s_hardware/local_setup.dsv\n'}
+[7.507816] (xarm_1s_hardware) StdoutLine: {'line': b'-- Symlinking: /home/hyeon/xarm_ws/install/xarm_1s_hardware/share/xarm_1s_hardware/package.dsv\n'}
+[7.512292] (xarm_1s_hardware) StdoutLine: {'line': b'-- Symlinking: /home/hyeon/xarm_ws/install/xarm_1s_hardware/share/ament_index/resource_index/packages/xarm_1s_hardware\n'}
+[7.517152] (xarm_1s_hardware) StdoutLine: {'line': b'-- Symlinking: /home/hyeon/xarm_ws/install/xarm_1s_hardware/share/ament_index/resource_index/hardware_interface__pluginlib__plugin/xarm_1s_hardware\n'}
+[7.521840] (xarm_1s_hardware) StdoutLine: {'line': b'-- Symlinking: /home/hyeon/xarm_ws/install/xarm_1s_hardware/share/xarm_1s_hardware/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[7.526512] (xarm_1s_hardware) StdoutLine: {'line': b'-- Symlinking: /home/hyeon/xarm_ws/install/xarm_1s_hardware/share/xarm_1s_hardware/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[7.531204] (xarm_1s_hardware) StdoutLine: {'line': b'-- Symlinking: /home/hyeon/xarm_ws/install/xarm_1s_hardware/share/xarm_1s_hardware/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[7.535727] (xarm_1s_hardware) StdoutLine: {'line': b'-- Symlinking: /home/hyeon/xarm_ws/install/xarm_1s_hardware/share/xarm_1s_hardware/cmake/xarm_1s_hardwareConfig.cmake\n'}
+[7.540364] (xarm_1s_hardware) StdoutLine: {'line': b'-- Symlinking: /home/hyeon/xarm_ws/install/xarm_1s_hardware/share/xarm_1s_hardware/cmake/xarm_1s_hardwareConfig-version.cmake\n'}
+[7.545092] (xarm_1s_hardware) StdoutLine: {'line': b'-- Symlinking: /home/hyeon/xarm_ws/install/xarm_1s_hardware/share/xarm_1s_hardware/package.xml\n'}
+[7.549910] (xarm_1s_hardware) StdoutLine: {'line': b'-- Installing: /home/hyeon/xarm_ws/install/xarm_1s_hardware/lib/libxarm_1s_hardware.so\n'}
+[7.550340] (xarm_1s_hardware) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/hyeon/xarm_ws/install/xarm_1s_hardware/lib/libxarm_1s_hardware.so" to ""\n'}
+[7.550503] (xarm_1s_hardware) StdoutLine: {'line': b'-- Installing: /home/hyeon/xarm_ws/install/xarm_1s_hardware/share/xarm_1s_hardware/cmake/export_xarm_1s_hardwareExport.cmake\n'}
+[7.550748] (xarm_1s_hardware) StdoutLine: {'line': b'-- Installing: /home/hyeon/xarm_ws/install/xarm_1s_hardware/share/xarm_1s_hardware/cmake/export_xarm_1s_hardwareExport-noconfig.cmake\n'}
+[7.552077] (xarm_1s_hardware) CommandEnded: {'returncode': 0}
+[7.563176] (xarm_1s_hardware) JobEnded: {'identifier': 'xarm_1s_hardware', 'rc': 0}
+[7.565103] (-) TimerEvent: {}
+[7.666951] (-) TimerEvent: {}
+[7.767337] (-) TimerEvent: {}
+[7.868253] (-) TimerEvent: {}
+[7.969955] (-) TimerEvent: {}
+[8.070840] (-) TimerEvent: {}
+[8.171752] (-) TimerEvent: {}
+[8.184087] (xarm_1s_moveit_config) StdoutLine: {'line': b'-- Found ZLIB: /usr/lib/x86_64-linux-gnu/libz.so (found version "1.3")  \n'}
+[8.272345] (-) TimerEvent: {}
+[8.372925] (-) TimerEvent: {}
+[8.473326] (-) TimerEvent: {}
+[8.574216] (-) TimerEvent: {}
+[8.675059] (-) TimerEvent: {}
+[8.775909] (-) TimerEvent: {}
+[8.876789] (-) TimerEvent: {}
+[8.976102] (xarm_1s_moveit_config) StdoutLine: {'line': b'-- Found OpenGL: /usr/lib/x86_64-linux-gnu/libOpenGL.so   \n'}
+[8.976875] (-) TimerEvent: {}
+[9.077224] (-) TimerEvent: {}
+[9.178100] (-) TimerEvent: {}
+[9.279005] (-) TimerEvent: {}
+[9.379901] (-) TimerEvent: {}
+[9.480554] (-) TimerEvent: {}
+[9.581441] (-) TimerEvent: {}
+[9.682245] (-) TimerEvent: {}
+[9.783148] (-) TimerEvent: {}
+[9.884070] (-) TimerEvent: {}
+[9.984933] (-) TimerEvent: {}
+[10.085834] (-) TimerEvent: {}
+[10.186737] (-) TimerEvent: {}
+[10.287515] (-) TimerEvent: {}
+[10.388331] (-) TimerEvent: {}
+[10.489087] (-) TimerEvent: {}
+[10.589948] (-) TimerEvent: {}
+[10.690747] (-) TimerEvent: {}
+[10.791536] (-) TimerEvent: {}
+[10.892375] (-) TimerEvent: {}
+[10.993230] (-) TimerEvent: {}
+[11.094084] (-) TimerEvent: {}
+[11.194957] (-) TimerEvent: {}
+[11.295804] (-) TimerEvent: {}
+[11.396730] (-) TimerEvent: {}
+[11.497862] (-) TimerEvent: {}
+[11.598534] (-) TimerEvent: {}
+[11.699317] (-) TimerEvent: {}
+[11.800328] (-) TimerEvent: {}
+[11.901179] (-) TimerEvent: {}
+[12.002017] (-) TimerEvent: {}
+[12.102914] (-) TimerEvent: {}
+[12.203739] (-) TimerEvent: {}
+[12.304581] (-) TimerEvent: {}
+[12.405422] (-) TimerEvent: {}
+[12.506333] (-) TimerEvent: {}
+[12.607128] (-) TimerEvent: {}
+[12.707894] (-) TimerEvent: {}
+[12.808731] (-) TimerEvent: {}
+[12.909595] (-) TimerEvent: {}
+[13.010490] (-) TimerEvent: {}
+[13.111382] (-) TimerEvent: {}
+[13.212193] (-) TimerEvent: {}
+[13.313055] (-) TimerEvent: {}
+[13.413902] (-) TimerEvent: {}
+[13.514765] (-) TimerEvent: {}
+[13.615181] (-) TimerEvent: {}
+[13.716086] (-) TimerEvent: {}
+[13.816597] (-) TimerEvent: {}
+[13.917431] (-) TimerEvent: {}
+[14.017965] (-) TimerEvent: {}
+[14.118864] (-) TimerEvent: {}
+[14.219783] (-) TimerEvent: {}
+[14.320626] (-) TimerEvent: {}
+[14.421168] (-) TimerEvent: {}
+[14.522023] (-) TimerEvent: {}
+[14.622885] (-) TimerEvent: {}
+[14.723608] (-) TimerEvent: {}
+[14.824386] (-) TimerEvent: {}
+[14.925220] (-) TimerEvent: {}
+[15.026072] (-) TimerEvent: {}
+[15.126952] (-) TimerEvent: {}
+[15.227810] (-) TimerEvent: {}
+[15.328760] (-) TimerEvent: {}
+[15.429623] (-) TimerEvent: {}
+[15.530511] (-) TimerEvent: {}
+[15.631459] (-) TimerEvent: {}
+[15.665944] (xarm_1s_moveit_config) StdoutLine: {'line': b'-- Found X11: /usr/include   \n'}
+[15.666353] (xarm_1s_moveit_config) StdoutLine: {'line': b'-- Looking for XOpenDisplay in /usr/lib/x86_64-linux-gnu/libX11.so;/usr/lib/x86_64-linux-gnu/libXext.so\n'}
+[15.732078] (-) TimerEvent: {}
+[15.829830] (xarm_1s_moveit_config) StdoutLine: {'line': b'-- Looking for XOpenDisplay in /usr/lib/x86_64-linux-gnu/libX11.so;/usr/lib/x86_64-linux-gnu/libXext.so - found\n'}
+[15.830015] (xarm_1s_moveit_config) StdoutLine: {'line': b'-- Looking for gethostbyname\n'}
+[15.832238] (-) TimerEvent: {}
+[15.932575] (-) TimerEvent: {}
+[15.997827] (xarm_1s_moveit_config) StdoutLine: {'line': b'-- Looking for gethostbyname - found\n'}
+[15.998204] (xarm_1s_moveit_config) StdoutLine: {'line': b'-- Looking for connect\n'}
+[16.032755] (-) TimerEvent: {}
+[16.133252] (-) TimerEvent: {}
+[16.158310] (xarm_1s_moveit_config) StdoutLine: {'line': b'-- Looking for connect - found\n'}
+[16.158497] (xarm_1s_moveit_config) StdoutLine: {'line': b'-- Looking for remove\n'}
+[16.233457] (-) TimerEvent: {}
+[16.321383] (xarm_1s_moveit_config) StdoutLine: {'line': b'-- Looking for remove - found\n'}
+[16.321578] (xarm_1s_moveit_config) StdoutLine: {'line': b'-- Looking for shmat\n'}
+[16.333853] (-) TimerEvent: {}
+[16.434554] (-) TimerEvent: {}
+[16.483936] (xarm_1s_moveit_config) StdoutLine: {'line': b'-- Looking for shmat - found\n'}
+[16.484125] (xarm_1s_moveit_config) StdoutLine: {'line': b'-- Looking for IceConnectionNumber in ICE\n'}
+[16.535712] (-) TimerEvent: {}
+[16.637149] (-) TimerEvent: {}
+[16.642998] (xarm_1s_moveit_config) StdoutLine: {'line': b'-- Looking for IceConnectionNumber in ICE - found\n'}
+[16.737740] (-) TimerEvent: {}
+[16.813114] (xarm_1s_moveit_config) StdoutLine: {'line': b"-- Setting yaml-cpp_DIR to: '/opt/ros/jazzy/share/yaml_cpp_vendor/cmake/../../../opt/yaml_cpp_vendor/share/cmake/yaml-cpp'\n"}
+[16.822461] (xarm_1s_moveit_config) StdoutLine: {'line': b'-- Found PkgConfig: /usr/bin/pkg-config (found version "1.8.1") \n'}
+[16.822542] (xarm_1s_moveit_config) StdoutLine: {'line': b"-- Checking for module 'yaml-cpp'\n"}
+[16.824440] (xarm_1s_moveit_config) StdoutLine: {'line': b'--   Found yaml-cpp, version 0.8.0\n'}
+[16.838129] (-) TimerEvent: {}
+[16.915481] (xarm_1s_moveit_config) StdoutLine: {'line': b'-- Found rviz_visual_tools: 4.1.4 (/opt/ros/jazzy/share/rviz_visual_tools/cmake)\n'}
+[16.929042] (xarm_1s_moveit_config) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.17.5 (/opt/ros/jazzy/share/ament_lint_auto/cmake)\n'}
+[16.938498] (-) TimerEvent: {}
+[16.992334] (xarm_1s_moveit_config) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[16.992808] (xarm_1s_moveit_config) StdoutLine: {'line': b"-- Configured 'flake8' exclude dirs and/or files: \n"}
+[16.992852] (xarm_1s_moveit_config) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[16.993113] (xarm_1s_moveit_config) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[16.994048] (xarm_1s_moveit_config) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[16.995068] (xarm_1s_moveit_config) StdoutLine: {'line': b'-- Configuring done (17.0s)\n'}
+[17.003084] (xarm_1s_moveit_config) StdoutLine: {'line': b'-- Generating done (0.0s)\n'}
+[17.005135] (xarm_1s_moveit_config) StdoutLine: {'line': b'-- Build files have been written to: /home/hyeon/xarm_ws/build/xarm_1s_moveit_config\n'}
+[17.016031] (xarm_1s_moveit_config) CommandEnded: {'returncode': 0}
+[17.017773] (xarm_1s_moveit_config) JobProgress: {'identifier': 'xarm_1s_moveit_config', 'progress': 'build'}
+[17.017823] (xarm_1s_moveit_config) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/hyeon/xarm_ws/build/xarm_1s_moveit_config', '--', '-j24', '-l24'], 'cwd': '/home/hyeon/xarm_ws/build/xarm_1s_moveit_config', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'hyeon', 'ROS_APT_SOURCE_VERSION': '1.2.0', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/hyeon', 'OLDPWD': '/home/hyeon/xarm_ws', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'WSL_DISTRO_NAME': 'Ubuntu-24.04', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/hyeon/xarm_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'hyeon', 'NAME': 'HsJung', 'WSL_INTEROP': '/run/WSL/2194_interop', 'PULSE_SERVER': 'unix:/mnt/wslg/PulseServer', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'PATH': '/opt/ros/jazzy/bin:/home/hyeon/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/WindowsApps/MicrosoftCorporationII.WindowsSubsystemForLinux_2.6.1.0_x64__8wekyb3d8bbwe:/mnt/c/windows/system32:/mnt/c/windows:/mnt/c/windows/System32/Wbem:/mnt/c/windows/System32/WindowsPowerShell/v1.0/:/mnt/c/windows/System32/OpenSSH/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA app/NvDLISR:/mnt/c/Users/Administrator/AppData/Local/Microsoft/WindowsApps:/mnt/c/Program Files/HP/OMEN-Broadcast/Common:/mnt/c/Program Files/cursor/resources/app/bin:/mnt/c/Program Files/nodejs/:/mnt/c/Program Files/Git/cmd:/mnt/c/msys64/mingw64/bin:/Docker/host/bin:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/tools/dart-sdk/bin:/mnt/c/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/:/mnt/c/Program Files/PuTTY/:/mnt/c/Users/jhs04/.local/bin:/mnt/c/Users/jhs04/AppData/Local/Programs/Python/Python311/Scripts/:/mnt/c/Users/jhs04/AppData/Local/Programs/Python/Python311/:/mnt/c/Users/jhs04/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/jhs04/AppData/Local/Python/bin:/mnt/c/Users/jhs04/AppData/Roaming/npm:/mnt/c/Users/jhs04/AppData/Local/Programs/Ollama:/mnt/c/msys64/mingw64/bin:/mnt/c/tools/dart-sdk/bin:/mnt/c/Users/jhs04/AppData/Local/Pub/Cache/bin:/mnt/c/Users/jhs04/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/jhs04/.local/bin:/snap/bin:/home/hyeonsu/.local/bin', 'XDG_RUNTIME_DIR': '/run/user/1000/', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'ROS_DOMAIN_ID': '13', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy:/home/hyeon/xarm_ws/install/mtc:/home/hyeon/xarm_ws/install/xarm_1s_moveit_config:/home/hyeon/xarm_ws/install/xarm_1s_description', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/hyeon/xarm_ws/build/xarm_1s_moveit_config', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'WSL2_GUI_APPS_ENABLED': '1', 'HOSTTYPE': 'x86_64', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/hyeon/xarm_ws/install/mtc:/home/hyeon/xarm_ws/install/xarm_1s_moveit_config:/home/hyeon/xarm_ws/install/xarm_1s_description:/opt/ros/jazzy', 'WSLENV': ''}), 'shell': False}
+[17.039147] (-) TimerEvent: {}
+[17.048594] (xarm_1s_moveit_config) CommandEnded: {'returncode': 0}
+[17.049408] (xarm_1s_moveit_config) JobProgress: {'identifier': 'xarm_1s_moveit_config', 'progress': 'install'}
+[17.050008] (xarm_1s_moveit_config) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/hyeon/xarm_ws/build/xarm_1s_moveit_config'], 'cwd': '/home/hyeon/xarm_ws/build/xarm_1s_moveit_config', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'hyeon', 'ROS_APT_SOURCE_VERSION': '1.2.0', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/hyeon', 'OLDPWD': '/home/hyeon/xarm_ws', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'WSL_DISTRO_NAME': 'Ubuntu-24.04', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/hyeon/xarm_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'hyeon', 'NAME': 'HsJung', 'WSL_INTEROP': '/run/WSL/2194_interop', 'PULSE_SERVER': 'unix:/mnt/wslg/PulseServer', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'PATH': '/opt/ros/jazzy/bin:/home/hyeon/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/WindowsApps/MicrosoftCorporationII.WindowsSubsystemForLinux_2.6.1.0_x64__8wekyb3d8bbwe:/mnt/c/windows/system32:/mnt/c/windows:/mnt/c/windows/System32/Wbem:/mnt/c/windows/System32/WindowsPowerShell/v1.0/:/mnt/c/windows/System32/OpenSSH/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA app/NvDLISR:/mnt/c/Users/Administrator/AppData/Local/Microsoft/WindowsApps:/mnt/c/Program Files/HP/OMEN-Broadcast/Common:/mnt/c/Program Files/cursor/resources/app/bin:/mnt/c/Program Files/nodejs/:/mnt/c/Program Files/Git/cmd:/mnt/c/msys64/mingw64/bin:/Docker/host/bin:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/tools/dart-sdk/bin:/mnt/c/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/:/mnt/c/Program Files/PuTTY/:/mnt/c/Users/jhs04/.local/bin:/mnt/c/Users/jhs04/AppData/Local/Programs/Python/Python311/Scripts/:/mnt/c/Users/jhs04/AppData/Local/Programs/Python/Python311/:/mnt/c/Users/jhs04/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/jhs04/AppData/Local/Python/bin:/mnt/c/Users/jhs04/AppData/Roaming/npm:/mnt/c/Users/jhs04/AppData/Local/Programs/Ollama:/mnt/c/msys64/mingw64/bin:/mnt/c/tools/dart-sdk/bin:/mnt/c/Users/jhs04/AppData/Local/Pub/Cache/bin:/mnt/c/Users/jhs04/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/jhs04/.local/bin:/snap/bin:/home/hyeonsu/.local/bin', 'XDG_RUNTIME_DIR': '/run/user/1000/', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'ROS_DOMAIN_ID': '13', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy:/home/hyeon/xarm_ws/install/mtc:/home/hyeon/xarm_ws/install/xarm_1s_moveit_config:/home/hyeon/xarm_ws/install/xarm_1s_description', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/hyeon/xarm_ws/build/xarm_1s_moveit_config', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'WSL2_GUI_APPS_ENABLED': '1', 'HOSTTYPE': 'x86_64', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/hyeon/xarm_ws/install/mtc:/home/hyeon/xarm_ws/install/xarm_1s_moveit_config:/home/hyeon/xarm_ws/install/xarm_1s_description:/opt/ros/jazzy', 'WSLENV': ''}), 'shell': False}
+[17.054608] (xarm_1s_moveit_config) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[17.055185] (xarm_1s_moveit_config) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[17.055504] (xarm_1s_moveit_config) StdoutLine: {'line': b'-- Symlinking: /home/hyeon/xarm_ws/install/xarm_1s_moveit_config/share/xarm_1s_moveit_config/config/initial_positions.yaml\n'}
+[17.061060] (xarm_1s_moveit_config) StdoutLine: {'line': b'-- Symlinking: /home/hyeon/xarm_ws/install/xarm_1s_moveit_config/share/xarm_1s_moveit_config/config/joint_limits.yaml\n'}
+[17.066797] (xarm_1s_moveit_config) StdoutLine: {'line': b'-- Symlinking: /home/hyeon/xarm_ws/install/xarm_1s_moveit_config/share/xarm_1s_moveit_config/config/kinematics.yaml\n'}
+[17.071543] (xarm_1s_moveit_config) StdoutLine: {'line': b'-- Symlinking: /home/hyeon/xarm_ws/install/xarm_1s_moveit_config/share/xarm_1s_moveit_config/config/moveit_controllers.yaml\n'}
+[17.076164] (xarm_1s_moveit_config) StdoutLine: {'line': b'-- Symlinking: /home/hyeon/xarm_ws/install/xarm_1s_moveit_config/share/xarm_1s_moveit_config/config/ompl_planning.yaml\n'}
+[17.081182] (xarm_1s_moveit_config) StdoutLine: {'line': b'-- Symlinking: /home/hyeon/xarm_ws/install/xarm_1s_moveit_config/share/xarm_1s_moveit_config/config/pilz_cartesian_limits.yaml\n'}
+[17.086400] (xarm_1s_moveit_config) StdoutLine: {'line': b'-- Symlinking: /home/hyeon/xarm_ws/install/xarm_1s_moveit_config/share/xarm_1s_moveit_config/config/pilz_industrial_motion_planner_planning.yaml\n'}
+[17.091990] (xarm_1s_moveit_config) StdoutLine: {'line': b'-- Symlinking: /home/hyeon/xarm_ws/install/xarm_1s_moveit_config/share/xarm_1s_moveit_config/config/ros2_controllers.yaml\n'}
+[17.096890] (xarm_1s_moveit_config) StdoutLine: {'line': b'-- Symlinking: /home/hyeon/xarm_ws/install/xarm_1s_moveit_config/share/xarm_1s_moveit_config/config/sensors_3d.yaml\n'}
+[17.102509] (xarm_1s_moveit_config) StdoutLine: {'line': b'-- Symlinking: /home/hyeon/xarm_ws/install/xarm_1s_moveit_config/share/xarm_1s_moveit_config/config/stomp_planning.yaml\n'}
+[17.108139] (xarm_1s_moveit_config) StdoutLine: {'line': b'-- Symlinking: /home/hyeon/xarm_ws/install/xarm_1s_moveit_config/share/xarm_1s_moveit_config/config/xarm_1s.srdf\n'}
+[17.113499] (xarm_1s_moveit_config) StdoutLine: {'line': b'-- Symlinking: /home/hyeon/xarm_ws/install/xarm_1s_moveit_config/share/xarm_1s_moveit_config/launch/demo.launch.py\n'}
+[17.119309] (xarm_1s_moveit_config) StdoutLine: {'line': b'-- Symlinking: /home/hyeon/xarm_ws/install/xarm_1s_moveit_config/share/xarm_1s_moveit_config/rviz/moveit.rviz\n'}
+[17.124259] (xarm_1s_moveit_config) StdoutLine: {'line': b'-- Symlinking: /home/hyeon/xarm_ws/install/xarm_1s_moveit_config/share/xarm_1s_moveit_config/.setup_assistant\n'}
+[17.129691] (xarm_1s_moveit_config) StdoutLine: {'line': b'-- Symlinking: /home/hyeon/xarm_ws/install/xarm_1s_moveit_config/share/ament_index/resource_index/package_run_dependencies/xarm_1s_moveit_config\n'}
+[17.135487] (xarm_1s_moveit_config) StdoutLine: {'line': b'-- Symlinking: /home/hyeon/xarm_ws/install/xarm_1s_moveit_config/share/ament_index/resource_index/parent_prefix_path/xarm_1s_moveit_config\n'}
+[17.139393] (-) TimerEvent: {}
+[17.140109] (xarm_1s_moveit_config) StdoutLine: {'line': b'-- Symlinking: /home/hyeon/xarm_ws/install/xarm_1s_moveit_config/share/xarm_1s_moveit_config/environment/ament_prefix_path.sh\n'}
+[17.145579] (xarm_1s_moveit_config) StdoutLine: {'line': b'-- Symlinking: /home/hyeon/xarm_ws/install/xarm_1s_moveit_config/share/xarm_1s_moveit_config/environment/ament_prefix_path.dsv\n'}
+[17.150922] (xarm_1s_moveit_config) StdoutLine: {'line': b'-- Symlinking: /home/hyeon/xarm_ws/install/xarm_1s_moveit_config/share/xarm_1s_moveit_config/environment/path.sh\n'}
+[17.155907] (xarm_1s_moveit_config) StdoutLine: {'line': b'-- Symlinking: /home/hyeon/xarm_ws/install/xarm_1s_moveit_config/share/xarm_1s_moveit_config/environment/path.dsv\n'}
+[17.160837] (xarm_1s_moveit_config) StdoutLine: {'line': b'-- Symlinking: /home/hyeon/xarm_ws/install/xarm_1s_moveit_config/share/xarm_1s_moveit_config/local_setup.bash\n'}
+[17.165792] (xarm_1s_moveit_config) StdoutLine: {'line': b'-- Symlinking: /home/hyeon/xarm_ws/install/xarm_1s_moveit_config/share/xarm_1s_moveit_config/local_setup.sh\n'}
+[17.171067] (xarm_1s_moveit_config) StdoutLine: {'line': b'-- Symlinking: /home/hyeon/xarm_ws/install/xarm_1s_moveit_config/share/xarm_1s_moveit_config/local_setup.zsh\n'}
+[17.176738] (xarm_1s_moveit_config) StdoutLine: {'line': b'-- Symlinking: /home/hyeon/xarm_ws/install/xarm_1s_moveit_config/share/xarm_1s_moveit_config/local_setup.dsv\n'}
+[17.181885] (xarm_1s_moveit_config) StdoutLine: {'line': b'-- Symlinking: /home/hyeon/xarm_ws/install/xarm_1s_moveit_config/share/xarm_1s_moveit_config/package.dsv\n'}
+[17.188023] (xarm_1s_moveit_config) StdoutLine: {'line': b'-- Symlinking: /home/hyeon/xarm_ws/install/xarm_1s_moveit_config/share/ament_index/resource_index/packages/xarm_1s_moveit_config\n'}
+[17.192989] (xarm_1s_moveit_config) StdoutLine: {'line': b'-- Symlinking: /home/hyeon/xarm_ws/install/xarm_1s_moveit_config/share/xarm_1s_moveit_config/cmake/xarm_1s_moveit_configConfig.cmake\n'}
+[17.197708] (xarm_1s_moveit_config) StdoutLine: {'line': b'-- Symlinking: /home/hyeon/xarm_ws/install/xarm_1s_moveit_config/share/xarm_1s_moveit_config/cmake/xarm_1s_moveit_configConfig-version.cmake\n'}
+[17.202621] (xarm_1s_moveit_config) StdoutLine: {'line': b'-- Symlinking: /home/hyeon/xarm_ws/install/xarm_1s_moveit_config/share/xarm_1s_moveit_config/package.xml\n'}
+[17.208297] (xarm_1s_moveit_config) CommandEnded: {'returncode': 0}
+[17.217219] (xarm_1s_moveit_config) JobEnded: {'identifier': 'xarm_1s_moveit_config', 'rc': 0}
+[17.218471] (mtc) JobStarted: {'identifier': 'mtc'}
+[17.239650] (-) TimerEvent: {}
+[17.279160] (mtc) JobProgress: {'identifier': 'mtc', 'progress': 'cmake'}
+[17.280510] (mtc) Command: {'cmd': ['/usr/bin/cmake', '/home/hyeon/xarm_ws/src/mtc', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/hyeon/xarm_ws/install/mtc'], 'cwd': '/home/hyeon/xarm_ws/build/mtc', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'hyeon', 'ROS_APT_SOURCE_VERSION': '1.2.0', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/hyeon', 'OLDPWD': '/home/hyeon/xarm_ws', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'WSL_DISTRO_NAME': 'Ubuntu-24.04', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/hyeon/xarm_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'hyeon', 'NAME': 'HsJung', 'WSL_INTEROP': '/run/WSL/2194_interop', 'PULSE_SERVER': 'unix:/mnt/wslg/PulseServer', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'PATH': '/opt/ros/jazzy/bin:/home/hyeon/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/WindowsApps/MicrosoftCorporationII.WindowsSubsystemForLinux_2.6.1.0_x64__8wekyb3d8bbwe:/mnt/c/windows/system32:/mnt/c/windows:/mnt/c/windows/System32/Wbem:/mnt/c/windows/System32/WindowsPowerShell/v1.0/:/mnt/c/windows/System32/OpenSSH/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA app/NvDLISR:/mnt/c/Users/Administrator/AppData/Local/Microsoft/WindowsApps:/mnt/c/Program Files/HP/OMEN-Broadcast/Common:/mnt/c/Program Files/cursor/resources/app/bin:/mnt/c/Program Files/nodejs/:/mnt/c/Program Files/Git/cmd:/mnt/c/msys64/mingw64/bin:/Docker/host/bin:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/tools/dart-sdk/bin:/mnt/c/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/:/mnt/c/Program Files/PuTTY/:/mnt/c/Users/jhs04/.local/bin:/mnt/c/Users/jhs04/AppData/Local/Programs/Python/Python311/Scripts/:/mnt/c/Users/jhs04/AppData/Local/Programs/Python/Python311/:/mnt/c/Users/jhs04/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/jhs04/AppData/Local/Python/bin:/mnt/c/Users/jhs04/AppData/Roaming/npm:/mnt/c/Users/jhs04/AppData/Local/Programs/Ollama:/mnt/c/msys64/mingw64/bin:/mnt/c/tools/dart-sdk/bin:/mnt/c/Users/jhs04/AppData/Local/Pub/Cache/bin:/mnt/c/Users/jhs04/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/jhs04/.local/bin:/snap/bin:/home/hyeonsu/.local/bin', 'XDG_RUNTIME_DIR': '/run/user/1000/', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'ROS_DOMAIN_ID': '13', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy:/home/hyeon/xarm_ws/install/mtc:/home/hyeon/xarm_ws/install/xarm_1s_moveit_config:/home/hyeon/xarm_ws/install/xarm_1s_description', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/hyeon/xarm_ws/build/mtc', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'WSL2_GUI_APPS_ENABLED': '1', 'HOSTTYPE': 'x86_64', 'CMAKE_PREFIX_PATH': '/home/hyeon/xarm_ws/install/xarm_1s_moveit_config:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/hyeon/xarm_ws/install/mtc:/home/hyeon/xarm_ws/install/xarm_1s_description:/opt/ros/jazzy', 'WSLENV': ''}), 'shell': False}
+[17.340944] (-) TimerEvent: {}
+[17.417849] (mtc) StdoutLine: {'line': b'-- The C compiler identification is GNU 13.3.0\n'}
+[17.441546] (-) TimerEvent: {}
+[17.543129] (-) TimerEvent: {}
+[17.643963] (-) TimerEvent: {}
+[17.744830] (-) TimerEvent: {}
+[17.845712] (-) TimerEvent: {}
+[17.946648] (-) TimerEvent: {}
+[18.047276] (-) TimerEvent: {}
+[18.147732] (-) TimerEvent: {}
+[18.148854] (mtc) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 13.3.0\n'}
+[18.248500] (-) TimerEvent: {}
+[18.349354] (-) TimerEvent: {}
+[18.450222] (-) TimerEvent: {}
+[18.552333] (-) TimerEvent: {}
+[18.652728] (-) TimerEvent: {}
+[18.753688] (-) TimerEvent: {}
+[18.854683] (-) TimerEvent: {}
+[18.863536] (mtc) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[18.955373] (-) TimerEvent: {}
+[19.055814] (-) TimerEvent: {}
+[19.131701] (mtc) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[19.136577] (mtc) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[19.136877] (mtc) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[19.137078] (mtc) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[19.155971] (-) TimerEvent: {}
+[19.247168] (mtc) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[19.256261] (-) TimerEvent: {}
+[19.358876] (-) TimerEvent: {}
+[19.459427] (-) TimerEvent: {}
+[19.527435] (mtc) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[19.532570] (mtc) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[19.533112] (mtc) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[19.533181] (mtc) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[19.534746] (mtc) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.6 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[19.559630] (-) TimerEvent: {}
+[19.621233] (mtc) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter \n'}
+[19.660594] (-) TimerEvent: {}
+[19.667598] (mtc) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[19.685285] (mtc) StdoutLine: {'line': b'-- Found rclcpp: 28.1.18 (/opt/ros/jazzy/share/rclcpp/cmake)\n'}
+[19.761546] (-) TimerEvent: {}
+[19.852528] (mtc) StdoutLine: {'line': b'-- Found rosidl_generator_c: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)\n'}
+[19.859485] (mtc) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)\n'}
+[19.861776] (-) TimerEvent: {}
+[19.867946] (mtc) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[19.877722] (mtc) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[19.921460] (mtc) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 7.3.3 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)\n'}
+[19.923110] (mtc) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 8.4.3 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)\n'}
+[19.962542] (-) TimerEvent: {}
+[19.975498] (mtc) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  \n'}
+[20.064628] (-) TimerEvent: {}
+[20.165244] (-) TimerEvent: {}
+[20.184941] (mtc) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") \n'}
+[20.265954] (-) TimerEvent: {}
+[20.296915] (mtc) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[20.366228] (-) TimerEvent: {}
+[20.467414] (-) TimerEvent: {}
+[20.497059] (mtc) StdoutLine: {'line': b'-- Found moveit_ros_planning_interface: 2.12.4 (/opt/ros/jazzy/share/moveit_ros_planning_interface/cmake)\n'}
+[20.569144] (-) TimerEvent: {}
+[20.669563] (-) TimerEvent: {}
+[20.676900] (mtc) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found version "1.83.0") found components: date_time filesystem program_options system thread \n'}
+[20.769904] (-) TimerEvent: {}
+[20.850311] (mtc) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found version "1.83.0") found components: chrono date_time filesystem iostreams program_options regex serialization system thread \n'}
+[20.870134] (-) TimerEvent: {}
+[20.970477] (-) TimerEvent: {}
+[21.070882] (-) TimerEvent: {}
+[21.172322] (-) TimerEvent: {}
+[21.273752] (-) TimerEvent: {}
+[21.374746] (-) TimerEvent: {}
+[21.476187] (-) TimerEvent: {}
+[21.577631] (-) TimerEvent: {}
+[21.679050] (-) TimerEvent: {}
+[21.780471] (-) TimerEvent: {}
+[21.881931] (-) TimerEvent: {}
+[21.983599] (-) TimerEvent: {}
+[22.085011] (-) TimerEvent: {}
+[22.186464] (-) TimerEvent: {}
+[22.287910] (-) TimerEvent: {}
+[22.389253] (-) TimerEvent: {}
+[22.490733] (-) TimerEvent: {}
+[22.506532] (mtc) StdoutLine: {'line': b'-- Found parameter_traits: 0.7.1 (/opt/ros/jazzy/share/parameter_traits/cmake)\n'}
+[22.514471] (mtc) StdoutLine: {'line': b'-- Found rclcpp_lifecycle: 28.1.18 (/opt/ros/jazzy/share/rclcpp_lifecycle/cmake)\n'}
+[22.537287] (mtc) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found version "1.83.0") found components: filesystem \n'}
+[22.590860] (-) TimerEvent: {}
+[22.625778] (mtc) StdoutLine: {'line': b'-- Found Eigen3: TRUE (found version "3.4.0") \n'}
+[22.626562] (mtc) StdoutLine: {'line': b'-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target\n'}
+[22.691107] (-) TimerEvent: {}
+[22.721946] (mtc) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found version "1.83.0") found components: system filesystem date_time program_options thread chrono \n'}
+[22.756032] (mtc) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found version "1.83.0") found components: thread system filesystem regex date_time program_options \n'}
+[22.773519] (mtc) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found version "1.83.0") found components: system filesystem date_time program_options thread \n'}
+[22.791312] (-) TimerEvent: {}
+[22.796866] (mtc) StdoutLine: {'line': b'-- Found moveit_task_constructor_core: 0.1.4 (/opt/ros/jazzy/share/moveit_task_constructor_core/cmake)\n'}
+[22.842223] (mtc) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.17.5 (/opt/ros/jazzy/share/ament_lint_auto/cmake)\n'}
+[22.891449] (-) TimerEvent: {}
+[22.909859] (mtc) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[22.910225] (mtc) StdoutLine: {'line': b'-- Configured cppcheck include dirs: \n'}
+[22.910288] (mtc) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[22.911026] (mtc) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[22.911195] (mtc) StdoutLine: {'line': b"-- Configured 'flake8' exclude dirs and/or files: \n"}
+[22.911571] (mtc) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[22.911777] (mtc) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[22.912370] (mtc) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[22.912467] (mtc) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[22.912979] (mtc) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[22.913861] (mtc) StdoutLine: {'line': b'-- Configuring done (5.6s)\n'}
+[22.940799] (mtc) StdoutLine: {'line': b'-- Generating done (0.0s)\n'}
+[22.944291] (mtc) StdoutLine: {'line': b'-- Build files have been written to: /home/hyeon/xarm_ws/build/mtc\n'}
+[22.955225] (mtc) CommandEnded: {'returncode': 0}
+[22.956124] (mtc) JobProgress: {'identifier': 'mtc', 'progress': 'build'}
+[22.956174] (mtc) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/hyeon/xarm_ws/build/mtc', '--', '-j24', '-l24'], 'cwd': '/home/hyeon/xarm_ws/build/mtc', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'hyeon', 'ROS_APT_SOURCE_VERSION': '1.2.0', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/hyeon', 'OLDPWD': '/home/hyeon/xarm_ws', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'WSL_DISTRO_NAME': 'Ubuntu-24.04', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/hyeon/xarm_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'hyeon', 'NAME': 'HsJung', 'WSL_INTEROP': '/run/WSL/2194_interop', 'PULSE_SERVER': 'unix:/mnt/wslg/PulseServer', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'PATH': '/opt/ros/jazzy/bin:/home/hyeon/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/WindowsApps/MicrosoftCorporationII.WindowsSubsystemForLinux_2.6.1.0_x64__8wekyb3d8bbwe:/mnt/c/windows/system32:/mnt/c/windows:/mnt/c/windows/System32/Wbem:/mnt/c/windows/System32/WindowsPowerShell/v1.0/:/mnt/c/windows/System32/OpenSSH/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA app/NvDLISR:/mnt/c/Users/Administrator/AppData/Local/Microsoft/WindowsApps:/mnt/c/Program Files/HP/OMEN-Broadcast/Common:/mnt/c/Program Files/cursor/resources/app/bin:/mnt/c/Program Files/nodejs/:/mnt/c/Program Files/Git/cmd:/mnt/c/msys64/mingw64/bin:/Docker/host/bin:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/tools/dart-sdk/bin:/mnt/c/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/:/mnt/c/Program Files/PuTTY/:/mnt/c/Users/jhs04/.local/bin:/mnt/c/Users/jhs04/AppData/Local/Programs/Python/Python311/Scripts/:/mnt/c/Users/jhs04/AppData/Local/Programs/Python/Python311/:/mnt/c/Users/jhs04/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/jhs04/AppData/Local/Python/bin:/mnt/c/Users/jhs04/AppData/Roaming/npm:/mnt/c/Users/jhs04/AppData/Local/Programs/Ollama:/mnt/c/msys64/mingw64/bin:/mnt/c/tools/dart-sdk/bin:/mnt/c/Users/jhs04/AppData/Local/Pub/Cache/bin:/mnt/c/Users/jhs04/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/jhs04/.local/bin:/snap/bin:/home/hyeonsu/.local/bin', 'XDG_RUNTIME_DIR': '/run/user/1000/', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'ROS_DOMAIN_ID': '13', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy:/home/hyeon/xarm_ws/install/mtc:/home/hyeon/xarm_ws/install/xarm_1s_moveit_config:/home/hyeon/xarm_ws/install/xarm_1s_description', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/hyeon/xarm_ws/build/mtc', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'WSL2_GUI_APPS_ENABLED': '1', 'HOSTTYPE': 'x86_64', 'CMAKE_PREFIX_PATH': '/home/hyeon/xarm_ws/install/xarm_1s_moveit_config:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/hyeon/xarm_ws/install/mtc:/home/hyeon/xarm_ws/install/xarm_1s_description:/opt/ros/jazzy', 'WSLENV': ''}), 'shell': False}
+[22.988460] (mtc) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/mtc_node.dir/src/mtc_node.cpp.o\x1b[0m\n'}
+[22.991602] (-) TimerEvent: {}
+[23.092072] (-) TimerEvent: {}
+[23.193554] (-) TimerEvent: {}
+[23.294995] (-) TimerEvent: {}
+[23.396425] (-) TimerEvent: {}
+[23.498019] (-) TimerEvent: {}
+[23.599426] (-) TimerEvent: {}
+[23.701085] (-) TimerEvent: {}
+[23.802804] (-) TimerEvent: {}
+[23.904505] (-) TimerEvent: {}
+[24.006301] (-) TimerEvent: {}
+[24.108054] (-) TimerEvent: {}
+[24.209746] (-) TimerEvent: {}
+[24.310782] (-) TimerEvent: {}
+[24.412492] (-) TimerEvent: {}
+[24.514201] (-) TimerEvent: {}
+[24.615729] (-) TimerEvent: {}
+[24.717566] (-) TimerEvent: {}
+[24.819236] (-) TimerEvent: {}
+[24.920943] (-) TimerEvent: {}
+[25.022737] (-) TimerEvent: {}
+[25.124163] (-) TimerEvent: {}
+[25.225665] (-) TimerEvent: {}
+[25.327012] (-) TimerEvent: {}
+[25.428582] (-) TimerEvent: {}
+[25.530119] (-) TimerEvent: {}
+[25.631842] (-) TimerEvent: {}
+[25.733546] (-) TimerEvent: {}
+[25.835257] (-) TimerEvent: {}
+[25.936963] (-) TimerEvent: {}
+[26.038764] (-) TimerEvent: {}
+[26.140389] (-) TimerEvent: {}
+[26.241910] (-) TimerEvent: {}
+[26.343701] (-) TimerEvent: {}
+[26.445456] (-) TimerEvent: {}
+[26.547154] (-) TimerEvent: {}
+[26.648829] (-) TimerEvent: {}
+[26.750438] (-) TimerEvent: {}
+[26.851973] (-) TimerEvent: {}
+[26.953697] (-) TimerEvent: {}
+[27.055413] (-) TimerEvent: {}
+[27.157129] (-) TimerEvent: {}
+[27.258757] (-) TimerEvent: {}
+[27.359533] (-) TimerEvent: {}
+[27.460967] (-) TimerEvent: {}
+[27.562470] (-) TimerEvent: {}
+[27.664247] (-) TimerEvent: {}
+[27.765741] (-) TimerEvent: {}
+[27.867345] (-) TimerEvent: {}
+[27.968873] (-) TimerEvent: {}
+[28.070567] (-) TimerEvent: {}
+[28.172428] (-) TimerEvent: {}
+[28.274165] (-) TimerEvent: {}
+[28.375392] (-) TimerEvent: {}
+[28.477044] (-) TimerEvent: {}
+[28.578743] (-) TimerEvent: {}
+[28.679458] (-) TimerEvent: {}
+[28.781252] (-) TimerEvent: {}
+[28.881951] (-) TimerEvent: {}
+[28.983556] (-) TimerEvent: {}
+[29.084131] (-) TimerEvent: {}
+[29.185607] (-) TimerEvent: {}
+[29.287193] (-) TimerEvent: {}
+[29.388541] (-) TimerEvent: {}
+[29.490210] (-) TimerEvent: {}
+[29.591978] (-) TimerEvent: {}
+[29.693544] (-) TimerEvent: {}
+[29.795120] (-) TimerEvent: {}
+[29.896656] (-) TimerEvent: {}
+[29.998088] (-) TimerEvent: {}
+[30.099713] (-) TimerEvent: {}
+[30.201363] (-) TimerEvent: {}
+[30.302127] (-) TimerEvent: {}
+[30.403712] (-) TimerEvent: {}
+[30.505303] (-) TimerEvent: {}
+[30.606857] (-) TimerEvent: {}
+[30.708477] (-) TimerEvent: {}
+[30.796071] (mtc) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable mtc_node\x1b[0m\n'}
+[30.808803] (-) TimerEvent: {}
+[30.909141] (-) TimerEvent: {}
+[31.010474] (-) TimerEvent: {}
+[31.112065] (-) TimerEvent: {}
+[31.203667] (mtc) StdoutLine: {'line': b'[100%] Built target mtc_node\n'}
+[31.211588] (mtc) CommandEnded: {'returncode': 0}
+[31.212201] (mtc) JobProgress: {'identifier': 'mtc', 'progress': 'install'}
+[31.212243] (-) TimerEvent: {}
+[31.212830] (mtc) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/hyeon/xarm_ws/build/mtc'], 'cwd': '/home/hyeon/xarm_ws/build/mtc', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'hyeon', 'ROS_APT_SOURCE_VERSION': '1.2.0', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/hyeon', 'OLDPWD': '/home/hyeon/xarm_ws', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'WSL_DISTRO_NAME': 'Ubuntu-24.04', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/hyeon/xarm_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'hyeon', 'NAME': 'HsJung', 'WSL_INTEROP': '/run/WSL/2194_interop', 'PULSE_SERVER': 'unix:/mnt/wslg/PulseServer', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'PATH': '/opt/ros/jazzy/bin:/home/hyeon/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/WindowsApps/MicrosoftCorporationII.WindowsSubsystemForLinux_2.6.1.0_x64__8wekyb3d8bbwe:/mnt/c/windows/system32:/mnt/c/windows:/mnt/c/windows/System32/Wbem:/mnt/c/windows/System32/WindowsPowerShell/v1.0/:/mnt/c/windows/System32/OpenSSH/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA app/NvDLISR:/mnt/c/Users/Administrator/AppData/Local/Microsoft/WindowsApps:/mnt/c/Program Files/HP/OMEN-Broadcast/Common:/mnt/c/Program Files/cursor/resources/app/bin:/mnt/c/Program Files/nodejs/:/mnt/c/Program Files/Git/cmd:/mnt/c/msys64/mingw64/bin:/Docker/host/bin:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/tools/dart-sdk/bin:/mnt/c/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/:/mnt/c/Program Files/PuTTY/:/mnt/c/Users/jhs04/.local/bin:/mnt/c/Users/jhs04/AppData/Local/Programs/Python/Python311/Scripts/:/mnt/c/Users/jhs04/AppData/Local/Programs/Python/Python311/:/mnt/c/Users/jhs04/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/jhs04/AppData/Local/Python/bin:/mnt/c/Users/jhs04/AppData/Roaming/npm:/mnt/c/Users/jhs04/AppData/Local/Programs/Ollama:/mnt/c/msys64/mingw64/bin:/mnt/c/tools/dart-sdk/bin:/mnt/c/Users/jhs04/AppData/Local/Pub/Cache/bin:/mnt/c/Users/jhs04/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/jhs04/.local/bin:/snap/bin:/home/hyeonsu/.local/bin', 'XDG_RUNTIME_DIR': '/run/user/1000/', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'ROS_DOMAIN_ID': '13', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy:/home/hyeon/xarm_ws/install/mtc:/home/hyeon/xarm_ws/install/xarm_1s_moveit_config:/home/hyeon/xarm_ws/install/xarm_1s_description', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/hyeon/xarm_ws/build/mtc', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'WSL2_GUI_APPS_ENABLED': '1', 'HOSTTYPE': 'x86_64', 'CMAKE_PREFIX_PATH': '/home/hyeon/xarm_ws/install/xarm_1s_moveit_config:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/hyeon/xarm_ws/install/mtc:/home/hyeon/xarm_ws/install/xarm_1s_description:/opt/ros/jazzy', 'WSLENV': ''}), 'shell': False}
+[31.217634] (mtc) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[31.217937] (mtc) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[31.218516] (mtc) StdoutLine: {'line': b'-- Symlinking: /home/hyeon/xarm_ws/install/mtc/lib/mtc/mtc_node\n'}
+[31.224609] (mtc) StdoutLine: {'line': b'-- Symlinking: /home/hyeon/xarm_ws/install/mtc/share/mtc/launch/__pycache__/pick_place_demo.launch.cpython-312.pyc\n'}
+[31.230490] (mtc) StdoutLine: {'line': b'-- Symlinking: /home/hyeon/xarm_ws/install/mtc/share/mtc/launch/pick_place_demo.launch.py\n'}
+[31.236526] (mtc) StdoutLine: {'line': b'-- Symlinking: /home/hyeon/xarm_ws/install/mtc/share/ament_index/resource_index/package_run_dependencies/mtc\n'}
+[31.241496] (mtc) StdoutLine: {'line': b'-- Symlinking: /home/hyeon/xarm_ws/install/mtc/share/ament_index/resource_index/parent_prefix_path/mtc\n'}
+[31.246254] (mtc) StdoutLine: {'line': b'-- Symlinking: /home/hyeon/xarm_ws/install/mtc/share/mtc/environment/ament_prefix_path.sh\n'}
+[31.251364] (mtc) StdoutLine: {'line': b'-- Symlinking: /home/hyeon/xarm_ws/install/mtc/share/mtc/environment/ament_prefix_path.dsv\n'}
+[31.255714] (mtc) StdoutLine: {'line': b'-- Symlinking: /home/hyeon/xarm_ws/install/mtc/share/mtc/environment/path.sh\n'}
+[31.260346] (mtc) StdoutLine: {'line': b'-- Symlinking: /home/hyeon/xarm_ws/install/mtc/share/mtc/environment/path.dsv\n'}
+[31.264601] (mtc) StdoutLine: {'line': b'-- Symlinking: /home/hyeon/xarm_ws/install/mtc/share/mtc/local_setup.bash\n'}
+[31.269328] (mtc) StdoutLine: {'line': b'-- Symlinking: /home/hyeon/xarm_ws/install/mtc/share/mtc/local_setup.sh\n'}
+[31.274892] (mtc) StdoutLine: {'line': b'-- Symlinking: /home/hyeon/xarm_ws/install/mtc/share/mtc/local_setup.zsh\n'}
+[31.279628] (mtc) StdoutLine: {'line': b'-- Symlinking: /home/hyeon/xarm_ws/install/mtc/share/mtc/local_setup.dsv\n'}
+[31.284888] (mtc) StdoutLine: {'line': b'-- Symlinking: /home/hyeon/xarm_ws/install/mtc/share/mtc/package.dsv\n'}
+[31.290403] (mtc) StdoutLine: {'line': b'-- Symlinking: /home/hyeon/xarm_ws/install/mtc/share/ament_index/resource_index/packages/mtc\n'}
+[31.295393] (mtc) StdoutLine: {'line': b'-- Symlinking: /home/hyeon/xarm_ws/install/mtc/share/mtc/cmake/mtcConfig.cmake\n'}
+[31.300288] (mtc) StdoutLine: {'line': b'-- Symlinking: /home/hyeon/xarm_ws/install/mtc/share/mtc/cmake/mtcConfig-version.cmake\n'}
+[31.305001] (mtc) StdoutLine: {'line': b'-- Symlinking: /home/hyeon/xarm_ws/install/mtc/share/mtc/package.xml\n'}
+[31.310599] (mtc) CommandEnded: {'returncode': 0}
+[31.312472] (-) TimerEvent: {}
+[31.320326] (mtc) JobEnded: {'identifier': 'mtc', 'rc': 0}
+[31.321484] (-) EventReactorShutdown: {}

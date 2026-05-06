@@ -1,8 +1,0 @@
-[ 50%] [32mBuilding CXX object CMakeFiles/mtc_node.dir/src/mtc_node.cpp.o[0m
-[01m[K/home/hyeonsu/xarm_ws/src/mtc/src/mtc_node.cpp:[m[K In member function ‘[01m[Kmoveit::task_constructor::Task MTCTaskNode::[01;32m[KcreateTask[m[K()[m[K’:
-[01m[K/home/hyeonsu/xarm_ws/src/mtc/src/mtc_node.cpp:253:14:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass moveit::task_constructor::stages::GeneratePlacePose[m[K’ has no member named ‘[01m[KsetAngleDelta[m[K’
-  253 |       stage->[01;31m[KsetAngleDelta[m[K(M_PI / 24);
-      |              [01;31m[K^~~~~~~~~~~~~[m[K
-gmake[2]: *** [CMakeFiles/mtc_node.dir/build.make:76: CMakeFiles/mtc_node.dir/src/mtc_node.cpp.o] Error 1
-gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/mtc_node.dir/all] Error 2
-gmake: *** [Makefile:146: all] Error 2

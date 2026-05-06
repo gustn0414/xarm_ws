@@ -1,10 +1,21 @@
 <?xml version="1.0"?>
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+    <!-- use_mock:=true  → 시뮬레이션 (RViz만)  -->
+    <!-- use_mock:=false → 실제 로봇 (HID 통신) -->
+    <xacro:arg name="use_mock" default="true"/>
+
     <xacro:macro name="xarm_1s_ros2_control" params="name">
         <ros2_control name="${name}" type="system">
             <hardware>
-                <!--plugin>ros2_control_xarm_1s/XArm1SSystemHardware</plugin-->
-                <plugin>mock_components/GenericSystem</plugin>
+                <xacro:if value="$(arg use_mock)">
+                    <plugin>mock_components/GenericSystem</plugin>
+                </xacro:if>
+                <xacro:unless value="$(arg use_mock)">
+                    <plugin>xarm_1s_hardware/XArm1SHardwareInterface</plugin>
+                    <!-- Hiwonder xArm VID/PID -->
+                    <param name="vid">0x0483</param>
+                    <param name="pid">0x5750</param>
+                </xacro:unless>
             </hardware>
             <joint name="arm6">
                 <command_interface name="position">

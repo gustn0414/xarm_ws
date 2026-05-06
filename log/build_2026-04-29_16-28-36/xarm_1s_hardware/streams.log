@@ -1,0 +1,81 @@
+[0.018s] Invoking command in '/home/hyeon/xarm_ws/build/xarm_1s_hardware': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /home/hyeon/xarm_ws/src/xarm_1s_hardware -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/hyeon/xarm_ws/install/xarm_1s_hardware
+[0.184s] -- The C compiler identification is GNU 13.3.0
+[0.879s] -- The CXX compiler identification is GNU 13.3.0
+[1.520s] -- Detecting C compiler ABI info
+[1.778s] -- Detecting C compiler ABI info - done
+[1.784s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.784s] -- Detecting C compile features
+[1.784s] -- Detecting C compile features - done
+[1.889s] -- Detecting CXX compiler ABI info
+[2.201s] -- Detecting CXX compiler ABI info - done
+[2.205s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[2.206s] -- Detecting CXX compile features
+[2.206s] -- Detecting CXX compile features - done
+[2.208s] -- Found ament_cmake: 2.5.6 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[2.307s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[2.353s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[2.369s] -- Found rclcpp: 28.1.18 (/opt/ros/jazzy/share/rclcpp/cmake)
+[2.529s] -- Found rosidl_generator_c: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[2.535s] -- Found rosidl_generator_cpp: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[2.543s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.552s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.594s] -- Found rmw_implementation_cmake: 7.3.3 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[2.595s] -- Found rmw_fastrtps_cpp: 8.4.3 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[2.642s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  
+[2.850s] -- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") 
+[2.946s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[3.139s] -- Found hardware_interface: 4.44.0 (/opt/ros/jazzy/share/hardware_interface/cmake)
+[3.475s] -- Found PkgConfig: /usr/bin/pkg-config (found version "1.8.1") 
+[3.475s] -- Checking for module 'hidapi-hidraw'
+[3.484s] --   Found hidapi-hidraw, version 0.14.0
+[3.565s] -- Configuring done (3.5s)
+[3.591s] -- Generating done (0.0s)
+[3.593s] -- Build files have been written to: /home/hyeon/xarm_ws/build/xarm_1s_hardware
+[3.602s] Invoked command in '/home/hyeon/xarm_ws/build/xarm_1s_hardware' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /home/hyeon/xarm_ws/src/xarm_1s_hardware -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/hyeon/xarm_ws/install/xarm_1s_hardware
+[3.603s] Invoking command in '/home/hyeon/xarm_ws/build/xarm_1s_hardware': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/hyeon/xarm_ws/build/xarm_1s_hardware -- -j24 -l24
+[3.634s] [ 50%] [32mBuilding CXX object CMakeFiles/xarm_1s_hardware.dir/src/xarm_1s_hardware_interface.cpp.o[0m
+[5.624s] [01m[K/home/hyeon/xarm_ws/src/xarm_1s_hardware/src/xarm_1s_hardware_interface.cpp:[m[K In member function ‘[01m[Kvirtual hardware_interface::CallbackReturn xarm_1s_hardware::XArm1SHardwareInterface::[01;32m[Kon_init[m[K(const hardware_interface::HardwareInfo&)[m[K’:
+[5.624s] [01m[K/home/hyeon/xarm_ws/src/xarm_1s_hardware/src/xarm_1s_hardware_interface.cpp:29:51:[m[K [01;35m[Kwarning: [m[K‘[01m[Kvirtual rclcpp_lifecycle::node_interfaces::LifecycleNodeInterface::CallbackReturn hardware_interface::HardwareComponentInterface::[01;32m[Kon_init[m[K(const hardware_interface::HardwareInfo&)[m[K’ is deprecated: Use on_init(const HardwareComponentInterfaceParams & params) instead. [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+[5.624s]    29 |   if ([01;35m[Khardware_interface::SystemInterface::on_init(info)[m[K !=
+[5.624s]       |       [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~[m[K
+[5.624s] In file included from [01m[K/opt/ros/jazzy/include/hardware_interface/hardware_interface/system_interface.hpp:18[m[K,
+[5.624s]                  from [01m[K/home/hyeon/xarm_ws/src/xarm_1s_hardware/include/xarm_1s_hardware/xarm_1s_hardware_interface.hpp:4[m[K,
+[5.624s]                  from [01m[K/home/hyeon/xarm_ws/src/xarm_1s_hardware/src/xarm_1s_hardware_interface.cpp:1[m[K:
+[5.624s] [01m[K/opt/ros/jazzy/include/hardware_interface/hardware_interface/hardware_component_interface.hpp:140:26:[m[K [01;36m[Knote: [m[Kdeclared here
+[5.624s]   140 |   virtual CallbackReturn [01;36m[Kon_init[m[K(const HardwareInfo & hardware_info);
+[5.624s]       |                          [01;36m[K^~~~~~~[m[K
+[7.145s] [100%] [32m[1mLinking CXX shared library libxarm_1s_hardware.so[0m
+[7.413s] [100%] Built target xarm_1s_hardware
+[7.421s] Invoked command in '/home/hyeon/xarm_ws/build/xarm_1s_hardware' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/hyeon/xarm_ws/build/xarm_1s_hardware -- -j24 -l24
+[7.422s] Invoking command in '/home/hyeon/xarm_ws/build/xarm_1s_hardware': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/hyeon/xarm_ws/build/xarm_1s_hardware
+[7.427s] -- Install configuration: ""
+[7.427s] -- Execute custom install script
+[7.428s] -- Symlinking: /home/hyeon/xarm_ws/install/xarm_1s_hardware/share/xarm_1s_hardware//xarm_1s_hardware_plugin.xml
+[7.435s] -- Symlinking: /home/hyeon/xarm_ws/install/xarm_1s_hardware/include/xarm_1s_hardware/xarm_1s_hardware_interface.hpp
+[7.440s] -- Up-to-date symlink: /home/hyeon/xarm_ws/install/xarm_1s_hardware/share/xarm_1s_hardware/xarm_1s_hardware_plugin.xml
+[7.440s] -- Symlinking: /home/hyeon/xarm_ws/install/xarm_1s_hardware/share/xarm_1s_hardware/environment/library_path.sh
+[7.445s] -- Symlinking: /home/hyeon/xarm_ws/install/xarm_1s_hardware/share/xarm_1s_hardware/environment/library_path.dsv
+[7.451s] -- Symlinking: /home/hyeon/xarm_ws/install/xarm_1s_hardware/share/ament_index/resource_index/package_run_dependencies/xarm_1s_hardware
+[7.456s] -- Symlinking: /home/hyeon/xarm_ws/install/xarm_1s_hardware/share/ament_index/resource_index/parent_prefix_path/xarm_1s_hardware
+[7.461s] -- Symlinking: /home/hyeon/xarm_ws/install/xarm_1s_hardware/share/xarm_1s_hardware/environment/ament_prefix_path.sh
+[7.467s] -- Symlinking: /home/hyeon/xarm_ws/install/xarm_1s_hardware/share/xarm_1s_hardware/environment/ament_prefix_path.dsv
+[7.472s] -- Symlinking: /home/hyeon/xarm_ws/install/xarm_1s_hardware/share/xarm_1s_hardware/environment/path.sh
+[7.477s] -- Symlinking: /home/hyeon/xarm_ws/install/xarm_1s_hardware/share/xarm_1s_hardware/environment/path.dsv
+[7.481s] -- Symlinking: /home/hyeon/xarm_ws/install/xarm_1s_hardware/share/xarm_1s_hardware/local_setup.bash
+[7.486s] -- Symlinking: /home/hyeon/xarm_ws/install/xarm_1s_hardware/share/xarm_1s_hardware/local_setup.sh
+[7.491s] -- Symlinking: /home/hyeon/xarm_ws/install/xarm_1s_hardware/share/xarm_1s_hardware/local_setup.zsh
+[7.496s] -- Symlinking: /home/hyeon/xarm_ws/install/xarm_1s_hardware/share/xarm_1s_hardware/local_setup.dsv
+[7.501s] -- Symlinking: /home/hyeon/xarm_ws/install/xarm_1s_hardware/share/xarm_1s_hardware/package.dsv
+[7.505s] -- Symlinking: /home/hyeon/xarm_ws/install/xarm_1s_hardware/share/ament_index/resource_index/packages/xarm_1s_hardware
+[7.510s] -- Symlinking: /home/hyeon/xarm_ws/install/xarm_1s_hardware/share/ament_index/resource_index/hardware_interface__pluginlib__plugin/xarm_1s_hardware
+[7.515s] -- Symlinking: /home/hyeon/xarm_ws/install/xarm_1s_hardware/share/xarm_1s_hardware/cmake/ament_cmake_export_include_directories-extras.cmake
+[7.519s] -- Symlinking: /home/hyeon/xarm_ws/install/xarm_1s_hardware/share/xarm_1s_hardware/cmake/ament_cmake_export_libraries-extras.cmake
+[7.524s] -- Symlinking: /home/hyeon/xarm_ws/install/xarm_1s_hardware/share/xarm_1s_hardware/cmake/ament_cmake_export_targets-extras.cmake
+[7.529s] -- Symlinking: /home/hyeon/xarm_ws/install/xarm_1s_hardware/share/xarm_1s_hardware/cmake/xarm_1s_hardwareConfig.cmake
+[7.533s] -- Symlinking: /home/hyeon/xarm_ws/install/xarm_1s_hardware/share/xarm_1s_hardware/cmake/xarm_1s_hardwareConfig-version.cmake
+[7.538s] -- Symlinking: /home/hyeon/xarm_ws/install/xarm_1s_hardware/share/xarm_1s_hardware/package.xml
+[7.543s] -- Installing: /home/hyeon/xarm_ws/install/xarm_1s_hardware/lib/libxarm_1s_hardware.so
+[7.543s] -- Set non-toolchain portion of runtime path of "/home/hyeon/xarm_ws/install/xarm_1s_hardware/lib/libxarm_1s_hardware.so" to ""
+[7.543s] -- Installing: /home/hyeon/xarm_ws/install/xarm_1s_hardware/share/xarm_1s_hardware/cmake/export_xarm_1s_hardwareExport.cmake
+[7.544s] -- Installing: /home/hyeon/xarm_ws/install/xarm_1s_hardware/share/xarm_1s_hardware/cmake/export_xarm_1s_hardwareExport-noconfig.cmake
+[7.545s] Invoked command in '/home/hyeon/xarm_ws/build/xarm_1s_hardware' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/hyeon/xarm_ws/build/xarm_1s_hardware

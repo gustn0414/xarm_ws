@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/hyeonsu/xarm_ws/src/xarm_1s_description
+CMAKE_SOURCE_DIR = /home/hyeon/xarm_ws/src/xarm_1s_description
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/hyeonsu/xarm_ws/build/xarm_1s_description
+CMAKE_BINARY_DIR = /home/hyeon/xarm_ws/build/xarm_1s_description
 
 # Utility rule file for uninstall.
 
@@ -78,6 +78,6 @@ CMakeFiles/uninstall.dir/clean:
 .PHONY : CMakeFiles/uninstall.dir/clean
 
 CMakeFiles/uninstall.dir/depend:
-	cd /home/hyeonsu/xarm_ws/build/xarm_1s_description && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/hyeonsu/xarm_ws/src/xarm_1s_description /home/hyeonsu/xarm_ws/src/xarm_1s_description /home/hyeonsu/xarm_ws/build/xarm_1s_description /home/hyeonsu/xarm_ws/build/xarm_1s_description /home/hyeonsu/xarm_ws/build/xarm_1s_description/CMakeFiles/uninstall.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/hyeon/xarm_ws/build/xarm_1s_description && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/hyeon/xarm_ws/src/xarm_1s_description /home/hyeon/xarm_ws/src/xarm_1s_description /home/hyeon/xarm_ws/build/xarm_1s_description /home/hyeon/xarm_ws/build/xarm_1s_description /home/hyeon/xarm_ws/build/xarm_1s_description/CMakeFiles/uninstall.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/uninstall.dir/depend
 

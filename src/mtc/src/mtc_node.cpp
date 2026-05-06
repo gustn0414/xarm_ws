@@ -1,6 +1,14 @@
 #include <rclcpp/rclcpp.hpp>
+
+// Jazzy: .hpp / Humble: .h
+#if __has_include(<moveit/planning_scene/planning_scene.hpp>)
 #include <moveit/planning_scene/planning_scene.hpp>
 #include <moveit/planning_scene_interface/planning_scene_interface.hpp>
+#else
+#include <moveit/planning_scene/planning_scene.h>
+#include <moveit/planning_scene_interface/planning_scene_interface.h>
+#endif
+
 #include <moveit/task_constructor/task.h>
 #include <moveit/task_constructor/solvers.h>
 #include <moveit/task_constructor/stages.h>
@@ -270,7 +278,7 @@ mtc::Task MTCTaskNode::createTask()
     //   stage->properties().configureInitFrom(mtc::Stage::PARENT);
     //   stage->properties().set("marker_ns", "place_pose");
     //   stage->setObject("object");
-    
+
     //   geometry_msgs::msg::PoseStamped target_pose_msg;
     //   target_pose_msg.header.frame_id = "object";
     //   target_pose_msg.pose.position.y = -0.34;

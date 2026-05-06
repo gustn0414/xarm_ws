@@ -1,17 +1,1 @@
-# 사용하는 모션 플래너 선정
-planning_plugins:
-  - pilz_industrial_motion_planner/CommandPlanner
-
-# 플래닝 요청전 검사단계 (추가 및 삭제 가능)
-request_adapters:
-  - default_planning_request_adapters/ValidateWorkspaceBounds
-  - default_planning_request_adapters/CheckStartStateBounds
-  - default_planning_request_adapters/CheckStartStateCollision
-
-# PTP 부분은 로봇에 맞게 수정
-default_planner_config: PTP
-
-# 시퀀스 기능을 쓸 때만 필요함
-capabilities: >-
-    pilz_industrial_motion_planner/MoveGroupSequenceAction
-    pilz_industrial_motion_planner/MoveGroupSequenceService
+/home/hyeon/xarm_ws/src/xarm_1s_moveit_config/config/pilz_industrial_motion_planner_planning.yaml
